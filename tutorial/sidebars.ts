@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
   /*
   tutorialSidebar: [
-    'python/python',
+    'python/python-coding',
     'hello',
     {
       type: 'category',
