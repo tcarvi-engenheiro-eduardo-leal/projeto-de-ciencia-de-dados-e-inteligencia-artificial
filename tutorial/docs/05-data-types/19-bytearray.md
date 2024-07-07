@@ -1,0 +1,13 @@
+# bytearray
+- bytearray objects are a mutable counterpart to bytes objects.
+- There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
+- class bytearray([source[, encoding[, errors]]])
+    - Creating an empty instance:
+        - `bytearray-variable_name0 = bytearray()`
+    - Creating a zero-filled instance with a given length: 
+        - `bytearray-variable_name1 = bytearray(10)`
+    - From an iterable of integers: 
+        - `bytearray-variable_name2 = bytearray(range(20))`
+    - Copying existing binary data via the buffer protocol:
+        - `bytearray-variable_name3 = bytearray(b'Hi!')`
+    - As bytearray objects are mutable, they support the mutable sequence operations in addition to the common bytes and bytearray operations described in Bytes and Bytearray Operations.

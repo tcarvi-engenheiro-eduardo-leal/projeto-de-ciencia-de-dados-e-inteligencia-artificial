@@ -1,0 +1,17 @@
+# str
+- Text sequence
+- Textual data in Python is handled with str objects, or strings.
+- Strings are immutable sequences of Unicode code points. 
+- String literals are written in a variety of ways:
+    - Single quotes: 'allows embedded "double" quotes'
+    - Double quotes: "allows embedded 'single' quotes"
+    - Triple quoted: '''Three single quotes''', """Three double quotes"""
+        - Triple quoted strings may span multiple lines - all associated whitespace will be included in the string literal.
+    - String literals that are part of a single expression and have only whitespace between them will be implicitly converted to a single string literal. That is, ("spam " "eggs") == "spam eggs".
+- Strings may also be created from other objects using the str constructor.
+- There is also no mutable string type, but str.join() or io.StringIO can be used to efficiently construct strings from multiple fragments.
+- Constructors:
+    - string_variable_name0 = str()
+    - string_variable_name1 = str(object='')
+    - string_variable_name2 = str(object=b'', encoding='utf-8', errors='strict')
+    - Return a string version of object. If object is not provided, returns the empty string. Otherwise, the behavior of str() depends on whether encoding or errors is given, as follows.
