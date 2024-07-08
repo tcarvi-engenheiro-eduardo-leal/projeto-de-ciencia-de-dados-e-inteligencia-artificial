@@ -48,8 +48,8 @@ print(resultado_desejado)
 
 ## Extração gerando dicts
 - Extração de dict, a partir de 2 listas quaisquer, usando:
-    - conceito de `list` e `tuples`
-    - `list comprehension`
+    - conceito de `dict`
+    - `dict comprehension`
     - `range(len(dado))`
 ```python
 dado1 = ["key1", "key2", "key3"]
@@ -59,8 +59,8 @@ print(resultado_desejado)
 ```
 
 - Extração de dict, a partir de 2 listas quaisquer, usando:
-    - conceito de `list` e `tuples`
-    - `list comprehension com condition`
+    - conceito de `dict`
+    - `dict comprehension com condition`
     - `range(len(dado))`
 ```python
 dado1 = ["key1", "key2", "key3"]
@@ -70,8 +70,8 @@ print(resultado_desejado)
 ```
 
 - Extração de dict, a partir de 2 listas quaisquer, usando:
-    - conceito de `list` e `tuples`
-    - `list comprehension`
+    - conceito de `dict`
+    - `dict comprehension`
     - `zip(dado1,dado2)`
 ```python
 dado1 = ["key1", "key2", "key3"]
@@ -81,8 +81,8 @@ print(resultado_desejado)
 ```
 
 - Extração de dict, a partir de 2 listas quaisquer, usando:
-    - conceito de `list` e `tuples`
-    - `list comprehension com condition`
+    - conceito de `dict`
+    - `dict comprehension com condition`
     - `zip(dado1,dado2)`
 ```python
 dado1 = ["key1", "key2", "key3"]
