@@ -24,7 +24,7 @@ class Conta(metaclass=ABCMeta):
   
 ```python
 class ContaComPassaMes(Conta):
-    def passa_o_mes(self)
+    def passa_o_mes(self):
         self._saldo -= 2
 ```  
   
