@@ -42,10 +42,10 @@ print(result)
 result = -10 // 3 # result = -4 . Pois -4 é menor do que -3.
 print(result)
 # No caso seguinte o resultado será de float. 
-result = 10.2 // 3 # result =
+result = 10.2 // 3 # result = 3.0
 print(result)
 # No caso seguinte o resultado será de int. 
-result = -10.2 // 3.0 # result =
+result = -10.2 // 3.0 # result = -4.0
 print(result)
 
 # Remainder of x divided by y
