@@ -1,6 +1,6 @@
 # Operations on numerical types
 
-``python
+```python
 # Addition
 # result = x + y
 
