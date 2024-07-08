@@ -13,6 +13,7 @@ class Conta(metaclass=ABCMeta):
 
     def __init__(self, codigo_user):
         self.codigo_user = codigo_user
+        self._saldo = 0
 
     @abstractmethod
     def passa_o_mes(self):
@@ -24,12 +25,12 @@ class Conta(metaclass=ABCMeta):
 ```python
 class ContaComPassaMes(Conta):
     def passa_o_mes(self)
-        self._codigo -= 2
+        self._saldo -= 2
 ```  
   
 ```python
 class ConstaSemPassaMes(Conta):
-    ...  
+    print("sem passa o mês")
 ```  
 
 ## Execução de Método Abstrato Implementado
