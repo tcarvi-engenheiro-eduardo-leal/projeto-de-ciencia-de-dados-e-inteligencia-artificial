@@ -29,7 +29,7 @@ class ContaComPassaMes(Conta):
 ```  
   
 ```python
-class ConstaSemPassaMes(Conta):
+class ContaSemPassaMes(Conta):
     def outro_metods(self):
         print("sem passa o mês")
 ```  
@@ -44,4 +44,4 @@ for conta in lista_de_contas:
     # o método "passa_o_mes" pois o definiram.
     conta.passa_o_mes()
 # Erro em Runtime - ConstaSemPassaMes deveria ter implementado o método "passa_o_mes" mas não o fez.
-contaComRuntimeErro = ContaSemPassaMes(3)
+# contaComRuntimeErro = ContaSemPassaMes(3) # Tirar hash de comentário para testar...
