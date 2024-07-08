@@ -36,7 +36,7 @@ else:
 try:
     # codigo
     print("Código em execução")
-    raise ValueError("Valeu error levantado")
+    raise ValueError("ValeuError levantado")
 except Exception as e:
     print(e)
 else:
@@ -49,7 +49,7 @@ finally:
 try:
     # codigo
     print("Código em execução")
-    raise ValueError("Valeu error levantado")
+    raise ValueError("ValeuError levantado")
 except ValueError as e:
     print(e)
 except KeyError as e:
