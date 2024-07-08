@@ -31,7 +31,13 @@ result = 9 // 3 # Neste caso, o resultado será de int.
 print(result)
 result = 9.0 // 3 # Neste caso, o resultado será de float.
 print(result)
-result = 10 // 3 # Neste caso, o resultado será de int. E ocorre o corte ....
+# No caso seguinte o resultado será de int. 
+# E ocorre o corte do decimal, resultado indo para posição numericamente menor.
+result = 10 // 3 # Neste caso, o resultado será +3.
+print(result)
+# No caso seguinte o resultado será de int. 
+# E ocorre o corte do decimal, resultado indo para posição numericamente menor.
+result = -10 // 3 # Neste caso, o resultado será -4, pois -4 é menor do que -3.
 print(result)
 result = 10.2 // 3 # Neste caso, o resultado será de float.
 print(result)
