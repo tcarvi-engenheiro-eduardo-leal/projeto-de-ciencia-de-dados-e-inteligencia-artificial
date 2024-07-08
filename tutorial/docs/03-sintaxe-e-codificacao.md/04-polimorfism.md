@@ -9,28 +9,28 @@
 2. Diferencie as classes filhas definindo, para cada, um método que tenha mesmo nome/assinatura mas comportamentos diferentes.
 
 ```python
-class Conta:
+class ClassePai:
 
     def __init__(self, codigo):
         self._codigo = codigo
-        self._outra_variavel = 0
+        self._saldo = 0
 
     def deposita(self, valor):
         self._saldo += valor
 
     def __str__(self):
-        return "{} and {}".format(self._codigo, self._outra_variárea)
+        return "Conta: {}. Saldo: {}.".format(self._codigo, self._saldo)
 ```  
   
 ```python
-class ContaCorrente(Conta):
+class ContaCorrente(ClassePai):
 
     def passa_o_mes(self)
         self._saldo -= 2
 ```  
   
 ```python
-class ContaPoupanca(Conta):
+class ContaPoupanca(ClassePai):
 
     def passa_o_mes(self)
         self._saldo -= 3
@@ -39,7 +39,9 @@ class ContaPoupanca(Conta):
 ## Exemplo de Polimorfismo
 ```python  
 conta1 = ContaCorrente()
+conta1.deposita(100)
 conta2 = ContaPoupanca()
+conta2.deposita(200)
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
     # Tanto ContaCorrente quanto ContaPoupanca implementa passa_o_mes.
