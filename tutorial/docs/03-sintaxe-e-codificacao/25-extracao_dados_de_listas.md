@@ -3,7 +3,6 @@
 ## Extração gerando list de tuples
 
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
-    - conceito de `list` e `tuples`
     - `list comprehension`
     - `range(len(input))`
 ```python
