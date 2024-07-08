@@ -1,4 +1,6 @@
 # Operador Ternário
 ```python
-valor_caso_verdade if condicao else valor_caso_falso
+expression_true_or_false = True
+valor_final = "Felizmente True" if expression_true_or_false else "Infelizmente False"
+print(valor_final)
 ```
