@@ -1,7 +1,10 @@
 # Extração de dados armazenados em listas
 
 ## Extração com list comprehension, range() e zip()
-- Com list comprehension e range()
+- Extração de list de tuples, a partir de 2 listas quisquer, usando:
+    - coceito de list e tuples
+    - list comprehension
+    - range(len(input))
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
