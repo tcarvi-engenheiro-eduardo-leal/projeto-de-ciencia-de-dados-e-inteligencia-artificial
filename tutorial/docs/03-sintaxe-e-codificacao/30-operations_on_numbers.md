@@ -11,7 +11,8 @@ result = x - y
 result = x * y
 
 # Divisão com resultado no conjunto de Reais)
-result = x / y
+result = x / y  
+
 ```python
 result = 10 / 3
 print(result)
@@ -25,9 +26,19 @@ print(result)
 
 # integer division (floored quotient) (divisão com resultado inteiro)
 result = x // y
+```python   
 # For operands of type int, the result has type int.
 # For operands of type float, the result has type float.
 # The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0.
+result = 10 // 3
+print(result)
+result = 9.0 // 3
+print(result)
+result = 10.2 // 3
+print(result)
+result = 10.2 // 3.0
+print(result)
+```  
 
 # Remainder of x divided by y
 # Módulo operator %
