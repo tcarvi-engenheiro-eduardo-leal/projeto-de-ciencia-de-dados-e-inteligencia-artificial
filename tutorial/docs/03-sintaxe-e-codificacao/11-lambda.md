@@ -1,6 +1,6 @@
 # lambda
 Define um método anônimo com:
-  - 1 ou mais parrâmetros de input
+  - 1 ou mais parâmetros de input
   - 1 expressão de saída
   - Simbolo ":" para separas o input e o outpup.
 - lambda `arguments` : `expression`
@@ -29,6 +29,7 @@ mydoubler = myfunc(2) # n==2 passa a ser um valor fixo, não variável, na funç
 mytripler = myfunc(3) # n==3 passa a ser um valor fixo, não variável, na função mytripler
 
 # Lógica relevante!
+## mydoubler() e mytripler() se tornaram funções, definidas sem o formalismo normal do Python.
 print(mydoubler(11)) # O parâmetro passado aqui é o a, da função anônima criada por lambda
 print(mytripler(11)) # O parâmetro passado aqui é o a, da função anônima criada por lambda
 ```  
