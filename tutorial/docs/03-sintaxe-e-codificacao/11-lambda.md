@@ -12,7 +12,7 @@ print(retorno_lambda)   # retorna 5
 ## Uso do lambda
 
 ### Para processar input e gerar output de forma mais sintética
-- Para não ter que definir uma função anteriormente, dentro do padrão de definição de funções python.
+- Para não ter que definir uma função anteriormente, dentro do padrão normal python.
 ```python
 x = lambda a, b : a * b
 print(x(5, 6))  # retorna 30
