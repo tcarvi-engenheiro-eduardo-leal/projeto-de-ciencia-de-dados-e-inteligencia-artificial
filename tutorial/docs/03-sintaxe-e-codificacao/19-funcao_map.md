@@ -22,6 +22,6 @@ print(list(x)) # [5, 6, 6]
 - Código pode gerar dificuldades de leitura. Ter cuidado...
 ```python 
 # map(lambda variavel_representante_do_input: expr_processamento_input, iteravel_com_os_inputs_a_serem_usados)
-map_variable = map(lambda x : x + 2, [1, 2, 3])
-print(list(map_variable)) # Imprime [3, 4, 5]
+map_variable = map(lambda x : x + 2, [1, 2, 3]) # Retorna map() com valores 3, 4, 5.
+print(list(map_variable)) # Imprime lista [3, 4, 5] que tem valores do map(). 
 ```
