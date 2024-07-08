@@ -12,9 +12,11 @@
 
 # Divisão com resultado no conjunto de Reais
 # result = x / y 
-result = 10 / 3
+result = 9 / 3
 print(result)
 result = 9.0 / 3
+print(result)
+result = 10 / 3
 print(result)
 result = 10.2 / 3
 print(result)
