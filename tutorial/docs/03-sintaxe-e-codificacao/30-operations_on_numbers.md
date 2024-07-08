@@ -1,17 +1,16 @@
 # Operations on numerical types
 
-```python
+``python
 # Addition
-result = x + y
+# result = x + y
 
 # Subtraction
-result = x - y
+# result = x - y
 
 # Multiplication
-result = x * y
+# result = x * y
 
-# Divisão com resultado no conjunto de Reais)
-```python
+# Divisão com resultado no conjunto de Reais
 # result = x / y 
 result = 10 / 3
 print(result)
@@ -21,10 +20,8 @@ result = 10.2 / 3
 print(result)
 result = 10.2 / 3.0
 print(result)
-```  
 
 # integer division (floored quotient) (divisão com resultado inteiro)
-```python   
 # result = x // y
 # For operands of type int, the result has type int.
 # For operands of type float, the result has type float.
@@ -37,42 +34,48 @@ result = 10.2 // 3
 print(result)
 result = 10.2 // 3.0
 print(result)
-```  
 
 # Remainder of x divided by y
 # Módulo operator %
-result = x % y
+# result = x % y
 
 # x negated
-result = -x
+# result = -x
 
 # x unchanged
-result = +x
+# result = +x
 
 # absolute value or magnitude of x
-result = abs(x)
+# result = abs(x)
 
 # int value
-result = int(x)
+# result = int(x)
 
 # float value
-result = float(x)
+# result = float(x)
 
 # complex value
 # A complex number with real part re, imaginary part im. im defaults to zero
+re = 3
+im = 5
 result = complex(re, im)
+print(result)
 
 # Conjugate of complex number
 result_conjugate = result.conjugate()
+print(result_conjugate)
 
 # Geração de par (x // y, x % y)
+x = 5
+y = 8
 result = divmod(x, y) # (x // y, x % y)
+print(result)
 
 # Exponenciação
 # Operação de elevar base a um expoente
-result = pow(x, y) # x to the power y
-result = x ** y    # x to the power y
-
+# result = pow(x, y) # x to the power y
+# result = x ** y    # x to the power y
+```  
 
 - Python fully supports mixed arithmetic: when a binary arithmetic operator has operands of different numeric types, the operand with the “narrower” type is widened to that of the other, where integer is narrower than floating point, which is narrower than complex. A comparison between numbers of different types behaves as though the exact values of those numbers were being compared.
 - Conversion from float to int truncates, discarding the fractional part.
