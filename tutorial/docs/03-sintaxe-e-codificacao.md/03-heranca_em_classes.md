@@ -13,27 +13,27 @@ class ClassePai:
 
     def __init__(self, codigo):
         self._codigo = codigo
-        self._outra_variavel = 0
+        self._saldo = 0
 
     def deposita(self, valor):
         self._saldo += valor
 
     def __str__(self):
-        return "{} and {}".format(self._codigo, self._outra_variárea)
+        return "{} and {}".format(self._codigo, self._saldo)
 ```  
   
 ```python
 class ClasseFilho1(ClassePai):
 
     def passa_o_mes(self):
-        self._codigo -= 2
+        self._saldo_ -= 2
 ```  
   
 ```python
 class ClasseFilho2(ClassePai):
 
     def passa_o_mes(self):
-        self._codigo -= 3
+        self._saldo_ -= 3
 ```  
 
 ## Exemplo de Herança
@@ -45,5 +45,6 @@ for conta in lista_de_contas:
     # Tanto ContaCorrente quanto ContaPoupanca possuem
     # o método "deposita" pois herdaram este método.
     conta.deposita(1000)
+    conta.passa_o_mes()
     print(conta)
 ``` 
