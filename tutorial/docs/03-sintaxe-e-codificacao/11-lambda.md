@@ -1,7 +1,8 @@
 # lambda
-
-A lambda function is a small anonymous function.  
-A lambda function can take any number of arguments, but can only have one expression.  
+Define um método anônimo com:
+  - 1 ou mais parrâmetros de input
+  - 1 expressão de saída
+  - Simbolo ":" para separas o input e o outpup.
 - lambda `arguments` : `expression`
 ```python
 lambda_name = lambda x : x + 2
