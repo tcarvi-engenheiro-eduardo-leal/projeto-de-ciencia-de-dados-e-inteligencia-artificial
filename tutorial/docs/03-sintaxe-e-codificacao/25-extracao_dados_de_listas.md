@@ -10,6 +10,7 @@
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = [(dado1[i], dado2[i]) for i in range(len(dado1))]
+print(resultado_desejado)
 ```  
 
 - Extração de list de tuples, a partir de 2 listas quaisquer, usando:
@@ -20,6 +21,7 @@ resultado_desejado = [(dado1[i], dado2[i]) for i in range(len(dado1))]
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = [(dado1[i], dado2[i]) for i in range(len(dado1)) if dado2[i] > 7]
+print(resultado_desejado)
 ```
 
 - Extração de list de tuples, a partir de 2 listas quaisquer, usando:
@@ -30,6 +32,7 @@ resultado_desejado = [(dado1[i], dado2[i]) for i in range(len(dado1)) if dado2[i
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2)]
+print(resultado_desejado)
 ```
 
 - Extração de list de tuples, a partir de 2 listas quaisquer, usando:
@@ -40,6 +43,7 @@ resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2)]
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2) if valor > 7]
+print(resultado_desejado)
 ```  
 
 ## Extração gerando dicts
@@ -48,6 +52,7 @@ resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2) if valor 
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1))}
+print(resultado_desejado)
 ```
 
 - Com dict comprehension, range() e condition
@@ -55,6 +60,7 @@ resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1))}
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1)) if dado2[i] > 7}
+print(resultado_desejado)
 ```
 
 - Com dict comprehension e zip()
@@ -62,6 +68,7 @@ resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1)) if dado2[i] 
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = {key: valor for key, valor in zip(dado1, dado2)}
+print(resultado_desejado)
 ```
 
 - Com dict comprehension, zip() e condition
@@ -69,4 +76,5 @@ resultado_desejado = {key: valor for key, valor in zip(dado1, dado2)}
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
 resultado_desejado = {key: valor for key, valor in zip(dado1, dado2) if valor > 7}
+print(resultado_desejado)
 ```  
