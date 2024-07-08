@@ -30,4 +30,4 @@ for i in enumerate(idades):
 ``` 
 
 - Obs.:
-    - Não aconselhamos usar set() como iteravel pois set() não mante sempre a mesma ordem.
+    - Não aconselhamos usar set() como iteravel pois set() não mantém sempre a mesma ordem.
