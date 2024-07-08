@@ -25,14 +25,14 @@ class ClassePai:
 ```python
 class ContaCorrente(ClassePai):
 
-    def passa_o_mes(self)
+    def passa_o_mes(self):
         self._saldo -= 2
 ```  
   
 ```python
 class ContaPoupanca(ClassePai):
 
-    def passa_o_mes(self)
+    def passa_o_mes(self):
         self._saldo -= 3
 ```  
 
