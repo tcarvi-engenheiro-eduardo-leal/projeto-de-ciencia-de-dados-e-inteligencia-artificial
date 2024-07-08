@@ -27,21 +27,25 @@ print(result)
 # integer division (floored quotient) (divisão com resultado inteiro)
 # The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0.
 print("result = x // y") 
-result = 9 // 3 # Neste caso, o resultado será de int.
+# No caso seguinte o resultado será de int. 
+result = 9 // 3 # result = 3
 print(result)
-result = 9.0 // 3 # Neste caso, o resultado será de float.
+# No caso seguinte o resultado será de float. 
+result = 9.0 // 3 # result = 3.0
 print(result)
 # No caso seguinte o resultado será de int. 
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
-result = 10 // 3 # Neste caso, o resultado será +3.
+result = 10 // 3 # result = 3
 print(result)
 # No caso seguinte o resultado será de int. 
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
-result = -10 // 3 # Neste caso, o resultado será -4, pois -4 é menor do que -3.
+result = -10 // 3 # result = -4 . Pois -4 é menor do que -3.
 print(result)
-result = 10.2 // 3 # Neste caso, o resultado será de float.
+# No caso seguinte o resultado será de float. 
+result = 10.2 // 3 # result =
 print(result)
-result = 10.2 // 3.0 # Neste caso, o resultado será de float.
+# No caso seguinte o resultado será de int. 
+result = -10.2 // 3.0 # result =
 print(result)
 
 # Remainder of x divided by y
