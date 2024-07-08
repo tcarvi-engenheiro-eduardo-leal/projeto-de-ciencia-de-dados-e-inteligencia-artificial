@@ -23,14 +23,14 @@ class ClassePai:
 ```  
   
 ```python
-class ContaCorrente(ClassePai):
+class ClasseFilho1(ClassePai):
 
     def passa_o_mes(self):
         self._saldo -= 2
 ```  
   
 ```python
-class ContaPoupanca(ClassePai):
+class ClasseFilho2(ClassePai):
 
     def passa_o_mes(self):
         self._saldo -= 3
@@ -38,9 +38,9 @@ class ContaPoupanca(ClassePai):
 
 ## Exemplo de Polimorfismo
 ```python  
-conta1 = ContaCorrente(27509)
+conta1 = ClasseFilho1(27509)
 conta1.deposita(100)
-conta2 = ContaPoupanca(27508)
+conta2 = ClasseFilho2(27508)
 conta2.deposita(200)
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
