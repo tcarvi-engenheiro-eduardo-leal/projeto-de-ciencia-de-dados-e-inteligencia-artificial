@@ -10,8 +10,18 @@ result = x - y
 # Multiplication
 result = x * y
 
-# Division (divisão com resultado no conjunto de Reais)
+# Divisão com resultado no conjunto de Reais)
 result = x / y
+```python
+result = 10 / 3
+print(result)
+result = 9.0 / 3
+print(result)
+result = 10.2 / 3
+print(result)
+result = 10.2 / 3.0
+print(result)
+```  
 
 # integer division (floored quotient) (divisão com resultado inteiro)
 result = x // y
