@@ -47,7 +47,10 @@ print(resultado_desejado)
 ```  
 
 ## Extração gerando dicts
-- Com dict comprehension e range()
+- Extração de dict, a partir de 2 listas quaisquer, usando:
+    - conceito de `list` e `tuples`
+    - `list comprehension`
+    - `range(len(dado))`
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
@@ -55,7 +58,10 @@ resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1))}
 print(resultado_desejado)
 ```
 
-- Com dict comprehension, range() e condition
+- Extração de dict, a partir de 2 listas quaisquer, usando:
+    - conceito de `list` e `tuples`
+    - `list comprehension com condition`
+    - `range(len(dado))`
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
@@ -63,7 +69,10 @@ resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1)) if dado2[i] 
 print(resultado_desejado)
 ```
 
-- Com dict comprehension e zip()
+- Extração de dict, a partir de 2 listas quaisquer, usando:
+    - conceito de `list` e `tuples`
+    - `list comprehension`
+    - `zip(dado1,dado2)`
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
@@ -71,7 +80,10 @@ resultado_desejado = {key: valor for key, valor in zip(dado1, dado2)}
 print(resultado_desejado)
 ```
 
-- Com dict comprehension, zip() e condition
+- Extração de dict, a partir de 2 listas quaisquer, usando:
+    - conceito de `list` e `tuples`
+    - `list comprehension com condition`
+    - `zip(dado1,dado2)`
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
