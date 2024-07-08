@@ -1,4 +1,4 @@
-# Extração de dados armazenados em listas
+# Extração Organizada de Dados
 
 ## Extração gerando list de tuples
 
