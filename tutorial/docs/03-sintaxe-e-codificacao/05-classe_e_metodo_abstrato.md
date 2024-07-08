@@ -30,7 +30,8 @@ class ContaComPassaMes(Conta):
   
 ```python
 class ConstaSemPassaMes(Conta):
-    print("sem passa o mês")
+    def outro_metods(self):
+        print("sem passa o mês")
 ```  
 
 ## Execução de Método Abstrato Implementado
