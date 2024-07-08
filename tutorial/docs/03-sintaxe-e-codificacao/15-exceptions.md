@@ -34,7 +34,7 @@ try:
 except:
     print("tratamento de exception")
 else:
-    print("Código executado se não houver exception")
+    print("Código executado apenas se não houver exception")
 ```  
 
 ```python
@@ -60,7 +60,7 @@ except ValueError:
 except KeyError:
     print("tratamento de exception do tipo KeyError")
 else:
-    print("Código executado se não houver exception")
+    print("Código executado apenas se não houver exception")
 finally:
     print("Código sempre executado")
 ```  
