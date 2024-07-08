@@ -1,4 +1,4 @@
-# Função map()
+# map(function,iterable)
 - The map() function executes a specified function for each item in an iterable. 
 - The item is sent to the function as a parameter.
 - Pode haver o retorno de dados, no formato de map.

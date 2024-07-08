@@ -1,4 +1,4 @@
-# range()
+# range(start,stop,step)
 - Gera uma sequência de números inteiros.
 - É uma sequência imutável de números
 - range(stop)
