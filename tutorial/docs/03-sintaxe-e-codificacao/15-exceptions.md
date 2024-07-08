@@ -29,36 +29,44 @@
 ```python
 try:
     # codigo
+    print("Código em execução")
+    raise ValueError("Valeu error levantado")
 except:
-    # tratamento de exception
+    print("tratamento de exception")
 else:
-    # Código executado se não houver exception
+    print("Código executado se não houver exception")
 ```  
 
 ```python
 try:
     # codigo
-except KeyError:
-    # tratamento de exception
+    print("Código em execução")
+    raise ValueError("Valeu error levantado")
+except:
+    print("tratamento de exception")
 else:
-    # Código executado se não houver exception
+    print("Código executado se não houver exception")
 finally:
-    # Código sempre executado
+    print("Código sempre executado")
 ```  
 
 ```python
 try:
     # codigo
-except KeyError:
-    # tratamento de exception
+    print("Código em execução")
+    raise ValueError("Valeu error levantado")
 except ValueError:
-    # tratamento de exception
+    print("tratamento de exception do tipo ValueError")
+except KeyError:
+    print("tratamento de exception do tipo KeyError")
+else:
+    print("Código executado se não houver exception")
 finally:
-    # Código sempre executado
+    print("Código sempre executado")
 ```  
 
 ## Lançamento de exceptions:
 ```python
-raise KeyError("Descrição da sua excessão de KeyError")
+raise KeyError("Descrição da sua exception de KeyError")
 ```  
  
