@@ -1,5 +1,7 @@
 # filter(function,iterable)
-- The filter() function returns an iterator where the items are filtered through a function to test if the item is accepted or not.
+- The filter() returns an iterator
+  - The items of iterable are filtered through a function.
+    - The test verify it the item is accepted or not.
 - `filter(function, iterable)`
     - `function`	A Function to be run for each item in the iterable
     - `iterable`	The iterable to be filtered
