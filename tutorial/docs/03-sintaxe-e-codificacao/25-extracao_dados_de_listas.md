@@ -14,7 +14,7 @@ resultado_desejado = [(dado1[i], dado2[i]) for i in range(len(dado1))]
 
 - Extração de list de tuples, a partir de 2 listas quaisquer, usando:
     - conceito de `list` e `tuples`
-    - `list comprehension om condition`
+    - `list comprehension com condition`
     - `range(len(input))`
 ```python
 dado1 = ["key1", "key2", "key3"]
