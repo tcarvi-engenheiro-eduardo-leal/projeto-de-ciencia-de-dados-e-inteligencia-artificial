@@ -11,6 +11,7 @@
 # result = x * y
 
 # Divisão com resultado no conjunto de Reais
+# Resultado sempre terá tipo de float!
 print("result = x / y") 
 result = 9 / 3
 print(result)
@@ -24,19 +25,17 @@ result = 10.2 / 3.0
 print(result)
 
 # integer division (floored quotient) (divisão com resultado inteiro)
-# For operands of type int, the result has type int.
-# For operands of type float, the result has type float.
 # The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0.
 print("result = x // y") 
-result = 9 // 3
+result = 9 // 3 # Neste caso, o resultado será de int.
 print(result)
-result = 9.0 // 3
+result = 9.0 // 3 # Neste caso, o resultado será de float.
 print(result)
-result = 10 // 3
+result = 10 // 3 # Neste caso, o resultado será de int. E ocorre o corte ....
 print(result)
-result = 10.2 // 3
+result = 10.2 // 3 # Neste caso, o resultado será de float.
 print(result)
-result = 10.2 // 3.0
+result = 10.2 // 3.0 # Neste caso, o resultado será de float.
 print(result)
 
 # Remainder of x divided by y
