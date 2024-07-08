@@ -38,8 +38,8 @@ class ClasseFilho2(ClassePai):
 
 ## Exemplo de Herança
 ```python  
-conta1 = ContaCorrente()
-conta2 = ContaPoupanca()
+conta1 = ClasseFilho1()
+conta2 = ClasseFilho2()
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
     # Tanto ContaCorrente quanto ContaPoupanca possuem
