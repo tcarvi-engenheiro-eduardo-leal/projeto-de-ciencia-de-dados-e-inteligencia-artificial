@@ -5,7 +5,8 @@ A lambda function can take any number of arguments, but can only have one expres
 - lambda `arguments` : `expression`
 ```python
 lambda_name = lambda x : x + 2
-retorno_lambda = lambda_name(3)   # retorna 5
+retorno_lambda = lambda_name(3)
+print(retorno_lambda)   # retorna 5
 ``` 
 
 ## Uso do lambda
