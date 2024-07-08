@@ -1,7 +1,8 @@
 # filter(function,iterable)
-- The filter() returns an iterator
-  - The items of iterable are filtered through a function.
-    - The test verify it the item is accepted or not.
+- Retorna um objeto do tipo filter
+  - O objeto do tipo filter é uma sequência de valores filtrados.
+  - Apenas o valores que foram testados e aprovados com True, pela function, são retornados junto com o filter.
+    
 - `filter(function, iterable)`
     - `function`	A Function to be run for each item in the iterable
     - `iterable`	The iterable to be filtered
