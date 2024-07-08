@@ -3,7 +3,7 @@
 - Seguem formas simplificadas para:
     - Gerar novos dados a partir de 2 listas
     - Combinar dados de 2 listas
-    - Executar loop nas duas listas
+    - Executar loop único nas duas listas
         - Com possível tratamento dos dados das 2 listas
         - Com possível filtragem dos dados das 2 listas 
 
