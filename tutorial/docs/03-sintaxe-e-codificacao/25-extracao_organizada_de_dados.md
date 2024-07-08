@@ -1,5 +1,12 @@
 # Extração Organizada de Dados
 
+- Seguem formas simplificadas para:
+    - Gerar novos dados a partir de 2 listas
+    - Combinar dados de 2 listas
+    - Executar loop nas duas listas
+        - Com possível tratamento dos dados das 2 listas
+        - Com possível filtragem dos dados das 2 listas 
+
 ## Extração gerando list de tuples
 
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
