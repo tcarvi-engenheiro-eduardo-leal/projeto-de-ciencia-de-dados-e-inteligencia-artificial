@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding',
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding/edit/main/tutorial/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding',
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding/edit/main/tutorial/',
         },
         theme: {
           customCss: './src/css/custom.css',
