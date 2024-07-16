@@ -128,13 +128,13 @@ print(result)
 - Additional Methods on Integer Types:
 ```python  
 # int.bit_length()
-(-37).bit_length()
+print((-37).bit_length())
 #int.bit_count()
-(-37).bit_count()
+print((37).bit_count())
 # int.to_bytes(length=1, byteorder='big', *, signed=False)
-(-37).to_bytes()
+print((37).to_bytes())
 # **classmethod** `int.from_bytes(bytes, byteorder='big', *, signed=False)
-int.from_bytes(b'\x00\x10', byteorder='big')
+# int.from_bytes(b'\x00\x10', byteorder='big')
 #int.as_integer_ratio()
 #int.is_integer()
 ```
