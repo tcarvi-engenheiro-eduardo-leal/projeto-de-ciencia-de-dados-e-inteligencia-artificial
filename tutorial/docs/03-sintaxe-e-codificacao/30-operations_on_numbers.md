@@ -48,6 +48,15 @@ print(result)
 #     Esta é a lógica do processamento estranho...
 result = 9.9 // 3 # result = 3.0
 print(result)
+# Fica ainda pior quando se usa número negativo!!!!!
+# Mas a lógica é a seguinte.
+#     Divide-se -9.9 // 3.
+#     O resultado é -3.3
+#     O processamento traz resposta para menor valor, no caso -4.
+#     Como se usou float, a resposta vem como -4.0
+#     Esta é a lógica do processamento ainda mais estranho...
+result = -9.9 // 3 # result = -4.0
+print(result)
 # No caso seguinte o resultado será de int. 
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
 result = 10 // 3 # result = 3
