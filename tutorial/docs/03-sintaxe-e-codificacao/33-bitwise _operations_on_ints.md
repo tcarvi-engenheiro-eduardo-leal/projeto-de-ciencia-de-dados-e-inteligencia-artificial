@@ -15,8 +15,11 @@
     - A right shift by n bits is equivalent to floor division by pow(2, n).
 - `~x` (the bits of x ***inverted***)
 ```python
+print(~2) # -2
 print(2 | 1) # 3
 print(2 | 2) # 2
+print(2 ^ 1) # 3
+print(2 ^ 2) # 0
 print(2 & 1) # 0
 print(2 & 2) # 2
 # Sobre ordem de execução:
