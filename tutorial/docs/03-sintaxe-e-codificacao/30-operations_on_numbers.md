@@ -63,7 +63,7 @@ result = 10 // 3 # result = 3
 print(result)
 # No caso seguinte o resultado será de int. 
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
-result = -10 // 3 # result = -4 . Pois -4 é menor do que -3.
+result = -10 // 3 # result = -4 . Pois -4 é o número inteiro menor logo abaixo de -3,3.
 print(result)
 # No caso seguinte o resultado será de float. 
 result = 10.2 // 3 # result = 3.0
