@@ -108,7 +108,7 @@ print(result_conjugate)
 # Geração de par (x // y, x % y)
 x = 5
 y = 8
-# Tuple com resultado da integer-division, e com o resto de tal divisão
+# gera tuple com resultado da integer-division, e com o resto de tal divisão
 result = divmod(x, y) # (x // y, x % y)
 print(result)
 
