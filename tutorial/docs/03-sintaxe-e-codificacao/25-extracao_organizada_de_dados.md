@@ -74,6 +74,7 @@ print(resultado_desejado)
     - `range(len(dado))`
     - Funcionalidades:
         - Combinação dos elementos de 2 listas
+        - Executar loop único para consultar dados de 2 listas
         - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
 dado1 = ["key1", "key2", "key3"]
@@ -89,6 +90,7 @@ print(resultado_desejado)
     - `range(len(dado))`
     - Funcionalidades:
         - Combinação dos elementos de 2 listas
+        - Executar loop único para consultar dados de 2 listas
         - Filtragem dos dados, de qualquer das listas, antes de gerar o novo dicionário.
         - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
