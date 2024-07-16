@@ -6,13 +6,13 @@
     - Menor do que operações numéricas
     - Maior do que comparações
 - O operador "unary" chamado de `inverted` ~ tem a mesma prioridade de execução que outros opedores numéridos do tipo "unary" como "+" ou "-".
-- `x | y` (***bitwise or*** of x and y)
-- `x ^ y` (***bitwise exclusive or*** of x and y)
-- `x &  y` (***bitwise and*** of x and y)
+- `x | y` (***bitwise or*** of "x and y")
+- `x ^ y` (***bitwise exclusive or*** of "x and y")
+- `x &  y` (***bitwise and*** of "x and y")
 - `x << n` (x ***shifted left by*** n ***bits***)
-    - A left shift by n bits is equivalent to multiplication by pow(2, n).
+    - Équivalente a multiplicar por 2 "n" vezes.
 - `x >> n` (x ***shifted right by*** n ***bits***)
-    - A right shift by n bits is equivalent to floor division by pow(2, n).
+    - Équivalente a fazer floor divivion por 2 elevado a potência de "n".
 - `~x` (the bits of x ***inverted***)
     - Como o sinal também muda, o processo apenas não muda os bits de ativado para inativado, na lógica de valores positivos!
     - A fórmula do resultado é igual a `-(x+1)`
