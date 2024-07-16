@@ -58,3 +58,9 @@ jupyter lab
 ```bash  
 brew install jupyterlab
 ```  
+## Instalação pelo windows
+- Neste caso, instale o Anaconda e use o "Anaconda PowerShell Prompt".
+    - Neste prompt, execute o comando:
+    ```bash  
+    jupyter lab
+    ```  
