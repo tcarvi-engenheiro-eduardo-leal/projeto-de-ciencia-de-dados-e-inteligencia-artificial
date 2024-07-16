@@ -24,14 +24,22 @@ print(result)
 result = 10.2 / 3.0
 print(result)
 
-# integer division (floored quotient) (divisão com resultado inteiro)
-# The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0.
+# integer division
+#    - floored quotient 
+#    - divisão com resultado inteiro tendendo para valor menor
+# The result is always rounded towards minus infinity: 
+#      1//2 is 0, 
+#   (-1)//2 is -1, 
+#      1//(-2) is -1, and 
+#   (-1)//(-2) is 0.
 print("result = x // y") 
 # No caso seguinte o resultado será de int. 
 result = 9 // 3 # result = 3
 print(result)
-# No caso seguinte o resultado será de float. 
+# No caso seguinte o resultado será de float pois 1 dos números é do tipo float. 
 result = 9.0 // 3 # result = 3.0
+print(result)
+result = 9.9 // 3 # result = 3.0
 print(result)
 # No caso seguinte o resultado será de int. 
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
