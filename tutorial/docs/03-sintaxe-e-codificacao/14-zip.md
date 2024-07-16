@@ -1,8 +1,8 @@
 # zip(iterator1, iterator2, iterator3, ...)
 - Gera uma combinação de elementos extraídos dos iteradores, considerando a mesma posição dos índices dos elementos.
-- O objeto retornado é um iterador de tuples
+- O objeto retornado é um iterador de tuples.
 - Cada elemento do iterador gerado é uma tuple.
-- Pode-se converter o o zip em uma tutple de tuples.
+- Pode-se converter o o zip em uma tuple de tuples.
     - `tuple(zip-object)`
     - ou `((zip-object))`
 - Mas não se pode usar `list` ou `dict` ou `set` para tal conversão.
