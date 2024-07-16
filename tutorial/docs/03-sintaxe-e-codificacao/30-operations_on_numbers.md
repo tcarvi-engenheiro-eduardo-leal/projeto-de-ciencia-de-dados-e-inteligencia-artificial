@@ -43,7 +43,7 @@ print(result)
 # Mas a lógica é a seguinte.
 #     Divide-se 9.9 // 3.
 #     O resultado é 3.3
-#     O processamento traz resposta para menor valor, no caso 3.
+#     O processamento traz resposta para menor valor, no caso 3.0
 #     Como se usou float, a resposta vem como 3.0
 #     Esta é a lógica do processamento estranho...
 result = 9.9 // 3 # result = 3.0
@@ -52,7 +52,7 @@ print(result)
 # Mas a lógica é a seguinte.
 #     Divide-se -9.9 // 3.
 #     O resultado é -3.3
-#     O processamento traz resposta para menor valor, no caso -4.
+#     O processamento traz resposta para menor valor, no caso -4.0
 #     Como se usou float, a resposta vem como -4.0
 #     Esta é a lógica do processamento ainda mais estranho...
 result = -9.9 // 3 # result = -4.0
@@ -65,10 +65,13 @@ print(result)
 # E ocorre o corte do decimal, resultado indo para posição numericamente menor.
 result = -10 // 3 # result = -4 . Pois -4 é o número inteiro menor logo abaixo de -3,3.
 print(result)
-# No caso seguinte o resultado será de float. 
+# No caso seguinte o resultado será de float, pois um dos números processados é um float.
+#   Mas sem mantem a lógica do menor número inteiro.
+#   10.2 // 3 vai dar 3.4. Mas menor número é 3.0. 
 result = 10.2 // 3 # result = 3.0
 print(result)
 # No caso seguinte o resultado será de int. 
+#   -10.2 // 3 vai dar -3.4. Mas menor número é -4.0. 
 result = -10.2 // 3.0 # result = -4.0
 print(result)
 
