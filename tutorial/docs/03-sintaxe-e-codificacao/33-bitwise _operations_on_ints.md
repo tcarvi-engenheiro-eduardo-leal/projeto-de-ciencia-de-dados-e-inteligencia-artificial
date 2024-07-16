@@ -14,8 +14,17 @@
 - `x >> n` (x ***shifted right by*** n ***bits***)
     - A right shift by n bits is equivalent to floor division by pow(2, n).
 - `~x` (the bits of x ***inverted***)
+    - Como o sinal também muda, o processo apenas não muda os bits de ativado para inativado.
+    - O resultado é igual a `-(x+1)`
 ```python
-print(~2) # -2
+print(~0) # -1
+print(~1) # -2
+print(~2) # -3
+print(~3) # -4
+print(~(-1)) # 0
+print(~(-2)) # 1
+print(~(-3)) # 2
+print(~(-4)) # 3
 print(2 | 1) # 3
 print(2 | 2) # 2
 print(2 ^ 1) # 3
