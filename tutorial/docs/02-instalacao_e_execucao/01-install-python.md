@@ -1,5 +1,5 @@
 # Install Python
-tt
+
 ### Instalação conforme site python.org
 - https://www.python.org/downloads/
 
