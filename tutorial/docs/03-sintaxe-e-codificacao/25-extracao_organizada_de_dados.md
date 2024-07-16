@@ -72,10 +72,13 @@ print(resultado_desejado)
 - Extração de `dict`, a partir de 2 `list`s quaisquer, usando:
     - `dict comprehension`
     - `range(len(dado))`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
-resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1))}
+resultado_desejado = {dado1[i]: dado2[i]+1 for i in range(len(dado1))}
 print(resultado_desejado)
 ```
   
@@ -84,10 +87,14 @@ print(resultado_desejado)
 - Extração de `dict`, a partir de 2 `list`s quaisquer, usando:
     - `dict comprehension com condition`
     - `range(len(dado))`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Filtragem dos dados, de qualquer das listas, antes de gerar o novo dicionário.
+        - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
-resultado_desejado = {dado1[i]: dado2[i] for i in range(len(dado1)) if dado2[i] > 7}
+resultado_desejado = {dado1[i]: dado2[i]+5 for i in range(len(dado1)) if dado2[i] > 7}
 print(resultado_desejado)
 ```
 
