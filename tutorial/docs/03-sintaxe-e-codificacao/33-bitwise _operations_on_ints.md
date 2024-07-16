@@ -1,9 +1,11 @@
 # Bitwise Operations on ints
 
-- Bitwise operations only make sense for integers.
-- The result of bitwise operations is calculated as though carried out in two’s complement with an infinite number of sign bits.
-- The priorities of the binary bitwise operations are all lower than the numeric operations and higher than the comparisons.
-- The unary operation ~ has the same priority as the other unary numeric operations (+ and -).
+- Usar apenas com números inteiros.
+- O resultado considera: `two’s complement with an infinite number of sign bits`.
+- Prioridade na execução:
+    - Menor do que operações numéricas
+    - Maior do que comparações
+- O operador "unary" chamado de `inverted` ~ tem a mesma prioridade de execução que outros opedores numéridos do tipo "unary" como "+" ou "-".
 - `x | y` (***bitwise or*** of x and y)
 - `x ^ y` (***bitwise exclusive or*** of x and y)
 - `x &  y` (***bitwise and*** of x and y)
