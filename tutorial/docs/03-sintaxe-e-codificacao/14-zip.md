@@ -6,6 +6,13 @@
     - `tuple(zip-object)`
     - ou `((zip-object))`
 - Mas não se pode usar `list` ou `dict` ou `set` para tal conversão.
+    - Só se consegue obter estas estruturas de saída se:
+        - um processamento de unpacking, dentro de um loop, for usado
+        - com gravação seguinte destas estruturas.
+        - Se necessário, tal procedimento pode ser executado com:
+            - `list-conprehension`, 
+            - `set-comprehension` ou com 
+            - `dict-comprehension`. 
 - Se os iteradores passados possuem tamanhos diferentes, o iterador de menor tamanho define o tamanho do objeto zip.
 - `zip(iterator1, iterator2, iterator3, ...)`
 
