@@ -21,8 +21,8 @@ print(2 & 1) # 0
 print(2 & 2) # 2
 # Sobre ordem de execução:
 print(2 | 1 + 1) # 2
-print(2 | 2 + 2) # 4
+print(2 | 2 + 2) # 6
 print(2 & 1 + 1) # 2
-print(2 & 2 + 2) # 2
+print(2 & 2 + 2) # 0
 
 ```
