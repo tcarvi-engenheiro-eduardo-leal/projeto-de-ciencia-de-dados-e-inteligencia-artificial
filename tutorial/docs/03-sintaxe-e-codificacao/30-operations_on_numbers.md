@@ -39,13 +39,14 @@ print(result)
 # MAS, no caso seguinte o resultado será de float pois 1 dos números é do tipo float. 
 result = 9.0 // 3 # result = 3.0
 print(result)
-# O caso seguinte é estranho.
+# O próximo caso é bastante estranho!!!!!
 # Mas a lógica é a seguinte.
-#     integer division converte os números para inteiro.
-#     então divide-se 9 // 3.
-#     Depois, pelo fato de um dos termos ser float, a resposta vem em float.
-#     Mas a reposta não teve o processamento do primeiro número como 9.9. O primeiro número foi processado como 9.
+#     integer division converte os números que serão processados para inteiro.
+#     Então divide-se 9 // 3.
+#     Depois, pelo fato de um dos termos ser float, a resposta é covertida para float.
+#     Mas a reposta não considerou o processamento do primeiro número como 9.9. O primeiro número foi processado como 9.
 #     Esta é a lógica do processamento estranho...
+#     O melhor é nunca usar float no processamento de integer division!!!!
 result = 9.9 // 3 # result = 3.0
 print(result)
 # No caso seguinte o resultado será de int. 
