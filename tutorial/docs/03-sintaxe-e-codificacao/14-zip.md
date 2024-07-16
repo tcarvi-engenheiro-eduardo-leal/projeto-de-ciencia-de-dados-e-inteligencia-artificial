@@ -1,13 +1,22 @@
 # zip(iterator1, iterator2, iterator3, ...)
 - Gera uma combinação de elementos extraídos dos iteradores, considerando a mesma posição dos índices dos elementos.
-- O objeto retornado é um iterador de tuples, com cada elemento sendo também uma tuple.
+- O objeto retornado é um iterador de tuples
+- Cada elemento do iterador gerado é uma tuple.
+- Pode-se converter o o zip em uma tutple de tuples.
+    - `tuple(zip-object)`
+    - ou `((zip-object))`
+- Mas não se pode usar `list` ou `dict` ou `set` para tal conversão.
 - Se os iteradores passados possuem tamanhos diferentes, o iterador de menor tamanho define o tamanho do objeto zip.
-- zip(iterator1, iterator2, iterator3, ...)
+- `zip(iterator1, iterator2, iterator3, ...)`
 
 ```python
 list1 = ["key1", "key2", "key3"]
 list2 = [1, 2, 3]
 list3 = ['A', 'B', 'C']
 for item in zip(list1, list2, list3):
+    print(item)
+for item in tuple(zip(list1, list2, list3)):
+    print(item)
+for item in (zip(list1, list2, list3)):
     print(item)
 ```  
