@@ -10,7 +10,7 @@
         - um processamento de unpacking, dentro de um loop, for usado
         - com gravação seguinte destas estruturas.
         - Se necessário, tal procedimento pode ser executado com:
-            - `list-conprehension`, 
+            - `list-comprehension`, 
             - `set-comprehension` ou com 
             - `dict-comprehension`. 
 - Se os iteradores passados possuem tamanhos diferentes, o iterador de menor tamanho define o tamanho do objeto zip.
