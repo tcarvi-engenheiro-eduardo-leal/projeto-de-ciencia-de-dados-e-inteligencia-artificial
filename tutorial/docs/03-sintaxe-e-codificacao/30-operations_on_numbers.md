@@ -44,7 +44,7 @@ print(result)
 #     integer division converte os números que serão processados para inteiro.
 #     Então divide-se 9 // 3.
 #     Depois, pelo fato de um dos termos ser float, a resposta é covertida para float.
-#     Mas a reposta não considerou o processamento do primeiro número como 9.9. O primeiro número foi processado como 9.
+#     Mas a reposta não considerou o processamento do primeiro número como 9.9. O primeiro número foi considerado como 9.
 #     Esta é a lógica do processamento estranho...
 #     O melhor é nunca usar float no processamento de integer division!!!!
 result = 9.9 // 3 # result = 3.0
