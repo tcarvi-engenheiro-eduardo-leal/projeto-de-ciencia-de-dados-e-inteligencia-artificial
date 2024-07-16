@@ -7,12 +7,12 @@
         - Com possível filtragem dos dados das 2 listas 
 
 ## Extração gerando list de tuples
-- Funcionalidades:
-    - Combinação dos elementos de 2 listas
-    - Executar loop único para consultar dados de 2 listas
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
     - `list comprehension`
     - `range(len(input))`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Executar loop único para consultar dados de 2 listas
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
@@ -23,6 +23,10 @@ print(resultado_desejado)
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
     - `list comprehension com condition`
     - `range(len(input))`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Executar loop único para consultar dados de 2 listas
+        - Filtragem dos dados, de qualquer das listas, antes de gerar a nova lista de tuples.
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
