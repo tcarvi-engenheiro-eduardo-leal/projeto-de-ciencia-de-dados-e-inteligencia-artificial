@@ -41,10 +41,13 @@ print(resultado_desejado)
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
     - `list comprehension`
     - `zip(dado1, dado2)`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
-resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2)]
+resultado_desejado = [{key: valor+2} for key, valor in zip(dado1, dado2)]
 print(resultado_desejado)
 ```
    
@@ -53,10 +56,14 @@ print(resultado_desejado)
 - Extração de `list de tuples`, a partir de 2 `list`s quaisquer, usando:
     - `list comprehension com condition`
     - `zip(dado1, dado2)`
+    - Funcionalidades:
+        - Combinação dos elementos de 2 listas
+        - Filtragem dos dados, de qualquer das listas, antes de gerar o novo dicionário.
+        - Manipulação dos dados, no dicionário que possui os dados das listas combinados.
 ```python
 dado1 = ["key1", "key2", "key3"]
 dado2 = [4, 8, 12]
-resultado_desejado = [{key: valor} for key, valor in zip(dado1, dado2) if valor > 7]
+resultado_desejado = [{key: valor+5} for key, valor in zip(dado1, dado2) if valor > 7]
 print(resultado_desejado)
 ```  
 
