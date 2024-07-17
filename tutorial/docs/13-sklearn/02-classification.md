@@ -7,7 +7,7 @@
     - Primeira Feature, definida como "Feature1"
     - Segunda Feature, definida como "Feature2"
     - Terceira Feature, definida como "Feature3"
-- **Modelo de Dados dos Items** que serão classificados:
+- **Modelo de Features dos Items** que serão classificados:
     - Item=Container_de_features, no formato de list.
     - Cada Item possui 3 features [Feature1, Feature2,  Feature3].
         - Feature1 indica a existência ou não da feature 1.
@@ -16,8 +16,14 @@
     - Cada feature pode ter valor 0 ou 1. 
         - Valor 0 indica que o item **NÃO POSSUI** a feature
         - Valor 1 indica que o item **POSSUI** a feature
-    - Definição do modelo:
-        - `modelo_do_item = [feature1, feature2, feature3]`
+    - Definição do modelo de feature dos item:
+        - `modelo_de_features_do_item = [feature1, feature2, feature3]`
+- **Modelo de Classes dos Items** que serão classificados:
+    - Cada Item pode ser de 2 tipos:
+        - Do tipo0, com classe1 e valor 0
+        - Do tipo1, com classe2 e valor 1
+    - Definição do modelo da classe dos items:
+        - `modelo_das_classes_do_item = valor_da_classe`
 - **Dados reais para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
