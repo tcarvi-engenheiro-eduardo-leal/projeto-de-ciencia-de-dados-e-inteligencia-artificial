@@ -3,21 +3,19 @@
 ## Comparação com \_\_eq\_\_ e \_\_lt\_\_, sem biblioteca functools
 
 ### Implementação para comparação com `==` ou com `!=`:
-1. Defina método __eq__(self, qualquer_outro_nome) na classe
-  - Obrigatoriamente indique o parâmetro "self"
-  - Haverá automaticamente chamada com parâmetro self=instancia
-2. Retorne True ou False devido comparações, no método __eq__(self, qualquer_outro_nome)
+1. Defina método `__eq__(self, qualquer_outro_nome)` na classe
+  - Obrigatoriamente indique o parâmetro "self" pois haverá automaticamente chamada com parâmetro self=instancia.
+2. Retorne True ou False devido comparações, no método `__eq__(self, qualquer_outro_nome)`
 3. Compare instâncias desta classe com `==` ou com `!=`
-  - Não compare, com este design, a opção `<=` ou `>=`. 
+  - **Não compare, com este design, a opção `<=` ou `>=`.** 
   - Estas comparações adicionais precisam da biblioteca `functools`.
 
 ### Implementação para comparação com `<` ou com `>`:
-1. Defina método __eq__(self, qualquer_outro_nome) na classe
-  - Obrigatoriamente indique o parâmetro "self"
-  - Haverá automaticamente chamada com parâmetro self=instancia
-2. Retorne True ou False devido comparações, no método __lt__(self, qualquer_outro_nome)
+1. Defina método `__eq__(self, qualquer_outro_nome)` na classe
+  - Obrigatoriamente indique o parâmetro "self" pois haverá automaticamente chamada com parâmetro self=instancia.
+2. Retorne True ou False devido comparações, no método `__lt__(self, qualquer_outro_nome)`
 3. Compare instâncias desta classe com `<` ou com `>`
-  - Não compare, com este design, a opção `<=` ou `>=`. 
+  - **Não compare, com este design, a opção `<=` ou `>=`.** 
   - Estas comparações adicionais precisam da biblioteca `functools`.
 
 ```python
