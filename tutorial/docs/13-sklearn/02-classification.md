@@ -4,7 +4,7 @@
 - Definir forma de classificação:
     - Item do tipo0, classificada como "0"
     - Item do tipo1, classificada como "1"
-- Definir um modelo para o treino da Inteligência Artificial
+- Definir um modelo para o treino supervisionado da Inteligência Artificial
     - Modelo: 
         - Item=Container_de_features, no formato de list.
         - Cada Item possui 3 features [Feature1, Feature2,  Feature3].
