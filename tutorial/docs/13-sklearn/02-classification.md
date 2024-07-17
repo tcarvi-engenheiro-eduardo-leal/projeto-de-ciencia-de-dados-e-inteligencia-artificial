@@ -23,7 +23,7 @@
         - Do tipo0, com classe1 e valor 0
         - Do tipo1, com classe2 e valor 1
     - Definição do modelo da classe dos items:
-        - `modelo_das_classes_do_item = valor_da_classe`
+        - `modelo_das_classes_do_item = [ valor_da_classe ]`
 - **Dados reais para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
