@@ -72,7 +72,7 @@ class Conta:
 conta1 = Conta(36)
 conta2 = Conta(37)
 conta3 = Conta(38)
-lista_de_contas = [conta1, conta2]
+lista_de_contas = [conta1, conta2, conta3]
 for conta in lista_de_contas:
     print(conta == conta1) # False
     print(conta != conta1) # True
