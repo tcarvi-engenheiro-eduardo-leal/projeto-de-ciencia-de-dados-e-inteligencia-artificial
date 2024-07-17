@@ -10,9 +10,11 @@
 - `x ^ y` (***bitwise exclusive or*** of "x and y")
 - `x &  y` (***bitwise and*** of "x and y")
 - `x << n` (x ***shifted left by*** n ***bits***)
-    - Équivalente a multiplicar por 2 "n" vezes.
+    - Os bits são movidos para equerda. Novos valores que aparecem na direita são de bits desligados.
+    - É equivalente a multiplicar por 2 "n" vezes.
 - `x >> n` (x ***shifted right by*** n ***bits***)
-    - Équivalente a fazer floor divivion por 2 elevado a potência de "n".
+    - Os bits são movidos para direita. Novos valores que aparecem na direita são de bits desligados.
+    - É equivalente a fazer floor divivion pela potência de 2 elevado a "n".
 - `~x` (the bits of x ***inverted***)
     - Como o sinal também muda, o processo apenas não muda os bits de ativado para inativado, na lógica de valores positivos!
     - A fórmula do resultado é igual a `-(x+1)`
