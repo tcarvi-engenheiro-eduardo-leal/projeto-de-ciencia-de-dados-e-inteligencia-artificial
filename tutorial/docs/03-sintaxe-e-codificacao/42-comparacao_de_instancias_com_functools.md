@@ -1,16 +1,17 @@
 # Comparação de Instâncias com functools
 
 ## Implementação para comparação completa, inclusive com `>=` e `<=`:
-1. from functools import total_ordering
-2. Indique, na definição do método, o decorator @total_ordering
-3. Defina método __eq__(self, qualquer_outro_nome) na classe
-  - Obrigatoriamente indique o parâmetro "self"
-  - Haverá automaticamente chamada com parâmetro self=instancia
+1. `from functools import total_ordering`
+2. Indique, na definição do método, o decorator `@total_ordering`
+3. Defina método `__eq__(self, qualquer_outro_nome)` na classe
+  - Obrigatoriamente indique o parâmetro "self" pois haverá automaticamente chamada com parâmetro self=instancia.
 4. Defina método __lt__(self, qualquer_outro_nome) na classe
-  - Obrigatoriamente indique o parâmetro "self"
-  - Haverá automaticamente chamada com parâmetro self=instancia3. Compare instâncias desta classe com `<` ou com `>`
-5. Retorne True ou False devido comparações nestes 2 métodos
-6. Compare instâncias com `>=` e `<=`:
+  - Obrigatoriamente indique o parâmetro "self" pois haverá automaticamente chamada com parâmetro self=instancia.
+5. Retorne True ou False devido comparações nestes 2 métodos.
+
+  
+- Já pode testar a comparação de instâncias desta classe com `<` ou com `>`.
+  - E já pode testar a comparação de instâncias com `>=` e `<=`.
 
 ```python  
 # Necessidade de importação de total_ordering
