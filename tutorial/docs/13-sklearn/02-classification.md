@@ -82,6 +82,7 @@
     - Treinar novamente com os novos dados dos "resultados esperados".
     - Se necessário, devido problema nos testes anteriores, aumentar a quantidade de dados do treino e retestar.
 - **Otimizar o algoritmo de classificação**
+    - Análise gráfica da dispersão de pontos da classificação.
 - **Executar a classificação**
     - Você deve ter agora um sistema de inteligência artificial que usa estimadores da bibliioteca sklearn.
     - Pode-se também criar sistemas de inteligência artificial
