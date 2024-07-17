@@ -1,7 +1,7 @@
 # Continue e break
 
 ```python
-for elemento in iteravel:
+for elemento in iterable:
     # bloco de execução
     if truth_testing:
         continue
@@ -10,7 +10,7 @@ for elemento in iteravel:
 ```  
 
 ```python
-for elemento in iteravel:
+for elemento in iterable:
     # bloco de execução
     if truth_testing:
         break
