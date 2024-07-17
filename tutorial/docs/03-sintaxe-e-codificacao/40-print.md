@@ -26,8 +26,7 @@ print('primeira: {} segunda: {} terceira: {} quarta: {} quinta: {}'.format(var_s
 ## Print de classes
 ### Implementação
 1. Defina método str(self) na classe
-    - Obrigatoriamente indique o parâmetro self
-    - Haverá automaticamente chamada para parâmetro self=instancia
+    - Obrigatoriamente indique o parâmetro self pois haverá automaticamente chamada para parâmetro self=instancia.
 2. Retorne algum texto no método str(self)
 3. Passe uma instância desta classe para algum método de impressão.
 
