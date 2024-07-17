@@ -2,8 +2,11 @@
 
 ## Etapas
 - Definir forma de classificação:
-    - Item do tipo0, classificada como "0"
-    - Item do tipo1, classificada como "1"
+    - Item do tipo0, com classe "0"
+    - Item do tipo1, com classe "1"
+    - Primeira Feature, definida como "Feature1"
+    - Segunda Feature, definida como "Feature2"
+    - Terceira Feature, definida como "Feature3"
 - Definir um modelo para treino supervisionado da Inteligência Artificial
     - Modelo: 
         - Item=Container_de_features, no formato de list.
