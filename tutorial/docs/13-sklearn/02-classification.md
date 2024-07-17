@@ -24,7 +24,7 @@
         - Do tipo1, com classe2 e valor 1
     - Definição do modelo da classe dos items:
         - `modelo_das_classes_do_item = [ valor_da_classe ]`
-- **Dados reais para treino**, seguindo o modelo definido anteriormente.
+- **Dados reais das features dos items, para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
     item_p_1 = [1, 1, 1]
@@ -33,6 +33,12 @@
     item_q_1 = [1, 1, 1]
     item_q_2 = [0, 0, 1]
     item_q_3 = [0, 1, 0]
+    train_x = [item_p_1, item_p_2, item_p_3, item_q_1, item_q_2, item_q_3]
+    ```
+- **Dados reais das classes dos items, para treino**, seguindo o modelo definido anteriormente.
+    - Código python:
+    ```python
+    train_y = [0, 0, 0, 1, 1, 1]
     ```
 - **Treinamento com dados reais**
     - Código python:
