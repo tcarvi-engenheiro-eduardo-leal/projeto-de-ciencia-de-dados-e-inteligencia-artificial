@@ -1,6 +1,6 @@
 # Ordenação
 
-## sorted()
+## Built-in Fucntion: sorted()
 
 ```python
 idades = [15, 87, 32, 45, 67, 37]
@@ -16,22 +16,7 @@ for indice, idade in enumerate(sorted(idades, reverse=True)):
     print(indice, idade)
 ```  
 
-```python
-def extrai_saldo(conta):
-    return conta._saldo
-
-for conta in sorted(contas, key=extrai_saldo): 
-    print(conta)
-``` 
-
-```python
-from operator import attrgetter
-
-for conta in sorted(contas, key=attrgetter('saldo')): 
-    print(conta)
-``` 
-
-## reversed()
+## Built-in Fucntion: reversed()
 ```python
 idades = [15, 87, 32, 45, 67, 37]
 for indice, idade in enumerate(reversed(idades)): 
@@ -39,7 +24,7 @@ for indice, idade in enumerate(reversed(idades)):
     print(indice, idade)
 ``` 
   
-## sort()
+## Método: list.sort()
 
 ```python
 idades = [15, 87, 32, 45, 67, 37]
@@ -48,3 +33,17 @@ for indice, idade in enumerate(idades.sort()):
     print(indice, idade)
 ``` 
 
+## Sorted junto com implementação de comparação da instância.
+- Conforme indicado no tutorial de comparação de instâncias.
+```python
+def extrai_saldo(conta):
+  return conta._saldo
+for conta in sorted(contas, key=extrai_saldo):
+  print(conta)
+```  
+- Conforme indicado no tutorial de comparação de instâncias.
+```python
+from operator import attrgetter
+for conta in sorted(contas, key=attrgetter("_saldo")):
+  print(conta)
+```  
