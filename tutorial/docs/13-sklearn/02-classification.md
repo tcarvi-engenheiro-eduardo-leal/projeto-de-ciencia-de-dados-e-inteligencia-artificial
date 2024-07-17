@@ -17,7 +17,7 @@
         - Valor 0 indica que o item **NÃO POSSUI** a feature
         - Valor 1 indica que o item **POSSUI** a feature
     - Definição do modelo:
-        - `Modelo = [Feature1, Feature2, Feature3]`
+        - `modelo_do_item = [feature1, feature2, feature3]`
 - **Dados reais para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
