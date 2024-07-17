@@ -29,7 +29,7 @@ class Conta:
         self._saldo += valor
 
     def __eq__(self, outro):
-        if type(outro) != ContaCorrente:
+        if type(outro) != Conta:
             return False
         return self._codigo == outro._codigo and self._saldo == outro._saldo
 
@@ -59,9 +59,9 @@ class Conta:
         self._saldo += valor
 
     def __eq__(self, outro):
-        if type(outro) != ContaCorrente:
+        if type(outro) != Conta:
             return False
-        return self._codigo == outro._codigo and self._saldo == outro._saldo
+        return self._saldo == outro._saldo and self._codigo == outro._codigo
 
     def __lt__(self, outro):
         return self._saldo < outro._saldo
@@ -71,12 +71,18 @@ class Conta:
 # Testes:
 conta1 = Conta(36)
 conta2 = Conta(37)
+conta3 = Conta(38)
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
-    print(conta == conta1)
-    print(conta != conta1)
-    print(conta < conta1)
-    print(conta > conta1)
+    print(conta == conta1) # False
+    print(conta != conta1) # True
+print(conta1 < conta2) # False pois saldo de ambas é 0
+print(conta1 > conta2) # False pois saldo de ambas é 0
+conta1.deposita(100)
+conta2.deposita(200)
+conta3.deposita(200)
+print(conta1 < conta2) # True
+print(conta1 > conta2) # False
 for conta in sorted(lista_de_contas):
     # Ordenação funciona devido implementação de __eq__ e __lt__
     print(conta)
