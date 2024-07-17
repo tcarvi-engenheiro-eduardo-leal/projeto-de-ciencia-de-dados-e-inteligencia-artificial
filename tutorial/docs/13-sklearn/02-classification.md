@@ -40,7 +40,7 @@
     ```  
     - Sistema de "Machine Learning" passa a ter conhecimento dos dados usados no treino.
     - Estimador (*estimator*) do "Machine Learning" já pode tentar classificar.
-- Testes:
+- **Testes para vefificar qualidade das estimativas**:
     - Definir novo conjunto de dados reais e identificar como "resultados esperados".
     - Código python:
     ```python
@@ -78,8 +78,14 @@
         taxa_de_acerto = accuracy_score(test_y, previsoes)
         print("Taxa de acerto: %.2f" %(taxa_de_acerto * 100))
         ```
-- Retreinamento:
+- **Retreinamento com dados usados anteriormente nos testes**:
     - Treinar novamente com os novos dados dos "resultados esperados".
     - Se necessário, devido problema nos testes anteriores, aumentar a quantidade de dados do treino e retestar.
-- Otimizar o algoritmo de classificação
-- Prever a classificação
+- **Otimizar o algoritmo de classificação**
+- **Executar a classificação**
+    - Você deve ter agora um sistema de inteligência artificial que usa estimadores da bibliioteca sklearn.
+    - Pode-se também criar sistemas de inteligência artificial
+        - com estimadores de outras bibliotecas do mercado, como:
+            - PyTorch, 
+            - TensorFlow ou 
+            - TinyML
