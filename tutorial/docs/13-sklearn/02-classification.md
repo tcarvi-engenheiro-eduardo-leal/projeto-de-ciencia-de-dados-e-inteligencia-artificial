@@ -1,13 +1,13 @@
 # Classification
 
 ## Etapas
-- Definir forma de classificação:
+- Descrição dos dados dos Items que serão classicados:
     - Item do tipo0, com classe "0"
     - Item do tipo1, com classe "1"
     - Primeira Feature, definida como "Feature1"
     - Segunda Feature, definida como "Feature2"
     - Terceira Feature, definida como "Feature3"
-- Definir um modelo para treino supervisionado da Inteligência Artificial
+- Modelo Items que serão classicados:
     - Modelo: 
         - Item=Container_de_features, no formato de list.
         - Cada Item possui 3 features [Feature1, Feature2,  Feature3].
