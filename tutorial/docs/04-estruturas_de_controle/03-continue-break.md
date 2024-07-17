@@ -4,16 +4,14 @@
 for elemento in iterable:
     # bloco de execução
     if truth_testing:
-        continue
+        continue    # Fluxo de nova iteração é executada.
     # Bloco de código não executado se comando "continue" é executado. 
-    # Mas fluxo de nova iteração é executada.
 ```  
 
 ```python
 for elemento in iterable:
     # bloco de execução
     if truth_testing:
-        break
+        break     # Fluxo completo do loop é encerrado.
     # Bloco de código não executado se comando "break" é executado. 
-    # Fluxo completo do loop é encerrado.
 ```  
