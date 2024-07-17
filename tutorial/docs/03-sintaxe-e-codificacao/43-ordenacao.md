@@ -18,7 +18,7 @@ for indice, idade in enumerate(sorted(idades, reverse=True)):
 
 ## Não used reversed() para lista de números.
 - Veja erro seguinte! 
-_ Use sorted(list, reverse=True)
+- Use apenas `sorted(list, reverse=True)`
 ```python
 idades = [15, 87, 32, 45, 67, 37]
 for indice, idade in enumerate(reversed(idades)): 
