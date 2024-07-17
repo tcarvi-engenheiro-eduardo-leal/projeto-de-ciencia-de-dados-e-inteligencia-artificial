@@ -52,7 +52,7 @@ class ContaCorrente:
         return "{} and {}".format(self._codigo)
 
 conta1 = ContaCorrente(37)
-conta2 = ContaPoupanca(38)
+conta2 = ContaCorrente(38)
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
     print(conta)
