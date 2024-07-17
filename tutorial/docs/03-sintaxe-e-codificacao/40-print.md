@@ -43,6 +43,14 @@ class Conta:
 
 ### Exemplo de Print de classes
 ```python  
+class ContaCorrente:
+
+    def __init__(self, codigo):
+        self._codigo = codigo
+
+    def __str__(self):
+        return "{} and {}".format(self._codigo)
+
 conta1 = ContaCorrente(37)
 conta2 = ContaPoupanca(38)
 lista_de_contas = [conta1, conta2]
