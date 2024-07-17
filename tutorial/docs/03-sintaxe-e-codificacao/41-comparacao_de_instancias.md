@@ -8,7 +8,7 @@
 2. Retorne True ou False devido comparações, no método `__eq__(self, qualquer_outro_nome)`
 3. Compare instâncias desta classe com `==` ou com `!=`
   - **Não compare, com este design, a opção `<=` ou `>=`.** 
-  - Estas comparações adicionais precisam da biblioteca `functools`.
+    - Estas comparações adicionais precisam da biblioteca `functools`.
 
 ### Implementação para comparação com `<` ou com `>`:
 1. Defina método `__eq__(self, qualquer_outro_nome)` na classe
@@ -16,7 +16,7 @@
 2. Retorne True ou False devido comparações, no método `__lt__(self, qualquer_outro_nome)`
 3. Compare instâncias desta classe com `<` ou com `>`
   - **Não compare, com este design, a opção `<=` ou `>=`.** 
-  - Estas comparações adicionais precisam da biblioteca `functools`.
+    - Estas comparações adicionais precisam da biblioteca `functools`.
 
 ```python
 class Conta:
