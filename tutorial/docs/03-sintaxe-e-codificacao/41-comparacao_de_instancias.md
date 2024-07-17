@@ -49,8 +49,28 @@ class Conta:
 # Mas não pode comparar <= e >=.
 #   <= e >= exigem união do processamento mediante biblioteca functools
 #
-conta1 = ContaCorrente(36)
-conta2 = ContaPoupanca(37)
+class Conta:
+
+    def __init__(self, codigo):
+        self._codigo = codigo
+        self._saldo = 0
+
+    def deposita(self, valor):
+        self._saldo += valor
+
+    def __eq__(self, outro):
+        if type(outro) != ContaCorrente:
+            return False
+        return self._codigo == outro._codigo and self._saldo == outro._saldo
+
+    def __lt__(self, outro):
+        return self._saldo < outro._saldo:
+
+    def __str__(self):
+        return "[>>Codigo {} Saldo {}<<]".format(self._codigo, self._saldo)
+# Testes:
+conta1 = Conta(36)
+conta2 = Conta(37)
 lista_de_contas = [conta1, conta2]
 for conta in lista_de_contas:
     print(conta == conta1)
