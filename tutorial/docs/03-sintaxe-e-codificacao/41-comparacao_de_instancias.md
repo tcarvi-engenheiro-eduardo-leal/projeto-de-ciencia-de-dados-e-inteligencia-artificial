@@ -34,7 +34,7 @@ class Conta:
         return self._codigo == outro._codigo and self._saldo == outro._saldo
 
     def __lt__(self, outro):
-        return self._saldo < outro._saldo:
+        return self._saldo < outro._saldo
 
     def __str__(self):
         return "[>>Codigo {} Saldo {}<<]".format(self._codigo, self._saldo)
@@ -64,7 +64,7 @@ class Conta:
         return self._codigo == outro._codigo and self._saldo == outro._saldo
 
     def __lt__(self, outro):
-        return self._saldo < outro._saldo:
+        return self._saldo < outro._saldo
 
     def __str__(self):
         return "[>>Codigo {} Saldo {}<<]".format(self._codigo, self._saldo)
