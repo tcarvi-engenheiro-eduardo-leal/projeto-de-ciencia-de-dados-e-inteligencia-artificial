@@ -50,5 +50,5 @@ conta_da_daniela.deposita(200)
 # A comparação conjunta de __eq__ e __lt__
 #   exige biblioteca incluída na classe acima.
 print("Deve ser True", conta_do_guilherme <= conta_da_daniela)
-print("Deve ser Fase", conta_do_guilherme >= conta_da_daniela)
+print("Deve ser False", conta_do_guilherme >= conta_da_daniela)
 ```  
