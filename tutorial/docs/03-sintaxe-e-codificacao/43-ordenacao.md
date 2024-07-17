@@ -1,6 +1,6 @@
 # Ordenação
 
-## Built-in Fucntion: sorted()
+## Built-in function: sorted()
 
 ```python
 idades = [15, 87, 32, 45, 67, 37]
@@ -16,7 +16,7 @@ for indice, idade in enumerate(sorted(idades, reverse=True)):
     print(indice, idade)
 ```  
 
-## Built-in Fucntion: reversed()
+## Built-in function: reversed()
 ```python
 idades = [15, 87, 32, 45, 67, 37]
 for indice, idade in enumerate(reversed(idades)): 
