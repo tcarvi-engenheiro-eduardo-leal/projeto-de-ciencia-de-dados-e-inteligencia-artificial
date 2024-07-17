@@ -49,7 +49,7 @@ class ContaCorrente:
         self._codigo = codigo
 
     def __str__(self):
-        return "{} and {}".format(self._codigo)
+        return str(self._codigo)
 
 conta1 = ContaCorrente(37)
 conta2 = ContaCorrente(38)
