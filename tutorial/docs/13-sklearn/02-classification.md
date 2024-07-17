@@ -4,7 +4,7 @@
 - Definir forma de classificação:
     - Item do tipo0, classificada como "0"
     - Item do tipo1, classificada como "1"
-- Definir um modelo para o treino supervisionado da Inteligência Artificial
+- Definir um modelo para treino supervisionado da Inteligência Artificial
     - Modelo: 
         - Item=Container_de_features, no formato de list.
         - Cada Item possui 3 features [Feature1, Feature2,  Feature3].
@@ -37,7 +37,7 @@
     modelo_estimador.fit(train_x, train_y)
     ```  
     - Sistema de "Machine Learning" passa a ter conhecimento dos dados usados no treino.
-    - Estimador do "Machine Learning" já pode tentar classificar.
+    - Estimador (*estimator*) do "Machine Learning" já pode tentar classificar.
 - Testes:
     - Definir novo conjunto de dados reais e identificar como "resultados esperados".
     - Código python:
