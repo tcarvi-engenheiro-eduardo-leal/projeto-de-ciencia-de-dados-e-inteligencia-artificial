@@ -1,6 +1,6 @@
 # Loops
 ```python
-for elemento in iteravel:
+for elemento in iterable:
     # bloco de execução
 ```  
 
