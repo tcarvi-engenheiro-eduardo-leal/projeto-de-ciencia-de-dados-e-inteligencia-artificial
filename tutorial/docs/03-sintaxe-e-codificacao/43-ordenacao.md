@@ -30,7 +30,9 @@ for indice, idade in enumerate(reversed(idades)):
 
 ```python
 idades = [15, 87, 32, 45, 67, 37]
-for indice, idade in enumerate(idades.sort()): 
+idades.sort() # Dados foram atualizado. 
+# O retorno do método é None, diferentemente do que ocorre com variável "build-in sorted()".
+for indice, idade in enumerate(idades): 
     # unpacking da tupla gravando indice e idade
     print(indice, idade)
 ``` 
