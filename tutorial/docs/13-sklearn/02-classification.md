@@ -58,9 +58,9 @@
     - Definir novo conjunto de dados reais e identificar como "resultados esperados".
     - Código python:
     ```python
-    animal_misterisoA = [1, 1, 1] # Eu sei que o animal é tipoP mas não informo para aplicativo.
-    animal_misterisoB = [1, 1, 0] # Eu sei que o animal é tipoQ mas não informo para aplicativo.
-    animal_misterisoC = [0, 1, 1] # Eu sei que o animal é tipoQ mas não informo para aplicativo.
+    item_misterisoA = [1, 1, 1] # Eu sei que o item é tipoP mas não informo para aplicativo.
+    item_misterisoB = [1, 1, 0] # Eu sei que o item é tipoQ mas não informo para aplicativo.
+    item_misterisoC = [0, 1, 1] # Eu sei que o item é tipoQ mas não informo para aplicativo.
     ```  
     - Estimar com Algoritmos Estimadores do modelo sklearn
         - Código python:
