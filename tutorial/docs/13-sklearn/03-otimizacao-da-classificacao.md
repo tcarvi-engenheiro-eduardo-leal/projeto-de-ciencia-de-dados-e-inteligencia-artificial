@@ -16,9 +16,9 @@
         - E ter covid
         - Qual deve ser a estimativa dela falecer ou se recuperar?
     - Só consigo responder e treinar o sistema de Inteligência Artificial se eu:
-        - Mexer nos dados
-        - Separar os indivíduos por linha
-        - Dar maior significado às colunas
+        - Organizar a disposição dos dados.
+        - Separar os indivíduos por linha.
+        - Dar maior significado às colunas, mediante organização visual.
 ```python
 from pathlib import Path
 import pandas as pd
