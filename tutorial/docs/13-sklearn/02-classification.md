@@ -66,14 +66,14 @@
         - Código python:
         ```python
         # Processamento matemático: f(X) = previsões
-        test_x = [animal_misterisoA, animal_misterisoB, animal_misterisoC]
-        test_y = [0, 1, 1] # Resultados Esperados # Labels reais
+        test_x = [item_misterisoA, item_misterisoB, item_misterisoC]
+        test_y = [0, 1, 1] # Resultados Esperados usados apenas depois das previsões.
         # Gera Previsões
         previsoes = modelo_estimador.predict(test_x)
         # Sistema retorna previsoes como um NumpyArray = array([0, 1, 0]), nos informando que:
-        # animal_misterisoA é do tipo P
-        # animal_misterisoB é do tipo Q
-        # animal_misterisoC é do tipo P
+        # item_misterisoA é do tipo P
+        # item_misterisoB é do tipo Q
+        # item_misterisoC é do tipo P
         ```  
     - Verificar acurácia da estimativa
         - Código python:
