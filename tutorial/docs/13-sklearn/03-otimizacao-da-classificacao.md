@@ -14,7 +14,7 @@
     - Se uma pessoa ter as features:
         - Residir em certo local
         - E ter covid
-        - Qual deve ser a estimativa dela falecer ou se recuperar?
+        - Ela deve falecer? Ou deve se recuperar?
     - Só consigo responder e treinar o sistema de Inteligência Artificial se eu:
         - Organizar a disposição dos dados.
         - Separar os indivíduos por linha.
