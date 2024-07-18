@@ -10,6 +10,7 @@
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
 - **Pergunta:**
+    - Dados: https://gist.github.com/guilhermesilveira/73cc6976569c41a338bbec78757d6756
     - Se uma pessoa ter as features:
         - Vir de certo local
         - E ter covid
