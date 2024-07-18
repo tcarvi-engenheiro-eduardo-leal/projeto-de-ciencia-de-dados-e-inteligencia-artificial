@@ -118,6 +118,9 @@
         - TinyML
     - Previsões de classificação, com sklearn:
     ```python
+    item_misterisoD = [0, 1, 1]
+    item_misterisoE = [0, 1, 1]
+    item_misterisoF = [0, 1, 1]
     x = [item_misterisoD, item_misterisoE, item_misterisoF]
     # Gera Previsões
     previsoes = modelo_estimador.predict(x)
