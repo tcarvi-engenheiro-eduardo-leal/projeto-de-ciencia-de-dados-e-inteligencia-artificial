@@ -14,6 +14,10 @@
         - Vir de certo local
         - E ter covid
         - Qual deve ser a estimativa dela falecer ou se recuperar?
+    - Só consigo responder e treinar o sistema de Inteligência Artificial se eu:
+        - Mexer nos dados
+        - Separar os indivíduos por linha
+        - Dar maior significado às colunas
 ```python
 from pathlib import Path
 import pandas as pd
