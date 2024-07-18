@@ -96,6 +96,14 @@
 - **Retreinamento com dados usados anteriormente nos testes**:
     - Treinar novamente com os novos dados dos "resultados esperados".
     - Se necessário, devido problema nos testes anteriores, aumentar a quantidade de dados do treino e retestar.
+    ```python
+    # Processamento matemático: f(X) = Y
+    train_x = test_x
+    train_y = test_y
+    from sklearn.svm import LinearSVC
+    modelo_estimador = LinearSVC()
+    modelo_estimador.fit(train_x, train_y)
+    ```  
 - **Otimizar o algoritmo de classificação**
     - Análise gráfica da dispersão de pontos da classificação.
 - **Executar a classificação**
