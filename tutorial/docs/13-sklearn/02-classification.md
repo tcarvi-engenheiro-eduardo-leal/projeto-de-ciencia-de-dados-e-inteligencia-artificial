@@ -107,7 +107,7 @@
 - **Otimizar o algoritmo de classificação**
     - Antes de entregar o `script estimador`, deve-se avaliar a qualidade do algoritmo.
         - Deve-se fazer análise gráfica da dispersão e entender o comportamento do algorítmo.
-        - A depndender da Análise gráfica, execute otimização da classificação.
+        - A depender da Análise gráfica, execute otimização da classificação.
 - **Executar a classificação**
     - Você deve ter agora um sistema de inteligência artificial que usa estimadores da bibliioteca sklearn.
     - Pode-se também criar sistemas de inteligência artificial
