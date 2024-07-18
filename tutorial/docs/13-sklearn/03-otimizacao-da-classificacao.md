@@ -28,12 +28,12 @@ dados = pd.read_csv(file_path_absolute)
 mapa_de_alteracao_nomes = {
     "Province/State": "local",
     "Confirmed": "confirmacoes_de_covid",
-    "Deaths": "obito_por_causa_da_covid",
-    "Recovered": "recuperacao_depois_da_covid"
+    "Deaths": "obitos_por_causa_da_covid",
+    "Recovered": "recuperacoes_depois_da_covid"
 }
 dados = dados.rename(columns = mapa_de_alteracao_nomes)
 # dados.head()
-dados = dados[['local', 'covid_confirmado', 'obito', 'recuperacao']]
+dados = dados[['local', 'confirmacoes_de_covid', 'obitos_por_causa_da_covid', 'recuperacoes_depois_da_covid']]
 print(dados.head())
 # modelo de features
 # modelo_features_de_item = [feature1, feature2, ]
