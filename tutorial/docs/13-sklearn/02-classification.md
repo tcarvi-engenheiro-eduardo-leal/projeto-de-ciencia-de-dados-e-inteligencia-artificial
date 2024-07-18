@@ -80,11 +80,12 @@
         ```python
         # Identificação de taxa de acerto sem biblioteca accuracy_score
         verificacao = (test_y == previsoes)
-        # verificacao retorna array([True, True, False])
+        print(verificacao) # verificacao retorna array-like [True, True, False]
         # Sistema acertou na primeira e segunda estimativa. Mas errou na terceira.
         #Taxa de acerto
-        corretos = verificacao.sum() # Número que quantidades de True
-        taxa_de_acerto = corretos / len(verificacao)
+        acertos = verificacao.sum() # Número que quantidades de True
+        total_de_verificacoes = len(verificacao) # Número total de verificações
+        taxa_de_acerto = acertos / total_de_verificacoes
         print("Taxa de acerto: %.2f" %(taxa_de_acerto * 100))
 
         ## Identificação de taxa de acerto com biblioteca accuracy_score de sklearn.metrics
