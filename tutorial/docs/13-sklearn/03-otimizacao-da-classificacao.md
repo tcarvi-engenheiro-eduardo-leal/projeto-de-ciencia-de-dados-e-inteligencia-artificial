@@ -12,7 +12,7 @@
 - **Pergunta:**
     - Dados: https://gist.github.com/guilhermesilveira/73cc6976569c41a338bbec78757d6756
     - Se uma pessoa ter as features:
-        - Vir de certo local
+        - Residir em certo local
         - E ter covid
         - Qual deve ser a estimativa dela falecer ou se recuperar?
     - Só consigo responder e treinar o sistema de Inteligência Artificial se eu:
