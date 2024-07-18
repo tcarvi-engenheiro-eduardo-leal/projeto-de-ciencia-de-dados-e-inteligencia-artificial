@@ -67,7 +67,7 @@
         ```python
         # Processamento matemático: f(X) = previsões
         test_x = [item_misterisoA, item_misterisoB, item_misterisoC]
-        test_y = [0, 1, 1] # Resultados Esperados usados apenas depois das previsões.
+        test_y = [0, 1, 1] # Resultados Esperados a serem usados apenas depois das previsões.
         # Gera Previsões
         previsoes = modelo_estimador.predict(test_x)
         # Sistema retorna previsoes como um NumpyArray = array([0, 1, 0]), nos informando que:
