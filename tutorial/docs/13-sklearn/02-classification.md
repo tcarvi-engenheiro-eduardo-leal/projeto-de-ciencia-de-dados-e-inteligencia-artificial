@@ -80,7 +80,7 @@
         ```python
         # Identificação de taxa de acerto sem biblioteca accuracy_score
         verificacao = (test_y == previsoes)
-        print(verificacao) # verificacao retorna array-like [True, True, False]
+        print(verificacao) # verificacao retorna NumPy array [True, True, False]
         # Sistema acertou na primeira e segunda estimativa. Mas errou na terceira.
         #Taxa de acerto
         acertos = verificacao.sum() # Número que quantidades de True
