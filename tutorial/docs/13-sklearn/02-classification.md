@@ -116,3 +116,10 @@
         - PyTorch
         - TensorFlow
         - TinyML
+    - Previsões de classificação, com sklearn:
+    ```python
+    x = [item_misterisoD, item_misterisoE, item_misterisoF]
+    # Gera Previsões
+    previsoes = modelo_estimador.predict(x)
+    print(previsoes)
+    ```
