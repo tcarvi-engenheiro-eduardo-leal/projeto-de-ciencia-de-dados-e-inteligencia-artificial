@@ -94,8 +94,8 @@
         print("Taxa de acerto: %.2f" %(taxa_de_acerto * 100))
         ```
 - **Retreinamento com dados usados anteriormente nos testes**:
-    - Treinar novamente com os novos dados dos "resultados esperados".
-    - Se necessário, devido problema nos testes anteriores, aumentar a quantidade de dados do treino e retestar.
+    - Treinar novamente com os novos dados dos "resultados esperados" (train_y).
+    - Se necessário, devido exigência de acurácia, aumentar a quantidade de dados do treino e retestar.
     ```python
     # Processamento matemático: f(X) = Y
     train_x = test_x
