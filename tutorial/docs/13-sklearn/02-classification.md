@@ -20,34 +20,34 @@
         - `modelo_de_features_do_item = [feature1, feature2, feature3]`
 - **Modelo de Classes dos Items** que serão classificados:
     - Cada Item pode ser de 2 tipos:
-        - Do tipo0, com classe1 e valor 0
-        - Do tipo1, com classe2 e valor 1
+        - Do tipo_p, com classe1 e valor 0
+        - Do tipo_q, com classe2 e valor 1
     - Definição do modelo da classe dos items:
         - `modelo_das_classes_do_item = [ valor_da_classe ]`
 - **Dados reais das features dos items, para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
-    item_p_1 = [1, 1, 1]
-    item_p_2 = [0, 0, 1]
-    item_p_3 = [0, 1, 0]
-    item_q_1 = [1, 1, 1]
-    item_q_2 = [0, 0, 1]
-    item_q_3 = [0, 1, 0]
+    item_1 = [1, 1, 1]
+    item_2 = [0, 0, 1]
+    item_3 = [0, 1, 0]
+    item_4 = [1, 1, 1]
+    item_5 = [0, 0, 1]
+    item_6 = [0, 1, 0]
     # 6 items com 3 features cada.
-    train_x = [item_p_1, item_p_2, item_p_3, item_q_1, item_q_2, item_q_3]
+    train_x = [item_1, item_2, item_3, item_4, item_5, item_6]
     ```
 - **Dados reais das classes dos items, para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
-    # 6 items com 1 classe cada.
+    # 6 items com 1 classe cada, indicando que item é do tipo_p ou do tipo_q
     train_y = [0, 0, 0, 1, 1, 1]
     ```
 - **Treinamento com dados reais**
     - Código python:
     ```python
     # Processamento matemático: f(X) = Y
-    train_x = [item_p_1, item_p_2, item_p_3, item_q_1, item_q_2, item_q_3]
-    train_y = [0, 0, 0, 1, 1, 1] # labels: 0 significa item_p e 1 significa item_q.
+    train_x = [item_1, item_2, item_3, item_4, item_5, item_6]
+    train_y = [0, 0, 0, 1, 1, 1]
     from sklearn.svm import LinearSVC
     modelo_estimador = LinearSVC()
     modelo_estimador.fit(train_x, train_y)
