@@ -10,9 +10,19 @@
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
 ```python
+import pathlib
 import pandas as pd
 
-url = "https://gist.github.com/guilhermesilveira/73cc6976569c41a338bbec78757d6756"
-dados = pd.read_csv(url)
+file_path = pathlib('src/python-coding/notebook/dados.csv')
+file_path_absolute = file_path.absolute()
+dados = pd.read_csv(file_path_absolute)
+mapa_de_alteracao_nomes = {
+    "Province/State": "local",
+    "Confirmed": "covid_confirmado",
+    "Deaths": "obito",
+    "Recovered": "recuperacao"
+}
+dados = dados.rename(columns = mapa_de_alteracao_nomes)
+dados.head()
 ```  
 
