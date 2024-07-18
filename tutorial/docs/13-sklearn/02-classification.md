@@ -33,11 +33,13 @@
     item_q_1 = [1, 1, 1]
     item_q_2 = [0, 0, 1]
     item_q_3 = [0, 1, 0]
+    # 6 items com 3 features cada.
     train_x = [item_p_1, item_p_2, item_p_3, item_q_1, item_q_2, item_q_3]
     ```
 - **Dados reais das classes dos items, para treino**, seguindo o modelo definido anteriormente.
     - Código python:
     ```python
+    # 6 items com 1 classe cada.
     train_y = [0, 0, 0, 1, 1, 1]
     ```
 - **Treinamento com dados reais**
