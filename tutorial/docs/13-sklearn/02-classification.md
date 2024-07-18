@@ -54,7 +54,7 @@
     ```  
     - Sistema de "Machine Learning" passa a ter conhecimento dos dados usados no treino.
     - Estimador (*estimator*) do "Machine Learning" já pode tentar classificar.
-- **Testes para vefificar qualidade das estimativas**:
+- **Testes para verificar qualidade das estimativas**:
     - Definir novo conjunto de dados reais e identificar como "resultados esperados".
     - Código python:
     ```python
