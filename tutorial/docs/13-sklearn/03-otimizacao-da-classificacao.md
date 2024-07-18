@@ -19,6 +19,7 @@
         - Organizar a disposição dos dados.
         - Separar os indivíduos por linha.
         - Dar maior significado às colunas, mediante organização visual.
+#### Organização dos Dados
 ```python
 from pathlib import Path
 import pandas as pd
@@ -40,4 +41,19 @@ print(dados.head())
 # modelo_features_de_item = [feature1, feature2, ]
 
 ```  
+#### Identificação do modelo de fetures e de classes
+- todo
+
+#### Estratificação separada dos itens como lista individualizada de features
+- O Modelo não predisa ser uma lista de items separados.
+- O modelo pode ser um NumpY Array, sendo que cada "coluna" é uma feature. 
+- Use dados.shape() para avaliar a dimensão dos dados de treino.
+
+#### Estratificação separada dos itens como uma opção de classe
+
+#### Escolha da quantidade de itens de treinos e de itens de testes.
+- Não usar dados de testes no conjunto dos dados de treinos.
+
+#### Executar treinamentos e testes, avaliando a escolha da quantificação de dados. 
+
 
