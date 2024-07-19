@@ -3,13 +3,14 @@
 - Trabalha com dados relacionais (ou rotulados)
 
 ## Utilização em Ciência de Dados
-- Limpeza de dados
-- Tratamento de dados
-- Análise exploratória de dados
-- Suporte em atividades de machine learning
-- Consulta e queries em banco de dados relacional
-- Visualização de dados
-- Webscraping
+- Tratamentos iniciais antes de processamentos estatísticos:
+    - **Análise exploratória de dados**
+    - **Webscraping**
+    - **Limpeza de dados**
+    - **Tratamento de dados**
+    - **Suporte em atividades de machine learning**
+    - **Consulta e queries em banco de dados relacional**
+    - **Visualização de dados**
 
 ## Integração com outras bibliotecas
 - Numpy
