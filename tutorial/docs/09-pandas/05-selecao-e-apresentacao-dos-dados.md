@@ -41,7 +41,7 @@ print(dados.groupby('Confirmed')['Recovered'].mean())
 # Extrai coluna "Confirmed" e a fixa com index. Gera uma tabela com estes dados.
 print(dados.groupby('Confirmed'))
 # Depois apresenta média dos valores do index em todas as colunas numéricas.
-print(dados.groupby('Confirmed')['Recovered'].mean().sort_values('Valor'))
+print(dados.groupby('Confirmed')['Recovered'].mean().sort_values(ascending=True))
 ```  
 
 # Plotagem usando pandas
