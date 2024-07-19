@@ -13,8 +13,8 @@ print(type(dados)) # pandas.core.frame.Dataframe
 dados.head()
 dados.head(3)
 dados.tail()
-print(dados.shape) # (x,y) # -> x-> collumns, y -> lines
-print(dados.columns)
+print(dados.shape) # (x,y) # -> x-> linhas, y -> colunas
+print(dados.columns) # Título das colunas
 print(dados.info())
 dados.describe()
 ```  
