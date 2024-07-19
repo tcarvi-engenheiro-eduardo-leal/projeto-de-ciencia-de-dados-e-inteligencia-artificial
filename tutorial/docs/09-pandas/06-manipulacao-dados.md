@@ -40,3 +40,15 @@ dados = dados[['confirmado_com_covid', 'obitos', 'recuperados']]
 
 print(dados.head())
 ```  
+
+## Mudar Caixa Alta de todos as células de uma colunas do DataFrame
+```python
+from pathlib import Path
+import pandas as pd
+
+path = Path('src/python-coding/notebook/dados.csv').absolute()
+dados = pd.read_csv(path)
+print(dados.head())
+dados['Country/Region'] = dados['Country/Region'].str.upper()
+print(dados.head())
+```  
