@@ -28,6 +28,9 @@ print(dados.Recovered)
     - Combinar os resultados em uma estrutura de dados, geralmente em um DataFrame ou em uma Series.
   
 ```python  
+# Dados numéricos para cálculo de mean()
+dados = dados[['Confirmed', 'Deaths', 'Recovered']]
+
 # Extrai coluna "Confirmed" e a fixa com index. Gera uma tabela com estes dados.
 print(dados.groupby('Confirmed'))
 # Depois apresenta média dos valores do index em todas as colunas numéricas.
