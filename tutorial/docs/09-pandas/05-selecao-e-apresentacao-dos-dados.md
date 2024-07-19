@@ -6,9 +6,15 @@ url = 'xxxxxxx'
 dados = pd.read_csv(url, sep=';')
 
 # seleção e apresentação de dados
-print(dados['Tipo']) # Imprime a coluna Tipe como Serie
-print(dados[['Tipo', 'Quarto']]) # Imprime a coluna Tipe como Serie
-print(dados['Valor'].mean()) # extrai comuna 
+print(dados['serie1'])
+print(dados['serie2'])
+print(dados['serie3'])
+print(dados['serie4'])
+print(dados[['serie1', 'serie2']])
+
+# Seleção e cálculo de média aritmética simples (mean)
+print(dados['Valor'].mean())
+
 print(dados.groupby('Tipo').mean(numeric_value=TRUE)) # extrai coluna "Tipo" e fixa com index. Depois apresenta média dos valores do index em todas as colunas.
 print(dados.groupby('Tipo')['Valor'].mean()) # extrai coluna "Tipo" e fixa com index. Depois apresenta média dos valores do index em todas as colunas.
 print(dados.groupby('Tipo')['Valor'].mean().sort_values('Valor')) # extrai coluna "Tipo" e fixa com index. Depois apresenta média dos valores do index em todas as colunas.

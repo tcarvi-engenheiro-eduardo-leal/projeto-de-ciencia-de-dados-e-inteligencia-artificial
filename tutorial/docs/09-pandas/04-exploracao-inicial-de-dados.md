@@ -16,9 +16,4 @@ print(dados.shape) # (x,y) # -> x-> collumns, y -> lines
 print(dados.columns)
 print(dados.info())
 dados.describe()
-
-print(dados['serie1'])
-print(dados['serie2'])
-print(dados['serie3'])
-print(dados['serie4'])
 ```  
