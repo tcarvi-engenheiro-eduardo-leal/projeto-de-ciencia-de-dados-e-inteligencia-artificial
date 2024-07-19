@@ -1,4 +1,2 @@
 # Referências
-- API reference
-    - t
-    
+- https://pandas.pydata.org/docs/
