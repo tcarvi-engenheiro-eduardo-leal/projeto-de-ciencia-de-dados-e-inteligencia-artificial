@@ -55,5 +55,21 @@ import pandas as pd
 path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
-dados.Confirmed.plot(kind='barh', figsise=(14, 10), color="purple")
+# kind: bar (vertical bar plot)
+dados.Confirmed.plot(kind='bar', figsize=(14, 10), color="purple")
+
+# kind: barh (horizontal bar plot)
+dados.Confirmed.plot(kind='barh', figsize=(14, 10), color="purple")
+
+# kind: line (line plot)
+dados.Confirmed.plot(kind='line', figsize=(14, 10), color="purple")
+
+# kind: hist (histograma)
+dados.Confirmed.plot(kind='hist', figsize=(14, 10), color="purple")
+
+# kind: area (area plot)
+dados.Confirmed.plot(kind='area', figsize=(14, 10), color="purple")
+
+# kind: pie (pie plot)
+dados.Confirmed.plot(kind='pie', figsize=(14, 10), color="purple")
 ```
