@@ -10,9 +10,9 @@ dados = pd.read_csv(path)
 # Viasualização Inicial dos Dados
 #
 print(type(dados)) # pandas.core.frame.Dataframe
-dados.head()
-dados.head(3)
-dados.tail()
+print(dados.head())
+print(dados.head(3))
+print(dados.tail())
 print(dados.shape) # (x,y) # -> x-> linhas, y -> colunas
 print(dados.columns) # Título das colunas
 print(dados.info())
