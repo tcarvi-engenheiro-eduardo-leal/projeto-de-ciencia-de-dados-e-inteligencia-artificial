@@ -6,10 +6,11 @@ import pandas as pd
 path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
+print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
 # seleção e apresentação de dados
 print('## ObservationDate ###############################################')
-print(dados['ObservationDate'])
-print(dados.shape())
+print(dados['ObservationDate']) # Index e Valores # Name: ObservationDate, Lenght: 2379, dtype: object
+print(dados['ObservationDate'].shape) # (2379,) # NumpyArray unidimensional com 2379 linhas.
 print('## Province/State ################################################')
 print(dados['Province/State'])
 print('## Country/Region #################################################')
