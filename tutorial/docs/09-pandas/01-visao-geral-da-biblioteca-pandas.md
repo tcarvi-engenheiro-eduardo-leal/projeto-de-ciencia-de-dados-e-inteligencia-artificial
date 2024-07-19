@@ -2,7 +2,7 @@
 - Biblioteca de ciência de dados
 - Trabalha com dados relacionais (ou rotulados)
 
-## Utilidade
+## Utilização em Ciência de Dados
 - Limpeza de dados
 - Tratamento de dados
 - Análise exploratória de dados
