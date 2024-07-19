@@ -22,8 +22,8 @@
 
 ## Dois objetos importantes
 - **Series**
-    - Objetos do tipo array unidimensional
-    - Com um eixo chamado de index e outro eixo com os valores/objetos da Serie.
+    - Objetos do tipo **array unidimensional**.
+    - Com **um eixo chamado de index e outro eixo com os valores/objetos da Serie**.
     - Dados:
         - Uma estrutura de index
         - Uma estrutural de valores/objetos
@@ -31,9 +31,9 @@
         - Tamanho do dado
         - Tipo do dado
 - **DataFrames**
-    - Objetos do tipo array bidimensional, de tamanho variável.
-    - Formato de uma tabela onde o dados se organizam em linhas e colunas
-    - É uma união de várias Series, **mas sob um mesmo index**.
+    - Objetos do tipo **array bidimensional, de tamanho variável**.
+    - Com **um eixo chamado de index e outro eixo com diversas Series**.
+    - **Todas as Series do DataFrame possuem um mesmo index vinculado**.
     - Dados:
         - Uma estrutura de index
         - Uma estrutural de valores/objetos
