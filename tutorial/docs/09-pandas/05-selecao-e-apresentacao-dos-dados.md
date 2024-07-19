@@ -7,11 +7,19 @@ path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 # seleção e apresentação de dados
-print(dados['serie1'])
-print(dados['serie2'])
-print(dados['serie3'])
-print(dados['serie4'])
-print(dados[['serie1', 'serie2']])
+print('## ObservationDate ###############################################')
+print(dados['ObservationDate'])
+print(dados.shape())
+print('## Province/State ################################################')
+print(dados['Province/State'])
+print('## Country/Region #################################################')
+print(dados['Country/Region'])
+print('## Confirmed #####################################################')
+print(dados['Confirmed'])
+print('## Confirmed ## Deaths ## Recovered ###############################')
+print(dados[['Confirmed', 'Deaths', 'Recovered']])
+
+shape
 
 # Seleção e cálculo de média aritmética simples (mean)
 print(dados['Valor'].mean())
