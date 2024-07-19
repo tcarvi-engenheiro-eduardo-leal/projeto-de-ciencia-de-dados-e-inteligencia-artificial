@@ -6,22 +6,33 @@ import pandas as pd
 path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
+# dados
 print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
-# seleção e apresentação de dados
+
 print('## ObservationDate ###############################################')
-print(dados['ObservationDate']) # Index e Valores # Name: ObservationDate, Lenght: 2379, dtype: object
-print(dados['ObservationDate'].shape) # (2379,) # NumpyArray unidimensional com 2379 linhas.
-print('## Province/State ################################################')
-print(dados['Province/State'])
-print('## Country/Region #################################################')
-print(dados['Country/Region'])
-print('## Confirmed #####################################################')
-print(dados['Confirmed'])
+
+# Index e Valores 
+# Name: ObservationDate, Lenght: 2379, dtype: object
+print(dados['ObservationDate'])
+
+# (2379,) # NumpyArray unidimensional com 2379 linhas.
+print(dados['ObservationDate'].shape)
+
+# class 'pandas.core.series.Series'
+# RangeIndex: 2379 entries, 0 to 2378
+# Series name: ObservationDate
+# Non-null count: 2379 non null
+# Dtype: object
+# dTypes: object(1)
+# memory usage: 18.7+ Kb
+print(dados['ObservationDate'].info())
+
+
 print('## Confirmed ## Deaths ## Recovered ###############################')
+
 print(dados[['Confirmed', 'Deaths', 'Recovered']])
-
-shape
-
+print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
+print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
 # Seleção e cálculo de média aritmética simples (mean)
 print(dados['Valor'].mean())
 
