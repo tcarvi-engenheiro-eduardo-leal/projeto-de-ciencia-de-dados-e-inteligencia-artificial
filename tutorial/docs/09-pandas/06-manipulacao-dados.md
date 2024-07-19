@@ -13,7 +13,7 @@ print(dados.columns)
 ```  
 
 ```python
-mapa = {
+mapa_alteracao_titulos = {
    'Confirmed':'confirmados',
    'Deaths':'obitos',
    'Recovered':'recuperados'
