@@ -1,9 +1,10 @@
 # Exploração Inicial de Dados
 ```python
+from pathlib import Path
 import pandas as pd
 
-url = 'XXXXXXX'
-dados = pd.read_csv(url, sep=';')
+path = Path('src/python-coding/notebook/dados.csv').absolute()
+dados = pd.read_csv(path)
 
 #
 # Viasualização Inicial dos Dados
