@@ -21,7 +21,7 @@
 - Scikit-learn
 
 ## Dois objetos importantes
-- Series
+- **Series**
     - Objetos do tipo array unidimensional
     - Com um eixo chamado de index e outro eixo com os valores/objetos da Serie.
     - Dados:
@@ -30,7 +30,7 @@
         - Nome do dado
         - Tamanho do dado
         - Tipo do dado
-- DataFrames
+- **DataFrames**
     - Objetos do tipo array bidimensional, de tamanho variável.
     - Formato de uma tabela onde o dados se organizam em linhas e colunas
     - É uma união de várias Series, **mas sob um mesmo index**.
