@@ -14,7 +14,7 @@ print(dados.columns)
 
 ```python
 mapa_alteracao_titulos = {
-   'Confirmed':'confirmados',
+   'Confirmed':'confirmado_com_covid',
    'Deaths':'obitos',
    'Recovered':'recuperados'
 }
@@ -22,3 +22,21 @@ mapa_alteracao_titulos = {
 dados = dados.rename(columns = mapa_alteracao_titulos)
 print(dados.columns)
 ```
+
+## Mudar Ordem e Excluir Colunas de DataFrame
+```python
+from pathlib import Path
+import pandas as pd
+
+path = Path('src/python-coding/notebook/dados.csv').absolute()
+dados = pd.read_csv(path)
+
+print(dados.head())
+```  
+
+```python
+# Escolha da ordem e seleção dos dados
+dados = dados[['confirmado_com_covid', 'obitos', 'recuperados']]
+
+print(dados.head())
+```  
