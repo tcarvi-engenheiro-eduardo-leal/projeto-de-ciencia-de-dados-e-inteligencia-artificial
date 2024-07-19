@@ -15,7 +15,7 @@ print(dados.columns) # Título das colunas
 print(dados.info())
 
 #
-# Viasualização Inicial dos Dados
+# Visualização Inicial dos Dados
 #
 print(dados.head())
 print(dados.head(3))
@@ -27,6 +27,7 @@ print('## ObservationDate ###############################################')
 # Index e Valores 
 # Name: ObservationDate, Lenght: 2379, dtype: object
 print(dados['ObservationDate'])
+print(dados['ObservationDate'].unique())
 
 # (2379,) # NumpyArray unidimensional com 2379 linhas.
 print(dados['ObservationDate'].shape)
@@ -39,7 +40,6 @@ print(dados['ObservationDate'].shape)
 # dTypes: object(1)
 # memory usage: 18.7+ Kb
 print(dados['ObservationDate'].info())
-
 
 print('## Confirmed ## Deaths ## Recovered ###############################')
 
@@ -62,5 +62,4 @@ print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
 # memory usage: 55.9 Kb
 # None
 print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
-
 ```  
