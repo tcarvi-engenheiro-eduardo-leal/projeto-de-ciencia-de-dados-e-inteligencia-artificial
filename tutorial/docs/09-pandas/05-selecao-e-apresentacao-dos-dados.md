@@ -6,7 +6,11 @@ import pandas as pd
 path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
-print(dados['Valor'].mean())
+# Seleção
+print(dados['ObservationDate'])
+print(dados['Confirmed'])
+print(dados['Deaths'])
+print(dados['Recovered'])
 
 print(dados.groupby('Tipo').mean(numeric_value=TRUE)) # extrai coluna "Tipo" e fixa com index. Depois apresenta média dos valores do index em todas as colunas.
 
