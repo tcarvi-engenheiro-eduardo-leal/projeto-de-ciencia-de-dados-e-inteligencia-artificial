@@ -32,18 +32,18 @@ print(dados.Recovered)
 dados = dados[['Confirmed', 'Deaths', 'Recovered']]
 
 # Extrai coluna "Confirmed" e a fixa com index. Gera uma tabela com estes dados.
+# O valor de "Confirmed" não se repete mais. Esta é a análise...
 print(dados.groupby('Confirmed'))
 # Depois apresenta média dos valores do index em todas as colunas numéricas.
 print(dados.groupby('Confirmed').mean())
 
-# Extrai coluna "Confirmed" e a fixa com index. Gera uma tabela com estes dados.
 print(dados.groupby('Confirmed'))
-# Depois apresenta média dos valores do index em todas as colunas numéricas.
+# Depois apresenta média dos valores do index apenas na coluna "Recovered".
 print(dados.groupby('Confirmed')['Recovered'].mean())
 
-# Extrai coluna "Confirmed" e a fixa com index. Gera uma tabela com estes dados.
 print(dados.groupby('Confirmed'))
-# Depois apresenta média dos valores do index em todas as colunas numéricas.
+# Depois apresenta média dos valores do index apenas na coluna "Recovered".
+# Usando adicionalmente a ordenação ascendente, começando da linha 1.
 print(dados.groupby('Confirmed')['Recovered'].mean().sort_values(ascending=True))
 ```  
 
