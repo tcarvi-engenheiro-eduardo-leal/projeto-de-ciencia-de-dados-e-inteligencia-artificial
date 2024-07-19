@@ -1,4 +1,4 @@
-# Visão geral da Biblioteca Pandas
+# Pandas
 - Biblioteca de ciência de dados
 - Trabalha com dados relacionais (ou rotulados)
 
