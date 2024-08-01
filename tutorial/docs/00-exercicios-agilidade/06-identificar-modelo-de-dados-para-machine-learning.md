@@ -5,11 +5,11 @@
 3) Conheça a coluna "comprou".
 4) Exclua todas as linhas com NaN.
 5) Identifique modelo de dados para prever se os clientes do site devem ou não comprar um produto na loja web.
-    - Separe colunas de input (features) e de output (classe).
-    - Segmentize dados de treino e de testes, na proporção respectiva de 60% e 40%.
+6) Separe colunas de input (features) e de output (classe). 5.1
+7) Segmentize dados de treino e de testes, na proporção respectiva de 60% e 40%.
     - Verifique acurácia do sistema de machine learning.
     - Gere estimativa para novos dados de input, sem ter conhecimento dos dados de saída.
-7) Apresente relatório das estimativas usando Power BI.
+8) Apresente relatório das estimativas usando Power BI.
 - **Tempo de execução:** 
     - 24/07/2024:**2 min e 27 seg**
 
@@ -39,8 +39,12 @@ dados.head()
 # features = [acessou_pagina_home, esta_logado]
 # classe = [faz_compra]
 
-x = dados[["acessou_pagina_home", "esta_logado"]]
-y = dados["faz_compra"]
+x = dados[["acessou_pagina_home", "esta_logado"]] #6
+y = dados["faz_compra"] #6
 
+# train_x = 60%
+# train_y = 60%
+# test_x = 40%
+# text_y = 40%
 
 ```
