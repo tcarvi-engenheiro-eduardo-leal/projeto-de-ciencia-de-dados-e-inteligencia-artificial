@@ -30,7 +30,7 @@ mapa_alteracao_titulos = {
     "comprou": "faz_compra"
 }
 dados.rename(columns=mapa_alteracao_titulos, inplace=True)
-faz_compra = [true if x == "sim" else false for x in dados["faz_compra"]]
+dados["faz_compra"] = [1 if x == "sim" else 0 for x in dados["faz_compra"]]
 dados.head()
 ```  
 
