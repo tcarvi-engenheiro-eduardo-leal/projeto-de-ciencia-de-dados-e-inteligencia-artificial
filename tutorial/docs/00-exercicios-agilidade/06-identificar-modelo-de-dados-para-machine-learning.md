@@ -30,5 +30,14 @@ mapa_alteracao_titulos = {
     "comprou": "faz_compra"
 }
 dados.rename(columns=mapa_alteracao_titulos, inplace=True)
+faz_compra = [true if x == "sim" else false for x in dados["faz_compra"]]
 dados.head()
 ```  
+
+```python
+# modelo de dados
+# features = [acessou_pagina_home, esta_logado]
+# classe = [faz_compra]
+
+
+```
