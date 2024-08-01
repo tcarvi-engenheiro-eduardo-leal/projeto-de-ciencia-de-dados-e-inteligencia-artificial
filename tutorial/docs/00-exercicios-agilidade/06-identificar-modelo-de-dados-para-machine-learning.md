@@ -1,4 +1,4 @@
-# Exercício 1 - Limpeza de dados
+# Exercício 6 - Identificar Modelo de Dados para Machine Learning
 
 1) Importe dados de XXXX
 2) Identifique tipo dos dados do Dataframe 

@@ -1,6 +1,6 @@
 # Exercício 1 - Limpeza de dados
 
-1) Importe dados de XXXX
+1) Importe dados de https://raw.githubusercontent.com/alura-cursos/pandas-conhecendo-a-biblioteca/main/desafios/alunos.csv
 2) Identifique tipo dos dados do Dataframe 
 3) Identifique possíveis erros
 4) Exclua todas as linhas com NaN.
