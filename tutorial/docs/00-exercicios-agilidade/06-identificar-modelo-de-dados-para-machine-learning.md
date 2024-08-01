@@ -45,6 +45,13 @@ y = dados["faz_compra"] #6
 # train_x = 60%
 # train_y = 60%
 # test_x = 40%
-# text_y = 40%
+# test_y = 40%
+
+limite = int(len(x)*0.6)
+
+train_x = x[:limite] # 60%
+train_y = y[:limite] # 60%
+test_x = x[limite:] # 40%
+test_y = y[limite:] # 40%
 
 ```
