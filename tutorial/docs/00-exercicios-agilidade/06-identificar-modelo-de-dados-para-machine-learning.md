@@ -20,12 +20,15 @@ import pandas as pd
 uri = 'https://raw.githubusercontent.com/guilhermesilveira/machine-learning/master/capitulo6/buscas.csv'
 dados = pd.read_csv(uri) #1
 dados.head() #2 #3
-dados = dados.dropna(axis=0, inplace=True) #4
+```  
+
+```python
+dados.dropna(axis=0, inplace=True) #4
 mapa_alteracao_titulos = {
     "home": "acessou_pagina_home",
     "logado": "esta_logado",
     "comprou": "faz_compra"
 }
-dados = dados.rename(columns=mapa_alteracao_titulos, inplace=True)
+dados.rename(columns=mapa_alteracao_titulos, inplace=True)
 dados.head()
 ```  
