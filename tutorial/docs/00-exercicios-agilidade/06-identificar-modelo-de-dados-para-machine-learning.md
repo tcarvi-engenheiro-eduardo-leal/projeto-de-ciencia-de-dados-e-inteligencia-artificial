@@ -1,6 +1,6 @@
 # Exercício 6 - Identificar Modelo de Dados para Machine Learning
 
-1) Importe dados de https://raw.githubusercontent.com/alura-cursos/pandas-conhecendo-a-biblioteca/main/desafios/alunos.csv
+1) Importe dados de https://raw.githubusercontent.com/guilhermesilveira/machine-learning/master/capitulo6/buscas.csv
 2) Conheça as colunas "Idade", "Notas" e "Aprovado".
 3) Exclua a coluna "Nome" e depois exclua todas as linhas com NaN.
 4) Acrescente mais duas colunas, com as seguintes especificações:
