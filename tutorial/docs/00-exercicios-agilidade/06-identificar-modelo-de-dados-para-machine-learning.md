@@ -18,6 +18,7 @@
 import pandas as pd
 
 uri = 'https://raw.githubusercontent.com/guilhermesilveira/machine-learning/master/capitulo6/buscas.csv'
-dados = pd.read_csv(uri)
-dados.head()
+dados = pd.read_csv(uri) #1
+dados.head() #2 #3
+dados = dados.dropna(axis=0, inplace=True)
 ```  
