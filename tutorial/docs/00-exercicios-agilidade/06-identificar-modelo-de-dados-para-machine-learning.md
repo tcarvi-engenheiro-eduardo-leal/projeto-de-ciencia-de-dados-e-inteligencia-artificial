@@ -54,6 +54,11 @@ train_y = y[:limite] #7 com 60%
 test_x = x[limite:] #7 com 40%
 test_y = y[limite:] #7 com 40%
 
-
-
 ```
+
+```python
+# execução do treinamento
+from sklearn.svm import LinearSVC
+
+modelo_estimador = LinearSVC()
+modelo_estimador.fit(train_x, train_y)
