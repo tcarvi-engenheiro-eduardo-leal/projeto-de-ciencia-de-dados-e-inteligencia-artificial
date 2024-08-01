@@ -12,3 +12,12 @@
 7) Apresente relatório das estimativas usando Power BI.
 - **Tempo de execução:** 
     - 24/07/2024:**2 min e 27 seg**
+
+## Resolução:
+```python  
+import pandas as pd
+
+uri = 'https://raw.githubusercontent.com/guilhermesilveira/machine-learning/master/capitulo6/buscas.csv'
+dados = pd.read_csv(uri)
+dados.head()
+```  
