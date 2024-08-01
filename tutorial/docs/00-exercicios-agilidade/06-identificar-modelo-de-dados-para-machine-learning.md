@@ -39,5 +39,8 @@ dados.head()
 # features = [acessou_pagina_home, esta_logado]
 # classe = [faz_compra]
 
+x = dados[["acessou_pagina_home", "esta_logado"]]
+y = dados["faz_compra"]
+
 
 ```
