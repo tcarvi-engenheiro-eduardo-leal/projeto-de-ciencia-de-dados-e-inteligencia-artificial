@@ -1,4 +1,4 @@
-# Otimização da Classificação
+# Split para Treino e Teste
 
 ## Etapas
 1. Estratificar os dados reais, antes do treinamento, em:
