@@ -57,7 +57,8 @@ print("A acurácia de %.2f%%" % acuracia)
 x = dados[["homepage", "como_funciona", "contato"]]
 y = dados["comprado"]
 from sklearn.model_selection import train_test_split
-treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, test_size = 0.25)
+SEED = 20
+treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25)
 from sklearn.svm import LinearSVC
 modelo = LinearSVC()
 modelo.fit(treino_x, treino_y)
