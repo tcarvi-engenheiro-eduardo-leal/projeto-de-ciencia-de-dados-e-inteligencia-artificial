@@ -49,8 +49,23 @@ modelo.fit(treino_x, treino_y)
 previsoes = modelo.predict(teste_x)
 from sklearn.metrics import accuracy_score
 acuracia = accuracy_score(teste_y, previsoes) * 100
-print("A acurácia de %.2f" % acuracia)
-```
+print("A acurácia de %.2f%%" % acuracia)
+```  
+
+## Teste e identificação da acurácia com split de sklearn
+```python
+x = dados[["homepage", "como_funciona", "contato"]]
+y = dados["comprado"]
+from sklearn.model_selection import train_test_split
+treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, test_size = 0.25)
+from sklearn.svm import LinearSVC
+modelo = LinearSVC()
+modelo.fit(treino_x, treino_y)
+previsoes = modelo.predict(teste_x)
+from sklearn.metrics import accuracy_score
+acuracia = accuracy_score(teste_y, previsoes) * 100
+print("A acurácia de %.2f%%" % acuracia)
+```  
 
 2. Plotar a dispersão dos dados.
 
