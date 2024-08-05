@@ -44,6 +44,14 @@ modelo = LinearSVC()
 modelo.fit(treino_x, treino_y)
 ```
 
+## Teste e identificação da acurácia
+```python
+previsoes = modelo.predict(teste_x)
+from sklearn.metrics import accuracy_score
+acuracia = accuracy_score(teste_y, previsoes) * 100
+print("A acurácia de %.2f" % acuracia)
+```
+
 2. Plotar a dispersão dos dados.
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
