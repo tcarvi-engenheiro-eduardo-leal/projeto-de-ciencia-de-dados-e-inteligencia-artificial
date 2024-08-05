@@ -67,6 +67,11 @@ print("A acurácia de %.2f%%" % acuracia)
 ```  
 
 2. Plotar a dispersão dos dados.
+```python
+import seaborn as sns
+sns.scatterplot(x="horas_esperadas", y="preco", data=dados)
+```
+![](./img/dispersao_para_otimizacao1.png)
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
 - **Pergunta:**
