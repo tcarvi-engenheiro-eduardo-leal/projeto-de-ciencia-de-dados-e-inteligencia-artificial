@@ -3,9 +3,9 @@
 ## Etapas
 1. Estratificar os dados reais, antes do treinamento, em:
     - train_x
-    - test_x
     - train_y
     - test_x
+    - test_y
    
 ```python
 import pandas as pd
