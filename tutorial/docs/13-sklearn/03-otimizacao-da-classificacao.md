@@ -23,6 +23,26 @@ x = dados[["homepage", "como_funciona", "contato"]]
 y = dados["comprado"]
 
 ```
+## Ver shape dos dados
+```python  
+print(x.shape)
+print(y.shape)
+```
+
+## Decisão de treinar com 75% dos dados e testar com 25% dos dados
+```python
+treino_x = x[:75]
+treino_y = y[:75]
+teste_x = x[75:]
+teste_y = y[75:]
+```  
+
+## Treino
+```python
+from sklearn.svm import LinearSVC
+modelo = LinearSVC()
+modelo.fit(treino_x, treino_y)
+```
 
 2. Plotar a dispersão dos dados.
 
