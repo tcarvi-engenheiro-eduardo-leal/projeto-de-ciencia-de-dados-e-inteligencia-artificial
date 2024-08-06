@@ -1,4 +1,4 @@
-# Otimização na Classificação
+# Otimização na selecao de dados
 
 ## Etapas
 1. Extração de dados para treino e para testes
