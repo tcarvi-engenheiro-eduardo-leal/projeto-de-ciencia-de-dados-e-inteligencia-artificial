@@ -1,4 +1,4 @@
-# Split para Treino e Teste
+# Otimização nos dados de Treino e Teste
 - Etapas:
 
 ## Separar os dados, antes do treinamento:
