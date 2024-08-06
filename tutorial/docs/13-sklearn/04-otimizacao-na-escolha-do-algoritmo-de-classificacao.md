@@ -75,3 +75,9 @@ sns.scatterplot(x="horas_esperadas", y="preco", data=dados)
 ```
 ![](./img/dispersao_para_otimizacao1.png)
 
+## Avaliar graficamente a dispersão dos dados com cores para valores da coluna finalizados
+```python
+import seaborn as sns
+sns.scatterplot(x="horas_esperadas", y="preco", , hue="finalizados", data=dados)
+```
+
