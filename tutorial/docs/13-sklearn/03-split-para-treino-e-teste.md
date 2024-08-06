@@ -89,7 +89,7 @@ treino_x, teste_x, treino_y, teste_y = train_test_split(x, y,
 from sklearn.svm import LinearSVC
 modelo = LinearSVC()
 modelo.fit(treino_x, treino_y)
-# retreino e reidentificação da acurácia
+# reteste e reidentificação da acurácia
 previsoes = modelo.predict(teste_x)
 from sklearn.metrics import accuracy_score
 acuracia = accuracy_score(teste_y, previsoes) * 100
