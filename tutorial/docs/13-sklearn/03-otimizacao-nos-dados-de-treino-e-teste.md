@@ -76,7 +76,7 @@ acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
 ```  
 
-## Uso de recurso de estratificação para dados não ficarem enviesados
+## Nova separação dos dados, mas usando recurso de estratificação, para dados não ficarem enviesados
 ```python
 # Mudança na chamada do split, para estratificação pelos valroes padrões de y
 from sklearn.model_selection import train_test_split
