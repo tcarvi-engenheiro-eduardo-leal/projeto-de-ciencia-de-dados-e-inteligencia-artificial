@@ -51,6 +51,14 @@ acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
 ```  
 
+## Avaliação dos dados usados no treino e no teste, para pensar na otimização
+```python  
+treino_x.value_counts()
+treino_y.value_counts()
+teste_x.value_counts()
+teste_y.value_counts()
+```  
+
 ## Nova separação dos dados, com split de sklearn, reteste e reidentificação da acurácia
 ```python
 from sklearn.model_selection import train_test_split
@@ -66,14 +74,6 @@ previsoes = modelo.predict(teste_x)
 from sklearn.metrics import accuracy_score
 acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
-```  
-
-## Avaliação dos dados usados no treino e no teste
-```python  
-treino_x.value_counts()
-treino_y.value_counts()
-teste_x.value_counts()
-teste_y.value_counts()
 ```  
 
 ## Uso de recurso de estratificação para dados não ficarem enviesados
