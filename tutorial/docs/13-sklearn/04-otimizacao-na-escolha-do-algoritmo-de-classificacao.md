@@ -84,5 +84,5 @@ sns.scatterplot(x="horas_esperadas", y="preco", , hue="finalizados", data=dados)
 ## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizados"
 ```python
 import seaborn as sns
-sns.scatterplot(x="horas_esperadas", y="preco", , hue="finalizados", data=dados)
+sns.relplot(x="horas_esperadas", y="preco", , col="finalizados", data=dados)
 ```
