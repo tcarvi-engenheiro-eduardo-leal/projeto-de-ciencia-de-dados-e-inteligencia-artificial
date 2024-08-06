@@ -1,7 +1,7 @@
 # Split para Treino e Teste
 - Etapas:
 
-## Estratificar os dados reais, antes do treinamento:
+## Separar os dados, antes do treinamento:
 - Divisão dos dados em:
     - train_x
     - train_y
@@ -22,7 +22,6 @@ mapa_alteracao_titulos = {
 dados = dados.rename(columns=mapa_alteracao_titulos)
 x = dados[["homepage", "como_funciona", "contato"]]
 y = dados["comprado"]
-
 ```
 
 ```python  
@@ -52,16 +51,18 @@ acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
 ```  
 
-## Teste e identificação da acurácia com split de sklearn
+## Nova separação dos dados, com split de sklearn, reteste e reidentificação da acurácia
 ```python
-previsoes = modelo.predict(teste_x)
 from sklearn.model_selection import train_test_split
 SEED = 20
 treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25)
+# retreino
 from sklearn.svm import LinearSVC
 modelo = LinearSVC()
 modelo.fit(treino_x, treino_y)
+# reteste
 previsoes = modelo.predict(teste_x)
+#reidentificação da acurácia
 from sklearn.metrics import accuracy_score
 acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
