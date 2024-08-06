@@ -68,6 +68,14 @@ acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
 ```  
 
+## Avaliação dos dados usados no treino e no teste
+```python  
+treino_x.value_counts()
+treino_y.value_counts()
+teste_x.value_counts()
+teste_y.value_counts()
+```  
+
 2. Plotar a dispersão dos dados.
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
