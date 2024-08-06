@@ -1,7 +1,8 @@
 # Split para Treino e Teste
+- Etapas:
 
-## Etapas
-1. Estratificar os dados reais, antes do treinamento, em:
+## Estratificar os dados reais, antes do treinamento:
+- Divisão dos dados em:
     - train_x
     - train_y
     - test_x
@@ -23,13 +24,12 @@ x = dados[["homepage", "como_funciona", "contato"]]
 y = dados["comprado"]
 
 ```
-## Ver shape dos dados
+
 ```python  
 print(x.shape)
 print(y.shape)
 ```
 
-## Decisão de treinar com 75% dos dados e testar com 25% dos dados
 ```python
 treino_x = x[:75]
 treino_y = y[:75]
@@ -54,8 +54,7 @@ print("A acurácia de %.2f%%" % acuracia)
 
 ## Teste e identificação da acurácia com split de sklearn
 ```python
-x = dados[["homepage", "como_funciona", "contato"]]
-y = dados["comprado"]
+previsoes = modelo.predict(teste_x)
 from sklearn.model_selection import train_test_split
 SEED = 20
 treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25)
