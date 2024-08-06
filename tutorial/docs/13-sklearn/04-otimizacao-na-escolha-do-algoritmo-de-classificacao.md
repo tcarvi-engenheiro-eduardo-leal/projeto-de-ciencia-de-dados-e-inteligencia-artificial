@@ -52,7 +52,7 @@ acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia de %.2f%%" % acuracia)
 ```  
 
-## Reteste,com split de sklearn, e reidentificação da acurácia
+## Reteste, com split de sklearn, e reidentificação da acurácia
 ```python
 from sklearn.model_selection import train_test_split
 SEED = 20
