@@ -76,6 +76,40 @@ teste_x.value_counts()
 teste_y.value_counts()
 ```  
 
+## Uso de recurso de estratificação para dados não ficarem enviesados
+```python  
+```python
+import pandas as pd
+
+uri='https://gist.githubusercontent.com/guilhermesilveira/2d2efa37d66b6c84a722ea627a897ced/raw/10968b997d885cbded1c92938c7a9912ba41c615/tracking.csv'
+dados = pd.read_csv(uri)
+mapa_alteracao_titulos = {
+    "home": "homepage",
+    "how_it_works": "como_funciona",
+    "contact": "contato",
+    "bought": "comprado"
+}
+dados = dados.rename(columns=mapa_alteracao_titulos)
+x = dados[["homepage", "como_funciona", "contato"]]
+y = dados["comprado"]
+treino_x = x[:75]
+treino_y = y[:75]
+teste_x = x[75:]
+teste_y = y[75:]
+x = dados[["homepage", "como_funciona", "contato"]]
+y = dados["comprado"]
+from sklearn.model_selection import train_test_split
+SEED = 20
+treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25)
+from sklearn.svm import LinearSVC
+modelo = LinearSVC()
+modelo.fit(treino_x, treino_y)
+previsoes = modelo.predict(teste_x)
+from sklearn.metrics import accuracy_score
+acuracia = accuracy_score(teste_y, previsoes) * 100
+print("A acurácia de %.2f%%" % acuracia)
+```  
+
 2. Plotar a dispersão dos dados.
 
 ### Estratificação de dados sem biblioteca biblioteca train_test_split
@@ -109,6 +143,7 @@ dados = dados[['local', 'confirmacoes_de_covid', 'obitos_por_causa_da_covid', 'r
 print(dados.head())
 # modelo de features
 # modelo_features_de_item = [feature1, feature2, ]
+
 
 ```  
 #### Identificação do modelo de fetures e de classes
