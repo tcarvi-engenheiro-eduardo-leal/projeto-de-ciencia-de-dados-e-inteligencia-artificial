@@ -1,4 +1,4 @@
-# Otimização nos dados de Treino e Teste
+# Otimização nos dados de Treino e de Teste
 - Etapas:
 
 ## Separar os dados, antes do treinamento:
