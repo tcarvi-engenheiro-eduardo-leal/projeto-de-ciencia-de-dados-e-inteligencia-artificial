@@ -111,16 +111,18 @@ print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 #     Feature horas_esperadas
 #     Feature preco
 # valores minimos e máximos dos eixos dos gráficos
-x_min = teste_x.horas_esperadas.min()
-x_max = teste_x.horas_esperadas.max()
-y_min = teste_x.preco.min()
-y_max = teste_x.preco.max()
+horas_esperadas_min = teste_x.horas_esperadas.min()
+horas_esperadas_max = teste_x.horas_esperadas.max()
+preco_min = teste_x.preco.min()
+preco_max = teste_x.preco.max()
 # Quantificação de pixels
 pixels = 100
 # Distribuição de pixels nos eixos x e y
-eixo_x = np.arange(x_min, x_max, (x_max - x_min) / pixels)
-eixo_y = np.arange(y_min, y_max, (y_max - y_min) / pixels)
+eixo_x = np.arange(horas_esperadas_min, horas_esperadas_max, (horas_esperadas_max - horas_esperadas_min) / pixels)
+eixo_y = np.arange(preco_min, preco_max, (preco_max - preco_min) / pixels)
 # Junção dos eixos x e y em uma malha (mesh)
+# Considera-se agora o x e y como dados do eixo XY. 
+#    Não usamos aqui a nomenclatura do algoritmo de y=f(x).
 xx, yy = np.meshgrid(eixo_x, eixo_y)
 pontos = np.c_[xx.ravel(), yy.ravel()]
 
