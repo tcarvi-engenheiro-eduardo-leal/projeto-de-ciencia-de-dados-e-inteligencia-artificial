@@ -149,4 +149,4 @@ plt.scatter(teste_x.horas_esperadas, teste_x.preco, c=teste_y, s=1)
 ![](./img/curva-de-decisao-do-algoritmo.png)
 - Identica-se que este algoritmo é limitado no sentido de ter uma curva de decisão reta.
 - Identifica-se que é necessário um algoritmo que tenha um curva menos reta.
-- A solução será procurar outro algoritmo.
+- A solução é procurar outro algoritmo.
