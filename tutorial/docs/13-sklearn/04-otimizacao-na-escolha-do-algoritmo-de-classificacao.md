@@ -80,9 +80,15 @@ sns.scatterplot(x="horas_esperadas", y="preco", data=dados)
 sns.scatterplot(x="horas_esperadas", y="preco", hue="finalizado", data=dados)
 ```
 ![](./img/grafico-com-cor.png)
-
+- Esta é a realidade dos dados de X e de Y.
+    - Conclui-se que o melhor algorítmo deve ter este formado de curva ascendente.
 ## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizado" e com cores para a mesma coluna
 ```python
 sns.relplot(x="horas_esperadas", y="preco", col="finalizado", hue="finalizado",data=dados)
 ```
 ![](./img/grafico-com-cor-separado.png)
+- Esta é a realidade dos dados de X e de Y.
+    - Percebe-se claramente que o melhor algorítmo deve ter este formado de curva ascendente.
+    - O gráfico laranja indica qual a curva que deve ser buscada. 
+    - Valores muito próximos desta curva, devem ser considerados como "Finalizados".
+    - Valores distantes desta curva devem ser considerados como "Não-Finalizados".
