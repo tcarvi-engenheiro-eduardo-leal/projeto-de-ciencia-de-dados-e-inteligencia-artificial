@@ -1,8 +1,8 @@
 # PYHTON VIRTUAL ENVIRONMENT
 
 ## Melhor prática
-- Sempre que pssível levante um Ambiente Virtual
-- E instale bibliotecas neste ambiente temporário
+- Sempre que possível levante um Ambiente Virtual com python.
+- E instale bibliotecas apenas neste ambiente temporário.
 
 ### Crie e ative um ambiente virtual, escolhendo versão específica do Python:  
 ```console
