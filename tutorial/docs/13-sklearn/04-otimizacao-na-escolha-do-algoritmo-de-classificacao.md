@@ -1,22 +1,25 @@
 # Otimização na escolha do Algoritmo de Classificação
-- Etapas
+
 ## Seleção de dados para treino e para testes
    
 ```python
 import pandas as pd 
 uri= 'https://gist.githubusercontent.com/guilhermesilveira/1b7d5475863c15f484ac495bd70975cf/raw/16aff7a0aee67e7c100a2a48b676a2d2d142f646/projects.csv'
 dados = pd.read_csv(uri)
+# alteração do nome das colunas
 mapa_alteracao_titulos = {
     "expected_hours": "horas_esperadas",
     "price": "preco",
     "unfinished": "nao_finalizado"
 }
 dados = dados.rename(columns=mapa_alteracao_titulos)
+# mudança do conteúdo da coluna não_finalizado em nova coluna
 troca = {
 0: 1,
 1: 0
 }
 dados["finalizado"] = dados.nao_finalizado.map(troca)
+# Separação dos dados de feature e dos dados de classe
 x = dados[["horas_esperadas", "preco"]]
 y = dados["finalizado"]
 ```
