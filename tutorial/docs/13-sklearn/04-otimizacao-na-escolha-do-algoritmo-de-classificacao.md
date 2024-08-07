@@ -57,9 +57,15 @@ print("A acurácia de %.2f%%" % acuracia)
 
 ## Reteste, com split de sklearn, e reidentificação da acurácia
 ```python
+# separação dos dados com split, random_state e com stratify
 from sklearn.model_selection import train_test_split
 SEED = 20
-treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, random_state = SEED, test_size = 0.25)
+treino_x, teste_x, treino_y, teste_y = train_test_split(
+    x, 
+    y,
+    random_state = SEED, 
+    test_size = 0.25,
+    stratify = y)
 # retreino
 from sklearn.svm import LinearSVC
 modelo = LinearSVC()
