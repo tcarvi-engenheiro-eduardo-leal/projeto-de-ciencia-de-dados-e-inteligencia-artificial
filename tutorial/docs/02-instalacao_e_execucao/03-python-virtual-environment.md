@@ -1,4 +1,4 @@
-# PYHTON VIRTUAL ENVIRONMENT
+# Python Virtual Environment
 
 ## Melhor prática
 - Sempre que possível levante um Ambiente Virtual com python.
