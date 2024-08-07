@@ -105,8 +105,7 @@ previsoes_base_line = np.ones(540)
 acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
 print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 # Definição da qualidade do algoritmo escolhido, em comparação com o de baseline
-print("A acurácia do algoritmo escohido é melhor do que o de baseline em apenas: %.2f%%. Solução é instatisfatória! Deve-se analisar melhor o problema..." %(acuracia - acuracia_de_baseline))
-
+print("A acurácia do algoritmo escolhido é melhor do que o de baseline em apenas: %.2f%%. Solução é instatisfatória! Deve-se analisar melhor o problema..." %(acuracia - acuracia_de_baseline))
 ```
 ## Criação de plano com eixos de 100 pixels, para identificar curva de decisão do algoritmo
 ```python
