@@ -117,8 +117,8 @@ pixels = 100
 eixo_x = np.arange(x_min, x_max, (x_max - x_min) / pixels)
 eixo_y = np.arange(y_min, y_max, (y_max - y_min) / pixels)
 
-xx, yy = np.meshgrid(eixo_x, eixo_y
-pontos = np.c_[xx.ravel(), yy.ravel())
+xx, yy = np.meshgrid(eixo_x, eixo_y)
+pontos = np.c_[xx.ravel(), yy.ravel()]
 z = modelo.predict(pontos)
 z = z.reshape(xx.shape)
 # plotagem
