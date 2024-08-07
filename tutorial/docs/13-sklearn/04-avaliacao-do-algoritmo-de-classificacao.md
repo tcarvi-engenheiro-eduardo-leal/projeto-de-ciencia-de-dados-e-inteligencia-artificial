@@ -128,7 +128,7 @@ xx, yy = np.meshgrid(eixo_x, eixo_y)
 #     e cria pontos do eixo YY, para cada 100 divisões deste eixo.
 # Mas este script precisa que tais vales estejam concatenados.
 # Para a concatenação dos pontos de cada eixo, usa-se xx.ravel() e yy.ravel().
-# Depois ainda se deve concatenar estas duas listas em uma concatenação maior, com np.c_[].
+# Depois ainda se deve concatenar, como pares, estas duas listas, em uma concatenação maior, com np.c_[].
 pontos = np.c_[xx.ravel(), yy.ravel()]
 
 z = modelo.predict(pontos)
