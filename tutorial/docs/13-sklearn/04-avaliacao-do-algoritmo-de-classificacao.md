@@ -105,20 +105,22 @@ previsoes_base_line = np.ones(540)
 acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
 print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
-## Apresentação gráfica da curva de decisão do algorítmo
+## Criação de plano com eixos de 100 pixels, para identificar curva de decisão do algorítmo
 ```python
-
+# valores minimos e máximos dos eixos X e Y
 x_min = teste_x.horas_esperadas.min()
 x_max = teste_x.horas_esperadas.max()
 y_min = teste_x.preco.min()
 y_max = teste_x.preco.max()
-
+# Quantificação de pixels
 pixels = 100
+# Distribuição de pixels nos eixos x e y
 eixo_x = np.arange(x_min, x_max, (x_max - x_min) / pixels)
 eixo_y = np.arange(y_min, y_max, (y_max - y_min) / pixels)
-
+# Junção dos eixos x e y em uma malha (mesh)
 xx, yy = np.meshgrid(eixo_x, eixo_y)
 pontos = np.c_[xx.ravel(), yy.ravel()]
+
 z = modelo.predict(pontos)
 z = z.reshape(xx.shape)
 # plotagem
