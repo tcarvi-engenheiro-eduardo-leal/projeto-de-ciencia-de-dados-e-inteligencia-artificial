@@ -10,20 +10,6 @@
 ### PYTHONHOME
 - It is an alternative module search path. It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directories to make switching module libraries easy.
 
-## PYHTON VIRTUAL ENVIRONMENT
-- Crie e ative um ambiente virtual, escolhendo versão específica do Python:  
-```console
-python3.12 -m venv myvenv
-```  
-  
-```console
-source myvenv/bin/activate
-```  
-  
-```console title="Para desativar o ambiente virtual do Python"
-deactivate
-```  
-
 ## MAC OS SYSTEM PATHS
 - /bin:
 - /sbin:
@@ -67,12 +53,3 @@ deactivate
     - ~ip-23.3.1.dist-info
     - pep8.py
     - setuptools
-  
-## PATHs do ambiente virtual em execução
-- `./myvenv/bin`
-  - activate
-  - pip
-  - pip3
-  - python
-  - python3
-  - python3.12
