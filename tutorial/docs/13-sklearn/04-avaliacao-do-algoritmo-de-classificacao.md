@@ -107,7 +107,10 @@ print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
 ## Criação de plano com eixos de 100 pixels, para identificar curva de decisão do algoritmo
 ```python
-# valores minimos e máximos dos eixos X e Y
+# Gráfico com 2 features
+# Feature horas_esperadas
+# Feature preco
+# valores minimos e máximos dos eixos dos gráficos
 x_min = teste_x.horas_esperadas.min()
 x_max = teste_x.horas_esperadas.max()
 y_min = teste_x.preco.min()
