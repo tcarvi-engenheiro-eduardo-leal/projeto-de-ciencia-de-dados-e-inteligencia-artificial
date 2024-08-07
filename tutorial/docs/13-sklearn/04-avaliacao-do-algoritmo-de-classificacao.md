@@ -1,4 +1,4 @@
-# Otimização na escolha do Algoritmo de Classificação
+# Avaliação do Algoritmo de Classificação
 
 ## Seleção e treino
   
@@ -97,11 +97,11 @@ sns.relplot(x="horas_esperadas", y="preco", col="finalizado", hue="finalizado",d
 ```python
 # acurácia do algoritmo atual, com previsões atuais
 acuracia = accuracy_score(teste_y, previsoes) * 100
-print("A acurácia atual é de %.2f%%" % acuracia)
+print("A acurácia atual: %.2f%%" % acuracia)
 # baseline de comparação
 import numpy as np
 previsoes_base_line = np.ones(540)
 # acurácia da baseline
 acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
-print("A acurácia de baseline %.2f%%" % acuracia_de_baseline)
+print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
