@@ -81,14 +81,14 @@ sns.scatterplot(x="horas_esperadas", y="preco", hue="finalizado", data=dados)
 ```
 ![](./img/grafico-com-cor.png)
 - Esta é a realidade dos dados de Y (classificação final).
-    - Conclui-se que o melhor algorítmo deve ter este formado de curva ascendente.
+    - Conclui-se que o melhor algoritmo deve ter este formado de curva ascendente.
 ## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizado" e com cores para a mesma coluna
 ```python
 sns.relplot(x="horas_esperadas", y="preco", col="finalizado", hue="finalizado",data=dados)
 ```
 ![](./img/grafico-com-cor-separado.png)
 - Esta é a realidade dos dados de Y (classificação final).
-    - Percebe-se claramente que o melhor algorítmo deve ter este formado de curva ascendente.
+    - Percebe-se claramente que o melhor algoritmo deve ter este formado de curva ascendente.
     - O gráfico laranja indica qual a curva que deve ser buscada. 
     - Valores muito próximos desta curva, devem ser considerados como "Finalizados".
     - Valores distantes desta curva devem ser considerados como "Não-Finalizados".
@@ -105,7 +105,7 @@ previsoes_base_line = np.ones(540)
 acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
 print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
-## Criação de plano com eixos de 100 pixels, para identificar curva de decisão do algorítmo
+## Criação de plano com eixos de 100 pixels, para identificar curva de decisão do algoritmo
 ```python
 # valores minimos e máximos dos eixos X e Y
 x_min = teste_x.horas_esperadas.min()

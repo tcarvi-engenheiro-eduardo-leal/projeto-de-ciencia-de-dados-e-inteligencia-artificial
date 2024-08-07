@@ -39,7 +39,7 @@ set_values1 ={100, 200, 300}
 iterable_sem_controlle_na_ordem_key_value = zip(set_names1, set_values1)
 variable_dict_name3 = dict(iterable_sem_controlle_na_ordem_key_value, foo4=400)
 # Return a new dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.
-variable_dict_name3 = dict([('foo', 100), ('bar', 200)]) # Lógica de construção pode ser indevida a depender do algorítmo.
+variable_dict_name3 = dict([('foo', 100), ('bar', 200)]) # Lógica de construção pode ser indevida a depender do algoritmo.
 
 # dict comprehension
 # new_dict = [expression for item in iterable if truth_testing_value == True]
