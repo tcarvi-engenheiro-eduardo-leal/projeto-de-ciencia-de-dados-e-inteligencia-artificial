@@ -107,8 +107,22 @@ print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
 ## Apresentação gráfica da curva de decisão do algorítmo
 ```python
-import matplotlib.pyplot as plt
 
+x_min = teste_x.horas_esperadas.min()
+x_max = teste_x.horas_esperadas.max()
+y_min = teste_x.preco.min()
+y_max = teste_x.preco.max()
+
+pixels = 100
+eixo_x = np.arange(x_min, x_max, (x_max - x_min) / pixels)
+eixo_y = np.arange(y_min, y_max, (y_max - y_min) / pixels)
+
+xx, yy = np.meshgrid(eixo_x, eixo_y
+pontos = np.c_[xx.ravel(), yy.ravel())
+z = modelo.predict(pontos)
+z = z.reshape(xx.shape)
+# plotagem
+import matplotlib.pyplot as plt
 plt.contourf(xx, yy, z, alpha=0.3)
 plt.scatter(teste_x_horas_esperadas, teste_x_preco, c=teste_y, s=1)
 ````
