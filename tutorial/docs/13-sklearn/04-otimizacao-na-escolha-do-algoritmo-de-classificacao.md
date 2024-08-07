@@ -22,26 +22,17 @@ dados["finalizado"] = dados.nao_finalizado.map(troca)
 # Separação dos dados de feature e dos dados de classe
 x = dados[["horas_esperadas", "preco"]]
 y = dados["finalizado"]
-```
-
-## Avaliar os dados de treino e de teste
-```python  
+# Avaliar os dados de treino e de teste
 print(x.shape)
 print(y.shape)
 x.value_counts()
 y.value_counts()
-```
-
-## Decisão de treinar com 75% dos dados e testar com 25% dos dados
-```python
+# Decisão de treinar com 75% dos dados e testar com 25% dos dados
 treino_x = x[:75]
 treino_y = y[:75]
 teste_x = x[75:]
 teste_y = y[75:]
-```  
-
-## Treino
-```python
+# Treino
 from sklearn.svm import LinearSVC
 modelo = LinearSVC()
 modelo.fit(treino_x, treino_y)
