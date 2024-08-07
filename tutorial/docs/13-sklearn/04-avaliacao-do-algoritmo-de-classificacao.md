@@ -131,5 +131,5 @@ z = z.reshape(xx.shape)
 # plotagem
 import matplotlib.pyplot as plt
 plt.contourf(xx, yy, z, alpha=0.3)
-plt.scatter(teste_x_horas_esperadas, teste_x_preco, c=teste_y, s=1)
+plt.scatter(teste_x.horas_esperadas, teste_x.preco, c=teste_y, s=1)
 ````
