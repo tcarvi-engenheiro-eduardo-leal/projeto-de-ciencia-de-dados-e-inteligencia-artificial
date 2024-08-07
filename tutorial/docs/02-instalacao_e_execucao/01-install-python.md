@@ -46,21 +46,3 @@ brew install python3.12
 ```console title="Para upgrade da versão atual do pip."
 pip install --upgrade pip
 ```  
-
-# Install and execute jupyterlab
-```bash  
-pip install jupyterlab
-```  
-```bash  
-jupyter lab
-```  
-- Se preferir, mantenha até a instalação do jupyter no contexto do homebrew:
-```bash  
-brew install jupyterlab
-```  
-## Instalação pelo windows
-- Neste caso, instale o Anaconda e use o "Anaconda PowerShell Prompt".
-    - Neste prompt, execute o comando:
-    ```bash  
-    jupyter lab
-    ```  
