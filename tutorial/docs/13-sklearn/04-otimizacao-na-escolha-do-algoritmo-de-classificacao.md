@@ -1,6 +1,6 @@
 # Otimização na escolha do Algoritmo de Classificação
 
-## Seleção de dados para treino e para testes
+## Seleção e treino
    
 ```python
 import pandas as pd 
@@ -78,8 +78,9 @@ sns.scatterplot(x="horas_esperadas", y="preco", data=dados)
 ## Avaliar graficamente a dispersão dos dados com cores para valores da coluna "finalizados"
 ```python
 import seaborn as sns
-sns.scatterplot(x="horas_esperadas", y="preco", hue="finalizados", data=dados)
+sns.scatterplot(x="horas_esperadas", y="preco", hue="finalizado", data=dados)
 ```
+![](./img/grafico-com-cor.png)
 
 ## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizados" e com cores para a mesma coluna
 ```python
