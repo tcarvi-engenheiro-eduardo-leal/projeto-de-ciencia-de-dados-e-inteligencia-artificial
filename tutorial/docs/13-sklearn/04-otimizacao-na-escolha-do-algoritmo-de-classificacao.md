@@ -1,7 +1,7 @@
 # Otimização na escolha do Algoritmo de Classificação
 
 ## Seleção e treino
-   
+  
 ```python
 import pandas as pd 
 uri= 'https://gist.githubusercontent.com/guilhermesilveira/1b7d5475863c15f484ac495bd70975cf/raw/16aff7a0aee67e7c100a2a48b676a2d2d142f646/projects.csv'
@@ -92,3 +92,16 @@ sns.relplot(x="horas_esperadas", y="preco", col="finalizado", hue="finalizado",d
     - O gráfico laranja indica qual a curva que deve ser buscada. 
     - Valores muito próximos desta curva, devem ser considerados como "Finalizados".
     - Valores distantes desta curva devem ser considerados como "Não-Finalizados".
+
+## Criação de algoritmo de baseline para comparação de algoritmos
+```python
+# acurácia do algoritmo atual, com previsões atuais
+acuracia = accuracy_score(teste_y, previsoes) * 100
+print("A acurácia atual é de %.2f%%" % acuracia)
+# baseline de comparação
+import numpy as np
+previsoes_base_line = np.ones(540)
+# acurácia da baseline
+acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
+print("A acurácia de baseline %.2f%%" % acuracia_de_baseline)
+```
