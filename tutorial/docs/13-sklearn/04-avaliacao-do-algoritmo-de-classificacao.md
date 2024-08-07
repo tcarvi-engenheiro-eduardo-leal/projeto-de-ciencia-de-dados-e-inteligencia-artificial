@@ -105,3 +105,10 @@ previsoes_base_line = np.ones(540)
 acuracia_de_baseline = accuracy_score(teste_y, previsoes_base_line) * 100
 print("A acurácia de baseline: %.2f%%" % acuracia_de_baseline)
 ```
+## Apresentação gráfica da curva de decisão do algorítmo
+```python
+import matplotlib.pyplot as plt
+
+plt.contourf(xx, yy, z, alpha=0.3)
+plt.scatter(teste_x_horas_esperadas, teste_x_preco, c=teste_y, s=1)
+````
