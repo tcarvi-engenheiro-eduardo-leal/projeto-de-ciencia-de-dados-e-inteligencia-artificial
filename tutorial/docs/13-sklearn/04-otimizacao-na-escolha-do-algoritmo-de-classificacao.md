@@ -75,13 +75,13 @@ sns.scatterplot(x="horas_esperadas", y="preco", data=dados)
 ```
 ![](./img/dispersao_para_otimizacao1.png)
 
-## Avaliar graficamente a dispersão dos dados com cores para valores da coluna "finalizados"
+## Avaliar graficamente a dispersão dos dados com cores para valores da coluna "finalizado"
 ```python
 sns.scatterplot(x="horas_esperadas", y="preco", hue="finalizado", data=dados)
 ```
 ![](./img/grafico-com-cor.png)
 
-## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizados" e com cores para a mesma coluna
+## Avaliar graficamente a dispersão dos dados com gráficos separados para valores da coluna "finalizado" e com cores para a mesma coluna
 ```python
 sns.relplot(x="horas_esperadas", y="preco", col="finalizado", hue="finalizado",data=dados)
 ```
