@@ -19,3 +19,10 @@ brew install jupyterlab
 ```bash  
 jupyter lab
 ```
+
+## Melhor prática
+- Sempre que possível levante um Ambiente Virtual com python.
+  - E instale bibliotecas apenas neste ambiente temporário.
+- Mesmo se usar o Jupyter ou outra solução de Notebook, use o python do Ambiente Virtual.
+  ![](./img/melhor-pratica.png)
+  A execução do jupyterlab indicará o url do kernel-python a ser usado no notebook.
