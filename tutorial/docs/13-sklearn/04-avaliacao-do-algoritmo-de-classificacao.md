@@ -131,13 +131,20 @@ xx, yy = np.meshgrid(eixo_x, eixo_y)
 # Depois ainda se deve concatenar, como pares, estas duas listas, em uma concatenação maior, com np.c_[].
 pontos = np.c_[xx.ravel(), yy.ravel()]
 # verifique os formatos dos arrays criados
-print(pontos.shape)
-print(xx.shape)
-print(yy.shape)
+print(pontos.shape) # shape = (10000, 2)
+print(xx.shape) # shape = (100, 100)
+print(yy.shape) # shape = (100, 100)
 z = modelo.predict(pontos)
-z = z.reshape(xx.shape)
-# plotagem
+print(z.shape) # shape = (10000,)
+z = z.reshape(xx.shape) # para manter o shape de xx # shape = (100, 100)
+print(z.shape)
+```  
+
+## Curva de Decisão do algoritmo
+```python
 import matplotlib.pyplot as plt
 plt.contourf(xx, yy, z, alpha=0.3)
 plt.scatter(teste_x.horas_esperadas, teste_x.preco, c=teste_y, s=1)
 ````
+- Identica-se que este algoritmo é limitado no sentido de ter uma curva de decisão reta.
+- Identifica-se que é necessário um algoritmo que tenha um curva de decisão com curva de inclinação.
