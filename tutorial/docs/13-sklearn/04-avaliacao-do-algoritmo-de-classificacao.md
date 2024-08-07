@@ -130,7 +130,10 @@ xx, yy = np.meshgrid(eixo_x, eixo_y)
 # Para a concatenação dos pontos de cada eixo, usa-se xx.ravel() e yy.ravel().
 # Depois ainda se deve concatenar, como pares, estas duas listas, em uma concatenação maior, com np.c_[].
 pontos = np.c_[xx.ravel(), yy.ravel()]
-
+# verifique os formatos dos arrays criados
+print(pontos.shape)
+print(xx.shape)
+print(yy.shape)
 z = modelo.predict(pontos)
 z = z.reshape(xx.shape)
 # plotagem
