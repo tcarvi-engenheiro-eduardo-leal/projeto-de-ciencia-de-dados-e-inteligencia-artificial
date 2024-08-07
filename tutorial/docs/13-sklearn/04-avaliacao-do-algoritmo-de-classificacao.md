@@ -124,9 +124,9 @@ eixo_y = np.arange(preco_min, preco_max, (preco_max - preco_min) / pixels)
 # Considera-se agora o x e y como dados do eixo XY. 
 #    Não usamos aqui a nomenclatura do algoritmo de y=f(x).
 xx, yy = np.meshgrid(eixo_x, eixo_y)
-# solução anterior cria pontos do eixo XX, para cada 100 posições do eixo.
-# E cria pontos do eixo YY, para cada 100 pontos deste eixo.
-# Mas o script precisa que tais vales estejam concatenados.
+# A linha anterior cria pontos do eixo XX, para cada 100 divisões do eixo.
+#     e cria pontos do eixo YY, para cada 100 divisões deste eixo.
+# Mas este script precisa que tais vales estejam concatenados.
 # Para a concatenação dos pontos de cada eixo, usa-se xx.ravel() e yy.ravel().
 # Depois ainda se deve concatenar estas duas listas em uma concatenação maior, com np.c_[].
 pontos = np.c_[xx.ravel(), yy.ravel()]
