@@ -1,4 +1,6 @@
-# Algoritmo svc (Support Vector Machine)
+# Algoritmo SVC (Support Vector Machine)
+- Estimador não linear
+
 ```python
 from sklearn.svm import SVC
 
@@ -8,5 +10,6 @@ treino_x, teste_x, treino_y, teste_y = train_test_split(x, y, test_size = 0.25,
                                                          stratify = y)
 print("Treinaremos com %d elementos e testaremos com %d elementos" % (len(treino_x), len(teste_x)))
 
-modelo = SVC()
+modelo = SVC(gamma='auto')
+
 ```  
