@@ -86,7 +86,33 @@ selecionados = (dados["Nome_coluna"] == "Algum valor existente...") | (dados["No
 print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
 ```
 
-## Filtrar dados com seleção booleana
+## Forma sintética para fazer verificações, em 1 coluna
 ```python 
-# to do
+selecionados =  dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."])
+# Retorna True ou False para cada célula da coluna...
+print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
 ```  
+
+## Filtragem com series.loc(), sem limitar seleção por colunas
+```python
+# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
+selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]) ]
+# Retorna True ou False para cada célula da coluna...
+print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+```  
+
+## Filtragem com series.loc(), com limitação da seleção por coluna
+```python
+# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
+selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970 ]
+# Retorna True ou False para cada célula da coluna...
+print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+```
+
+## Filtragem com series.loc(), com limitação da seleção por várias colunas
+```python
+# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
+selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970:2021 ]
+# Retorna True ou False para cada célula da coluna...
+print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+```
