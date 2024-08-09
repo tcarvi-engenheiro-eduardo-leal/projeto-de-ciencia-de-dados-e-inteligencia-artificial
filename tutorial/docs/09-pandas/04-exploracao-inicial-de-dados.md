@@ -12,6 +12,10 @@ dados = pd.read_csv(path)
 print(type(dados)) # pandas.core.frame.Dataframe
 print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
 print(dados.columns) # Título das colunas
+# dados.info() informa:
+#    - Quantidade total de dados e de colunas. 
+#    - Quantidade de dados não nulos de cada coluna.
+#    - Tipo de dado de cada coluna.
 print(dados.info())
 
 #
@@ -62,4 +66,27 @@ print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
 # memory usage: 55.9 Kb
 # None
 print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
+```  
+
+## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
+```python
+# dados únicos de uma coluna
+dados["Nome_coluna"].unique()
+```
+
+## Verificar quais dados de uma coluna são iguais a certo valor
+```python
+selecionados = dados["Nome_coluna"] == "Algum valor existente..."
+print('Quantidade do Selecionado = %s' %(sum(selecionados)) )
+```
+
+## Verificar quais dados de uma coluna são iguais a certo valor ou a outro valor
+```python
+selecionados = (dados["Nome_coluna"] == "Algum valor existente...") | (dados["Nome_coluna"] == "Algum outro valor existente...")
+print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+```
+
+## Filtrar dados com seleção booleana
+```python 
+# to do
 ```  
