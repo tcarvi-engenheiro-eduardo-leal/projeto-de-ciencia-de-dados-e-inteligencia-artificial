@@ -1,4 +1,18 @@
-# Exploração Inicial de Dados
+# Análise Técnica Inicial de Dados
+
+- Em dataframes
+    - type(data_frame_name)
+    - data_frame_name.info()
+        - Nome da classe
+        - Número de linhas (RangeIndex)
+        - Número de dados (entries)
+        - Descrição da Serie
+            - Nome da Serie
+            - Quantidade de dados não nulos da Serie
+            - Tipo de dado
+        - Distribuição dos tipos
+        - Uso da memória
+
 ```python
 from pathlib import Path
 import pandas as pd
