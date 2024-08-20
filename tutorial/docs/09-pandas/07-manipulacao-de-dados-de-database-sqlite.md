@@ -1,71 +1,27 @@
-# Exploração Inicial de Dados
+# Manipulação de Dados de database sqlite
+- Executar operações simples de consulta e criação de nova tabela com funções do pandas e sqlalchemy
+    - pd.read_sql_table([parameters])
+    - pd.to_sql([parameters])
+- Executar manipulação de dados CRUD com uso de ORM de sqlalchemy
+    - ORM é uma técnica de MAPEAMENTO OBJETO RELACIONAL que permite a execução do CRUD em banco de dados relacional, através de comandos enviados para objetos criados no código.
+    - Biblioteca ORM para CRUD: sqlalchemy
+        - CREATE
+        - READ
+        - UPDATE
+        - DELETE
+
+# Criar Engine para as conexões com o banco de dados local sqlite
+
 ```python
-from pathlib import Path
-import pandas as pd
+from sqlalchemy import create_engine
+# sqlalchemy pode fazer conexão com:
+# - sqlite
+# - mysql/mariaDB
+# - postgresql
+# - oracle
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
-dados = pd.read_csv(path)
-
-#
-# Visualização da forma dos Dados
-#
-print(type(dados)) # pandas.core.frame.Dataframe
-print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
-print(dados.columns) # Título das colunas
-# dados.info() informa:
-#    - Quantidade total de dados e de colunas. 
-#    - Quantidade de dados não nulos de cada coluna.
-#    - Tipo de dado de cada coluna.
-print(dados.info())
-
-#
-# Visualização Inicial dos Dados
-#
-print(dados.head())
-print(dados.head(3))
-print(dados.tail())
-
-# Visualização de Series
-print('## ObservationDate ###############################################')
-
-# Index e Valores 
-# Name: ObservationDate, Lenght: 2379, dtype: object
-print(dados['ObservationDate'])
-print(dados['ObservationDate'].unique())
-
-# (2379,) # NumpyArray unidimensional com 2379 linhas.
-print(dados['ObservationDate'].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Series name: ObservationDate
-# Non-null count: 2379 non null
-# Dtype: object
-# dTypes: object(1)
-# memory usage: 18.7+ Kb
-print(dados['ObservationDate'].info())
-
-print('## Confirmed ## Deaths ## Recovered ###############################')
-
-# Index e Valores das 3 Series
-# [2379 rows x 3 columns]
-print(dados[['Confirmed', 'Deaths', 'Recovered']])
-
-# (2379, 3) # NumpyArrya bidimensional com 2379 linhas e 3 colunas
-print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Data columns: (total 3 columns):
-#  #  Column      Non-null Count  Dtype
-# --- ---------- --------------- ------
-#  0  Confirmed   2379 non-null  float64 
-#  1  Deaths      2379 non-null  float64
-#  2  Recovered   2379 non-null  float64
-# dTypes: float64(3)
-# memory usage: 55.9 Kb
-# None
-print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
+# define a conexão co o banco de daados sqlite
+engine = create_engine('sqlite:///:memory:')
 ```  
 
 ## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
