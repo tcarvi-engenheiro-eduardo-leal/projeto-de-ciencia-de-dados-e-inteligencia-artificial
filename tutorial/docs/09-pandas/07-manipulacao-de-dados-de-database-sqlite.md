@@ -97,6 +97,34 @@ class Address(Base):
     )
     def __repr__(self) -> str: # "-> str" é apenas uma "Annotation Function".
         return f"Address(id={self.id!r}, email_address={self.email_address!r})"
-
-
 ```  
+
+### Gravar dados iniciais no Banco de Dados
+```python
+Base.metadata.create_all(engine)
+```  
+
+### CREATE objeto de dados (ORM) no script para persistência no banco de dados
+```python
+import sqlalchemy
+from sqlalchemy.orm import Session
+
+with Session(engine) as session:
+    spongebob = User(
+        name="spongebob",
+        fullname="Spongebob Squarepants",
+        address=[Address(email_address="spongebob@sqlalchemy.org")],
+    )
+    sandy = User(
+        name="Sandy",
+        fullname="Sandy Cheeks",
+        address=[
+            Address(email_address="sandy@sqlalchemy.org")],
+            Address(email_address="sandy@squirrelpower.org")
+        ],
+    )
+    patrick = User(name="patrick", fullname="Patrick Star")
+    session.add_all([spongebob, sandy, patrick])
+    session.commit()
+```  
+
