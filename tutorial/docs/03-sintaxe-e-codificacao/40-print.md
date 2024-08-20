@@ -11,6 +11,11 @@ var_character = 'c'
 # Print com f-string
 print(f'primeira: {var_string}')
 print(f'primeira: {var_string} segunda: {var_int} terceira: {var_float} quarta: {var_boolean}')
+# Pode-se forçar a conversão com:
+# '!s' que chama str() para converter para string.
+# '!r' que chama repr()
+# '!a' que chama ascii()
+print(f'primeira: {var_string!s}')
 
 # Print com Operador de Formatação
 print('primeira: %s' % var_string)
