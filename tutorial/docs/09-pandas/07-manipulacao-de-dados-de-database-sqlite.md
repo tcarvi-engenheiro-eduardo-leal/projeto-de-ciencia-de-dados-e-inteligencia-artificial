@@ -61,3 +61,42 @@ pd.to_sql('clientes', engine, index=False)
 inspector = inspect(engine)
 print(inspector.get_table_name()) # ['clientes'] 
 ```  
+
+## Manipulação de dados apenas com estrutura de dados ORM e sqlalchemy
+
+### Declaração de Modelo de Dados, para estrutura dos Objetos ORM do banco de dados.
+```python
+from sqlalchemy import ForeignKey, String
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from typing import List, Optional
+
+# Classe da base para o modelo
+class Base(DeclarativeBase)
+    pass
+
+# Classes que representam os dados do Banco de Dados devem importar da classe de base.
+# A mapped class typically refers to single particular database table, the name of which is indicated by using the __tablename__ class-level attribute.
+class User(Base):
+    __tablename__ = "user_account"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str] = mapped_column(String(30))
+    fullname: Mapped[Optional[str]]
+    address: Mapped[List['Address']] = relationship(
+        back_populates = "user", cascade="all, delete-orphan"
+    )
+    def __repr__(self) -> str: # "-> str" é apenas uma "Annotation Function".
+        return f"User(id={self.id!r}, name={self.name!r}, fullname={self.fullname!r})"
+
+class Address(Base):
+    __tablename__ = "address"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    email_address: Mapped[str]
+    user_id: Mapped[int] = mapped_column(ForeignKey("user_account.id"))
+    user: Mapped["User"] = relationship(
+        back_populates = "address"
+    )
+    def __repr__(self) -> str: # "-> str" é apenas uma "Annotation Function".
+        return f"Address(id={self.id!r}, email_address={self.email_address!r})"
+
+
+```  
