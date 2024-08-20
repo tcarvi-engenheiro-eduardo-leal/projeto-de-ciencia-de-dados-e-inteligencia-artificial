@@ -37,7 +37,6 @@ print('primeira: {} segunda: {} terceira: {} quarta: {} quinta: {}'.format(var_s
 
 ```python
 class Conta:
-
     def __init__(self, codigo):
         self._codigo = codigo
         self._outra_variavel = 0
