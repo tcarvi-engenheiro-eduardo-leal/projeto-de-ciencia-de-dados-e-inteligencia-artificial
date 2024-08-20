@@ -24,51 +24,40 @@ from sqlalchemy import create_engine
 engine = create_engine('sqlite:///:memory:')
 ```  
 
-## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
+## Manipulação de Dados apenas com Pandas e sqlalchemy
 ```python
-# dados únicos de uma coluna
-dados["Nome_coluna"].unique()
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///:memory:')
+
+import pandas as pd
+
+# sem limitar a consulta por colunas
+pd.read_sql_table('user_account', engine)
 ```
 
-## Verificar quais dados de uma coluna são iguais a certo valor
+## READ de Banco de Dados sqlite com pandas e com limitação das colunas a serem mostradas
 ```python
-selecionados = dados["Nome_coluna"] == "Algum valor existente..."
-print('Quantidade do Selecionado = %s' %(sum(selecionados)) )
-```
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///:memory:')
 
-## Verificar quais dados de uma coluna são iguais a certo valor ou a outro valor
-```python
-selecionados = (dados["Nome_coluna"] == "Algum valor existente...") | (dados["Nome_coluna"] == "Algum outro valor existente...")
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
+import pandas as pd
 
-## Forma sintética para fazer verificações, em 1 coluna
-```python 
-selecionados =  dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."])
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+# limitando a consulta para colunas escolhidas
+pd.read_sql_table('user_account', engine, columns=['id', 'fullname'])
 ```  
 
-## Filtragem com series.loc(), sem limitar seleção por colunas
+## Importar dados csv da internet, e criar nova tabela no banco de dados
 ```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]) ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///:memory:')
+
+import pandas as pd
+url = 'https://XXXX'
+
+# gravar dados importados, em uma nova table de nome "clientes"
+pd.to_sql('clientes', engine, index=False)
+
+# Verifica se houve gravação
+inspector = inspect(engine)
+print(inspector.get_table_name()) # ['clientes'] 
 ```  
-
-## Filtragem com series.loc(), com limitação da seleção por coluna
-```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970 ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
-
-## Filtragem com series.loc(), com limitação da seleção por várias colunas
-```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970:2021 ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
