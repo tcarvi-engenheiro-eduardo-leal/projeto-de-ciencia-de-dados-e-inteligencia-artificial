@@ -128,3 +128,40 @@ with Session(engine) as session:
     session.commit()
 ```  
 
+
+### READ com select, já tendo rows em database local sqlite
+```python
+from sqlalchemy import select
+
+session = Session(engine)
+stmt = select(User).where(User.name.in_(["spongebob", "sandy"]))
+for user in session.scalars(stmt):
+    print(user)
+```  
+
+### READ com select, usando join
+```python
+from sqlalchemy import select
+
+session = Session(engine)
+stmt = (
+    select(Address)
+        .join(Address.user)
+        .where(User.name == "sandy")
+        .where(Address.email_address == "sandy@sqlalchemy.org")
+)
+sandy_address = session.scalars(stmt).one()
+sandy_address
+```  
+
+###  Update dos dados, usando join
+```python
+from sqlalchemy import select
+
+stmt = select(User).where(User.name == "patrick")
+patrick = session.scalars(stmt).one()
+patrick.address.append(Address(email_address="patrickstart@sqlalchemy.org"))
+sandy_adress.email_address = "sandy_cheeks@sqlalchemy.org"
+
+session.commit()
+```  
