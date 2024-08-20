@@ -1,118 +1,90 @@
-# Exploração Inicial de Dados
+# Importar Dados de HTML e de XML
+
+## Importe básico de tag table
 ```python
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
-dados = pd.read_csv(path)
+path_local = Path('src/python-coding/notebook/filmes_wikipedia.html').absolute()
+dados = pd.read_html(path_local) # importa apenas dados de table
+print(dados)
+```   
 
-#
-# Visualização da forma dos Dados
-#
-print(type(dados)) # pandas.core.frame.Dataframe
-print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
-print(dados.columns) # Título das colunas
-# dados.info() informa:
-#    - Quantidade total de dados e de colunas. 
-#    - Quantidade de dados não nulos de cada coluna.
-#    - Tipo de dado de cada coluna.
-print(dados.info())
+## Avaliação dos Dados Importados
+```python
+from pathlib import Path
+import pandas as pd
 
-#
-# Visualização Inicial dos Dados
-#
-print(dados.head())
-print(dados.head(3))
-print(dados.tail())
-
-# Visualização de Series
-print('## ObservationDate ###############################################')
-
-# Index e Valores 
-# Name: ObservationDate, Lenght: 2379, dtype: object
-print(dados['ObservationDate'])
-print(dados['ObservationDate'].unique())
-
-# (2379,) # NumpyArray unidimensional com 2379 linhas.
-print(dados['ObservationDate'].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Series name: ObservationDate
-# Non-null count: 2379 non null
-# Dtype: object
-# dTypes: object(1)
-# memory usage: 18.7+ Kb
-print(dados['ObservationDate'].info())
-
-print('## Confirmed ## Deaths ## Recovered ###############################')
-
-# Index e Valores das 3 Series
-# [2379 rows x 3 columns]
-print(dados[['Confirmed', 'Deaths', 'Recovered']])
-
-# (2379, 3) # NumpyArrya bidimensional com 2379 linhas e 3 colunas
-print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Data columns: (total 3 columns):
-#  #  Column      Non-null Count  Dtype
-# --- ---------- --------------- ------
-#  0  Confirmed   2379 non-null  float64 
-#  1  Deaths      2379 non-null  float64
-#  2  Recovered   2379 non-null  float64
-# dTypes: float64(3)
-# memory usage: 55.9 Kb
-# None
-print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
+path_local = Path('src/python-coding/notebook/filmes_wikipedia.html').absolute()
+dados = pd.read_html(path_local) # importa apenas dados de table
+print(type(dados))
+print(len(dados))
+print(dados[1])
 ```  
 
-## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
+## Seleção de Dados do HTML
 ```python
-# dados únicos de uma coluna
-dados["Nome_coluna"].unique()
-```
+from pathlib import Path
+import pandas as pd
 
-## Verificar quais dados de uma coluna são iguais a certo valor
-```python
-selecionados = dados["Nome_coluna"] == "Algum valor existente..."
-print('Quantidade do Selecionado = %s' %(sum(selecionados)) )
-```
+path_local = Path('src/python-coding/notebook/filmes_wikipedia.html').absolute()
+dados = pd.read_html(path_local) # importa apenas dados de table
+print(type(dados))
+print(len(dados))
+print(dados[1])
 
-## Verificar quais dados de uma coluna são iguais a certo valor ou a outro valor
-```python
-selecionados = (dados["Nome_coluna"] == "Algum valor existente...") | (dados["Nome_coluna"] == "Algum outro valor existente...")
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
-
-## Forma sintética para fazer verificações, em 1 coluna
-```python 
-selecionados =  dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."])
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+dados_selecionados = dados[1]
 ```  
 
-## Filtragem com series.loc(), sem limitar seleção por colunas
+## Seleção de Dados do HTML
 ```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]) ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
+from pathlib import Path
+import pandas as pd
+
+path_local = Path('src/python-coding/notebook/filmes_wikipedia.html').absolute()
+dados = pd.read_html(path_local) # importa apenas dados de table
+print(type(dados))
+print(len(dados))
+print(dados[1])
+
+dados_selecionados = dados[1]
 ```  
 
-## Filtragem com series.loc(), com limitação da seleção por coluna
+## Gravação de Dados do HTML
 ```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970 ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
+from pathlib import Path
+import pandas as pd
 
-## Filtragem com series.loc(), com limitação da seleção por várias colunas
+path_local = Path('src/python-coding/notebook/filmes_wikipedia.html').absolute()
+dados = pd.read_html(path_local) # importa apenas dados de table
+print(type(dados))
+print(len(dados))
+print(dados[1])
+
+dados_selecionados = dados[1]\
+
+path_local2 = Path('src/python-coding/notebook/filmes_wikipedia2.html').absolute()
+dados_selecionados.to_html(path_local2)
+
+# Releitura para confirmação da operação de gravação
+dados_ja_gravado = pd.read_html(path_local2)
+print(dado_ja_gravado)
+```  
+
+## Importe e Gravação de Dados de XML
 ```python
-# series.loc() seleciona dados de uma coluna, a partir de um array de valores True ou False, que tenha o mesmo tamanho de index da coluna.
-selecionados =  dados.loc[ dados["Nome_coluna"].isin(["Algum valor existente...", "Algum outro valor existente..."]), 1970:2021 ]
-# Retorna True ou False para cada célula da coluna...
-print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
-```
+from pathlib import Path
+import pandas as pd
+
+path_local = Path('src/python-coding/notebook/imdb_top_1000.xml').absolute()
+dados = pd.read_html(path_local)
+print(type(dados))
+print(len(dados))
+
+path_local2 = Path('src/python-coding/notebook/imdb_top_1000_2.xml').absolute()
+dados_selecionados.to_xml(path_local2)
+
+# Releitura para confirmação da operação de gravação
+dados_ja_gravado = pd.read_xml(path_local2)
+print(dado_ja_gravado)
+```  
