@@ -1,6 +1,6 @@
 # Análise Técnica Inicial de Dados
 
-- Em dataframes
+- Em dataframes:
     - type(data_frame_name)
     - data_frame_name.info()
         - Nome da classe
@@ -12,7 +12,43 @@
             - Tipo de dado
         - Distribuição dos tipos
         - Uso da memória
+    - data_frame_dados.value_counts()
+        - Nome da Serie
+        - Quantificação de linhas iguais
+            - com indicação do tipo
+    - **data_frame_name.shape**
+        - Tuple com 2 valores: (número_linhas, número_colunas)
+    - **data_frame_name.columns**
+    - **data_frame_name.head()**
+    - **data_frame_name.head(10)**
+    - **data_frame_name.tail()**
+    - **data_frame_name.tail(10)**
+- Em Series:
+    - type(serie)
+    - serie_name.info()
+        - Nome da classe
+        - Número de linhas (RangeIndex)
+        - Número de dados (entries)
+        - Descrição da Serie
+            - Nome da Serie
+            - Quantidade de dados não nulos da Serie
+            - Tipo de dado
+        - Distribuição dos tipos
+        - Uso da memória
+    - serie_name.value_counts()
+        - Nome da Serie
+        - Quantificação de linhas iguais
+            - com indicação do tipo
+    - **serie_name.shape**
+        - Tuple com apenas 1 valore: (número_linhas,)
+    - **serie_name.unique()**
+    - **serie_name.head()**
+    - **serie_name.head(10)**
+    - **serie_name.tail()**
+    - **serie_name.tail(10)**
 
+
+## Análise Técnica do dataframe
 ```python
 from pathlib import Path
 import pandas as pd
@@ -20,67 +56,40 @@ import pandas as pd
 path = Path('src/python-coding/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
-#
-# Visualização da forma dos Dados
-#
-print(type(dados)) # pandas.core.frame.Dataframe
-print(dados.shape) # (2379, 8) # NumpyArray bidemensional com 2379 linhas e 8 colunas.
-print(dados.columns) # Título das colunas
-# dados.info() informa:
-#    - Quantidade total de dados e de colunas. 
-#    - Quantidade de dados não nulos de cada coluna.
-#    - Tipo de dado de cada coluna.
-print(dados.info())
+print(type(data_frame_dados))
+data_frame_dados.info()
+data_frame_dados.value_counts()
+print(data_frame_dados.shape)
+print(data_frame_dados.columns)
 
-#
-# Visualização Inicial dos Dados
-#
-print(dados.head())
-print(dados.head(3))
-print(dados.tail())
-
-# Visualização de Series
-print('## ObservationDate ###############################################')
-
-# Index e Valores 
-# Name: ObservationDate, Lenght: 2379, dtype: object
-print(dados['ObservationDate'])
-print(dados['ObservationDate'].unique())
-
-# (2379,) # NumpyArray unidimensional com 2379 linhas.
-print(dados['ObservationDate'].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Series name: ObservationDate
-# Non-null count: 2379 non null
-# Dtype: object
-# dTypes: object(1)
-# memory usage: 18.7+ Kb
-print(dados['ObservationDate'].info())
-
-print('## Confirmed ## Deaths ## Recovered ###############################')
-
-# Index e Valores das 3 Series
-# [2379 rows x 3 columns]
-print(dados[['Confirmed', 'Deaths', 'Recovered']])
-
-# (2379, 3) # NumpyArrya bidimensional com 2379 linhas e 3 colunas
-print(dados[['Confirmed', 'Deaths', 'Recovered']].shape)
-
-# class 'pandas.core.series.Series'
-# RangeIndex: 2379 entries, 0 to 2378
-# Data columns: (total 3 columns):
-#  #  Column      Non-null Count  Dtype
-# --- ---------- --------------- ------
-#  0  Confirmed   2379 non-null  float64 
-#  1  Deaths      2379 non-null  float64
-#  2  Recovered   2379 non-null  float64
-# dTypes: float64(3)
-# memory usage: 55.9 Kb
-# None
-print(dados[['Confirmed', 'Deaths', 'Recovered']].info())
+data_frame_name.head()
+data_frame_name.head(10)
+data_frame_name.tail()
+data_frame_name.tail(10)
 ```  
+
+## Análise Técnica de Serie
+```python
+from pathlib import Path
+import pandas as pd
+
+path = Path('src/python-coding/notebook/dados.csv').absolute()
+dados_calories = pd.read_csv(path).calories
+
+print(type(dados_calories))
+dados_calories.info()
+dados_calories.value_counts()
+print(dados_calories.unique)
+print(dados_calories.shape)
+print(dados_calories.columns)
+
+data_frame_name.head()
+data_frame_name.head(10)
+data_frame_name.tail()
+data_frame_name.tail(10)
+```  
+
+## Análise do conteúdo de dados
 
 ## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
 ```python
