@@ -4,12 +4,16 @@
 - Python é executado em um "***interpreter system***".
 
 ## Estilo da Codificação
-- in a **procedural way**,
-- in an **object-oriented way** or
-- in a **functional way**.
-- Defining **rich or anemic domain data objects**.
-    
-## Community main uses
+- **procedural way**,
+- **object-oriented way**
+- **functional way**
+
+## Organização do domínio dos dados
+- Pode-se definir:
+    - **rich domain data objects**
+    - ou **anemic domain data objects**
+
+## Utilização no Mercado de TI
 - **Machine Learning**:
     - **TensorFlow** (tools for predictive data analysis)
     - **PyTorch** (tools for predictive data analysis)
