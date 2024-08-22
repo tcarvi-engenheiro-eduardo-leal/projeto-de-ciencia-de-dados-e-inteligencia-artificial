@@ -176,3 +176,27 @@ selecionados = dados.loc[ dados.loc[array_de_booleano], "duration" ]
 # Retorna True ou False para cada célula da coluna...
 print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
 ```
+
+## melt() de uma ou de várias colunas no formato "wide", em duas novas colunas, sendo uma com os títulos e outra com os valores, no formato "long".
+- **Se 2 ou mais colunas sofrerem melt(), haverá expansão de linhas, no valor dobrado da quantidade de colunas que sofrem o melt()...**
+- No formato **wide**, também conhecido como **tabela de pivô**, as tabelas têm uma única linha de cabeçalho contendo diversas colunas, geralmente mais colunas do que linhas, e são úteis para armaenas informações que possuem muitos atributos, como questinários e pesquisas. As colunas podem donter valores ausentes par as células em que os dados não se aplicam.
+
+```python
+import pandas as pd
+
+data_frame = pd. DataFrame(
+    'A': {0: 'a', 1: 'aa', 2: 'aaa'},
+    'B': {0: 'b', 1: 'bb', 2: 'bbb'},
+    'C': {0: 'c', 1: 'cc', 2: 'ccc'},
+    'D': {0: 'd', 1: 'dd', 2: 'ddd'},
+    'E': {0: 'e', 1: 'ee', 2: 'eee'},
+    'F': {0: 'f', 1: 'ff', 2: 'fff'},
+    'G': {0: 'g', 1: 'gg', 2: 'ggg'},
+    'H': {0: 'h', 1: 'hh', 2: 'hhh'},
+    'I': {0: 'i', 1: 'ii', 2: 'iii'},
+    'J': {0: 'j', 1: 'jj', 2: 'jjj'},
+    'L': {0: 'l', 1: 'll', 2: 'lll'},
+    'M': {0: 'm', 1: 'mm', 2: 'mmm'},
+)
+
+unpivoted_data_frame = pd.melt(df, id_vars=['A', 'C', 'F'], value_vars=['B', 'E'], var_name = 'var_name', value_name='value_name')
