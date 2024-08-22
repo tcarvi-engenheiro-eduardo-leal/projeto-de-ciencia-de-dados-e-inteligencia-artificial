@@ -1,0 +1,6 @@
+# groupby
+
+```python
+d
+```  
+
