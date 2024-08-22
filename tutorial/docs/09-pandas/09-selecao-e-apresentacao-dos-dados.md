@@ -5,7 +5,7 @@
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 print(dados['ObservationDate'])
@@ -52,7 +52,7 @@ print(dados.groupby('Confirmed')['Recovered'].mean().sort_values(ascending=True)
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 # kind: bar (vertical bar plot)

@@ -53,7 +53,7 @@
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 print(type(data_frame_dados))
@@ -73,7 +73,7 @@ data_frame_name.tail(10)
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados_calories = pd.read_csv(path).calories
 
 print(type(dados_calories))

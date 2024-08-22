@@ -5,7 +5,7 @@
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/pacientes.json').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/pacientes.json').absolute()
 dados = pd.read_json(path)
 dados.head()
 ```  
@@ -15,7 +15,7 @@ dados.head()
 from pathlib import Path
 import pandas as pd
 
-path_local = Path('src/python-coding/notebook/pacientes.json').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/pacientes.json').absolute()
 dados = pd.read_json(path_local)
 dados.head()
 ```  
@@ -25,7 +25,7 @@ dados.head()
 from pathlib import Path
 import pandas as pd
 
-path_local = Path('src/python-coding/notebook/pacientes.json').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/pacientes.json').absolute()
 dados = pd.read_json(path_local)
 dados.head()
 dados_nomalizados = pd.json_normalize(dados['Pacientes'])
@@ -37,7 +37,7 @@ dados_normalizados.head()
 from pathlib import Path
 import pandas as pd
 
-path_local = Path('src/python-coding/notebook/pacientes.json').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/pacientes.json').absolute()
 dados = pd.read_json(path_local)
 dados.head()
 dados_nomalizados = pd.json_normalize(dados['Pacientes'])
@@ -50,14 +50,14 @@ dados2.head()
 from pathlib import Path
 import pandas as pd
 
-path_local = Path('src/python-coding/notebook/pacientes.json').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/pacientes.json').absolute()
 dados = pd.read_json(path_local)
 dados.head()
 dados_nomalizados = pd.json_normalize(dados['Pacientes'])
 dados2 = dados[['Pesquisa', 'Ano']].join(dados_nomalizados)
 dados2.head()
 
-path_local2 = Path('src/python-coding/notebook/pacientes2.json').absolute()
+path_local2 = Path('src/projeto-inteligencia-artificial/notebook/pacientes2.json').absolute()
 dados2.to_json(path_local2)
 
 verificacao_dados = pd.read_json(path_local2)

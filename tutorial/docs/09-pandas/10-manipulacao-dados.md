@@ -6,7 +6,7 @@
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 print(dados.columns)
@@ -28,7 +28,7 @@ print(dados.columns)
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 
 print(dados.head())
@@ -46,7 +46,7 @@ print(dados.head())
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 print(dados.head())
 dados['Country/Region'] = dados['Country/Region'].str.upper()
@@ -58,7 +58,7 @@ print(dados.head())
 from pathlib import Path
 import pandas as pd
 
-path = Path('src/python-coding/notebook/dados.csv').absolute()
+path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
 dados = pd.read_csv(path)
 print(dados.head())
 dados['Country/Region'] = dados['Country/Region'].str.replace("Region","Regiao")

@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'python-coding',
+  title: 'projeto-inteligencia-artificial',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -58,9 +58,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'python-coding',
+      title: 'projeto-inteligencia-artificial',
       logo: {
-        alt: 'python-coding Logo',
+        alt: 'projeto-inteligencia-artificial Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/python/python-coding',
+              to: '/docs/python/projeto-inteligencia-artificial',
             },
           ],
         },
@@ -121,7 +121,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `${new Date().toLocaleDateString("pt-BR")} ©TCARVI`,
+      copyright: `atualizado em  ${new Date().toLocaleDateString("pt-BR")} ©TCARVI`,
     },
     prism: {
       theme: prismThemes.github,

@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 # Download de:
-path_local = Path('src/python-coding/notebook/planilhas_poluicao.xlsx').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/planilhas_poluicao.xlsx').absolute()
 print(pd.ExcelFile(path_local).sheet_names)
 # [ ]
 
@@ -21,7 +21,7 @@ from pathlib import Path
 import pandas as pd
 
 # Download de:
-path_local = Path('src/python-coding/notebook/planilhas_poluicao.xlsx').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/planilhas_poluicao.xlsx').absolute()
 print(pd.ExcelFile(path_local).sheet_names)
 # [ ]
 
@@ -36,14 +36,14 @@ from pathlib import Path
 import pandas as pd
 
 # Download de:
-path_local = Path('src/python-coding/notebook/planilhas_poluicao.xlsx').absolute()
+path_local = Path('src/projeto-inteligencia-artificial/notebook/planilhas_poluicao.xlsx').absolute()
 print(pd.ExcelFile(path_local).sheet_names)
 # [ ]
 
 dados = pd.read_excel(path_local, sheet_name = "GEE Estados", usecols='A:D', nrows=10)
 # Nome da planilha, dentro do arquivo excel que é um diretório de planilhas
 dados.head()
-path_local2 = Path('src/python-coding/notebook/planilhas_poluicao2.xlsx').absolute()
+path_local2 = Path('src/projeto-inteligencia-artificial/notebook/planilhas_poluicao2.xlsx').absolute()
 dados.to_excel(path_local2, index=False)
 dados2 = pd.read_excel(path_local2, sheet_name = "GEE Estados", usecols='A:D', nrows=10)
 dados2.head()
