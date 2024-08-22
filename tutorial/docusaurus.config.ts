@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/python/python-coding',
+              to: '/docs/python/sobre-python',
             },
           ],
         },
