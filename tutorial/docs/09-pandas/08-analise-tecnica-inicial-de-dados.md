@@ -1,52 +1,52 @@
 # Análise Técnica Inicial de Dados
 
-- Em dataframes:
-    - type(data_frame_name)
-    - data_frame_name.info()
-        - Nome da classe
-        - Número de linhas (RangeIndex)
-        - Número de dados (entries)
-        - Descrição da Serie
-            - Nome da Serie
-            - Quantidade de dados não nulos da Serie
-            - Tipo de dado
-        - Distribuição dos tipos
-        - Uso da memória
-    - data_frame_dados.value_counts()
+## Em dataframes:
+- type(data_frame_name)
+- data_frame_name.info()
+    - Nome da classe
+    - Número de linhas (RangeIndex)
+    - Número de dados (entries)
+    - Descrição da Serie
         - Nome da Serie
-        - Quantificação de linhas iguais
-            - com indicação do tipo
-    - **data_frame_name.shape**
-        - Tuple com 2 valores: (número_linhas, número_colunas)
-    - **data_frame_name.columns**
-    - **data_frame_name.head()**
-    - **data_frame_name.head(10)**
-    - **data_frame_name.tail()**
-    - **data_frame_name.tail(10)**
-- Em Series:
-    - type(serie)
-    - serie_name.info()
-        - Nome da classe
-        - Número de linhas (RangeIndex)
-        - Número de dados (entries)
-        - Descrição da Serie
-            - Nome da Serie
-            - Quantidade de dados não nulos da Serie
-            - Tipo de dado
-        - Distribuição dos tipos
-        - Uso da memória
-    - serie_name.value_counts()
-        - Nome da Serie
-        - Quantificação de linhas iguais
-            - com indicação do tipo
-    - **serie_name.shape**
-        - Tuple com apenas 1 valore: (número_linhas,)
-    - **serie_name.unique()**
-    - **serie_name.head()**
-    - **serie_name.head(10)**
-    - **serie_name.tail()**
-    - **serie_name.tail(10)**
+        - Quantidade de dados não nulos da Serie
+        - Tipo de dado
+    - Distribuição dos tipos
+    - Uso da memória
+- data_frame_dados.value_counts()
+    - Nome da Serie
+    - Quantificação de linhas iguais
+        - com indicação do tipo
+- **data_frame_name.shape**
+    - Tuple com 2 valores: (número_linhas, número_colunas)
+- **data_frame_name.columns**
+- **data_frame_name.head()**
+- **data_frame_name.head(10)**
+- **data_frame_name.tail()**
+- **data_frame_name.tail(10)**
 
+## Em Series:
+- type(serie)
+- serie_name.info()
+    - Nome da classe
+    - Número de linhas (RangeIndex)
+    - Número de dados (entries)
+    - Descrição da Serie
+        - Nome da Serie
+        - Quantidade de dados não nulos da Serie
+        - Tipo de dado
+    - Distribuição dos tipos
+    - Uso da memória
+- serie_name.value_counts()
+    - Nome da Serie
+    - Quantificação de linhas iguais
+        - com indicação do tipo
+- **serie_name.shape**
+    - Tuple com apenas 1 valore: (número_linhas,)
+- **serie_name.unique()**
+- **serie_name.head()**
+- **serie_name.head(10)**
+- **serie_name.tail()**
+- **serie_name.tail(10)**
 
 ## Análise Técnica do dataframe
 ```python
@@ -68,7 +68,7 @@ data_frame_name.tail()
 data_frame_name.tail(10)
 ```  
 
-## Análise Técnica de Serie
+## Análise Técnica da Serie
 ```python
 from pathlib import Path
 import pandas as pd
@@ -91,7 +91,7 @@ data_frame_name.tail(10)
 
 ## Análise do conteúdo de dados
 
-## Saber quai são os dados existentes na coluna, sem considerar a repetição dos mesmos
+## Saber quais são os dados existentes na coluna, sem considerar a repetição dos mesmos
 ```python
 # dados únicos de uma coluna
 dados["Nome_coluna"].unique()
