@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/python/projeto-inteligencia-artificial',
+              to: '/docs/python/python-coding',
             },
           ],
         },
