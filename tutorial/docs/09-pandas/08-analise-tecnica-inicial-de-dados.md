@@ -177,10 +177,16 @@ selecionados = dados.loc[ dados.loc[array_de_booleano], "duration" ]
 print('Quantidade do Selecionado  = %s' %(sum(selecionados)) )
 ```
 
-## melt() de uma ou de várias colunas no formato "wide", em duas novas colunas, sendo uma com os títulos e outra com os valores, no formato "long".
-- **Se 2 ou mais colunas sofrerem melt(), haverá expansão de linhas, no valor dobrado da quantidade de colunas que sofrem o melt()...**
-- No formato **wide**, também conhecido como **tabela de pivô**, as tabelas têm uma única linha de cabeçalho contendo diversas colunas, geralmente mais colunas do que linhas, e são úteis para armaenas informações que possuem muitos atributos, como questinários e pesquisas. As colunas podem donter valores ausentes par as células em que os dados não se aplicam.
-
+## Organização de dados da tabela do formato "wide" para o formato "long"
+- Uso do melt()
+- Input: 
+    - Uma ou várias colunas no formato "wide"
+- Output: 
+    - Duas novas colunas, sendo uma com os títulos e outra com os valores, no formato "long".
+    - Para 1 coluna, não há modificação na quantidade de linhas.
+    - Para 2 ou maior quantidade (Q) de colunas, deve ocorrer a multiplicação do número de linhas pela quantidade de colunas.
+- No formato **wide**, também conhecido como **tabela de pivô**, as tabelas têm uma única linha de cabeçalho contendo dados dispersos em diversas colunas.
+- No formato **long**, também conhecido como **tabela unpivoted**, 1 ou diversas colunas foram transportadas para apenas 2 colunas. Uma coluna com os títulos dos dados. E outra coluna com os valores dos dados.
 ```python
 import pandas as pd
 
