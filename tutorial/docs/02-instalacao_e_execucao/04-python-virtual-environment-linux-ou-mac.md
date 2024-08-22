@@ -1,11 +1,12 @@
-# Python Virtual Environment para Llinux ou Mac
+# Python Virtual Environment para Linux ou Mac
 
 ### Virtual Environment 
 - Sempre abra o terminal e crie uma nova virtual environment
   - Ou ative uma virtual environment criada anteriormente.
-
+  
 ```console
 python3.12 -m venv myvenv```  
+``` 
 
 ```console
 source myvenv/bin/activate
