@@ -1,12 +1,13 @@
 # Sobre Python
-## Context of Execution
-- Python runs on an **interpreter system**.
-## Coding styles
-- Python code is written:
-    - in a **procedural way**,
-    - in an **object-oriented way** or
-    - in a **functional way**.
-    - Defining **rich or anemic domain data objects**.
+
+## Execução
+- Python é executado em um "***interpreter system***".
+
+## Estilo da Codificação
+- in a **procedural way**,
+- in an **object-oriented way** or
+- in a **functional way**.
+- Defining **rich or anemic domain data objects**.
     
 ## Community main uses
 - **Machine Learning**:
