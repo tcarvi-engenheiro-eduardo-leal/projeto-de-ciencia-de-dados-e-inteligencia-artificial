@@ -5,7 +5,7 @@
   - Ou ative uma virtual environment criada anteriormente.
   - Evite trabalhar com o Python usado por seu sistema operacional!
   
-```console title="vá para o diretório escolhido para a instalação"
+```console title="Acesse o diretório escolhido para a instalação..."
 cd virtual-environment-para-jupyterlab-e-scripts-locais
 ``` 
 
