@@ -5,7 +5,7 @@
   - Ou ative uma virtual environment criada anteriormente.
   
 ```console
-python3.12 -m venv virtual-environment```  
+python3.12 -m venv virtual-environment
 ``` 
 
 ```console
