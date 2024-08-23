@@ -4,8 +4,8 @@
 ```python
 import pandas as pd
 
-url = 'xxxxxxx'
-dados = pd.read_csv(url, sep=';')
+url = 'https://raw.githubusercontent.com/alura-cursos/pandas-conhecendo-a-biblioteca/main/desafios/alunos.csv'
+dados = pd.read_csv(url)
 print(dados)
 ```  
 
