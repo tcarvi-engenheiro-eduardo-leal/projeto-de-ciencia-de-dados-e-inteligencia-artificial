@@ -69,11 +69,11 @@ node_modules/
 .dataconnect
 
 # TCARVI
-nao_enviar
+nao_enviar/*
 !nao_enviar/.keep
-notebook-com-venv-e-scripts-locais/nao_enviar/
+notebook-com-venv-e-scripts-locais/nao_enviar/*
 !notebook-com-venv-e-scripts-locais/nao_enviar/.keep
-notebook-com-venv-e-scripts-locais/myvenv/
+notebook-com-venv-e-scripts-locais/myvenv/*
 !notebook-com-venv-e-scripts-locais/myvenv/.keep
 node_modules
 build
