@@ -76,4 +76,4 @@ build
 firebase.json
 yarn.lock
 package-lock.json
-notebook/myvenv
+notebook-local-arquivos-sem-update/myvenv
