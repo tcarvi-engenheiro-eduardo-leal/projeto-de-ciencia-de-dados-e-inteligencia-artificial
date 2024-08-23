@@ -5,16 +5,16 @@
 ## Utilização em Ciência de Dados
 - Tratamentos iniciais antes de processamentos estatísticos:
     - **Análise exploratória de dados**
-        - Junto com Numpy
+        - Uso junto com Numpy
     - **Webscraping**
-        - Uso de scripts para raspar dados de sites da internet.
+        - Uso em scripts que raspam dados de sites da internet.
     - **Limpeza de dados** e **tratamento de dados**
-        - Junto com Numpy
+        - Uso junto com Numpy
     - **Suporte em atividades de machine learning**
     - **Consulta e queries em banco de dados relacional**
     - **Visualização de dados**
-        - Junto com Numpy
-        - Junto com Seaborn
+        - Uso junto com Numpy
+        - Uso junto com Seaborn
 
 ## Dois objetos importantes
 
