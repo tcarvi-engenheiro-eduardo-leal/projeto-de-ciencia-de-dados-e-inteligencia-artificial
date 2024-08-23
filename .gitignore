@@ -7,6 +7,22 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+# Generated files
+.docusaurus
+.cache-loader
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
 # Firebase cache
 .firebase/
 
@@ -41,12 +57,6 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
-node_modules/
-
 # Optional npm cache directory
 .npm
 
@@ -71,10 +81,10 @@ node_modules/
 # TCARVI
 nao_enviar/*
 !nao_enviar/.keep
-notebook-com-venv-e-scripts-locais/nao_enviar/*
-!notebook-com-venv-e-scripts-locais/nao_enviar/.keep
-notebook-com-venv-e-scripts-locais/myvenv/*
-!notebook-com-venv-e-scripts-locais/myvenv/.keep
+notebook-com-myvenv-e-scripts-locais/myvenv/*
+!notebook-com-myvenv-e-scripts-locais/myvenv/.keep
+notebook-com-myvenv-e-scripts-locais/scripts-ipynb-nao-sincronizaveis/*
+!notebook-com-myvenv-e-scripts-locais/scripts-ipynb-nao-sincronizaveis/.keep
 node_modules
 build
 .firebaserc
