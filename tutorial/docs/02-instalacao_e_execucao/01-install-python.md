@@ -2,6 +2,8 @@
 
 ### Instalação conforme site python.org
 - https://www.python.org/downloads/
+- Atenção: 
+    - **Depois de ter o python na sua máquina, sempre opte por usar uma versão temporária do python em uma máquina virtual, pois você terá mais controle sobre este ambiente virtual. Instruções no tópico de "Python Virtual Environment".**
 
 ### Instalação para MAC
 
