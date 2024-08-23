@@ -1,10 +1,14 @@
 # Python Virtual Environment para Linux ou Mac
 
-### Virtual Environment 
-- Sempre abra o terminal e crie uma nova virtual environment
+### Virtual Environment
+- Sempre abra o terminal e crie uma nova virtual environment.
   - Ou ative uma virtual environment criada anteriormente.
-  - Evite trabalhar com o mesmo Python usado por seu sistema operacional!
+  - Evite trabalhar com o Python usado por seu sistema operacional!
   
+```console title="vá para o diretório escolhido para a instalação"
+cd virtual-environment-para-jupyterlab-e-scripts-locais
+``` 
+
 ```console
 python3.12 -m venv virtual-environment
 ``` 
