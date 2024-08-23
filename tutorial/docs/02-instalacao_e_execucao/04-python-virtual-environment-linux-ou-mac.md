@@ -3,6 +3,7 @@
 ### Virtual Environment 
 - Sempre abra o terminal e crie uma nova virtual environment
   - Ou ative uma virtual environment criada anteriormente.
+  - Evite trabalhar com o mesmo Python usado por seu sistema operacional!
   
 ```console
 python3.12 -m venv virtual-environment
@@ -18,7 +19,7 @@ deactivate
 
 ## PATHs do ambiente virtual em execução
 - `./virtual-environment/bin`
-  - activatep
+  - activate
   - pip
   - pip3
   - python
