@@ -69,7 +69,7 @@ node_modules/
 .dataconnect
 
 # TCARVI
-nao_enviar/
+nao_enviar
 node_modules
 build
 .firebaserc
@@ -77,3 +77,4 @@ firebase.json
 yarn.lock
 package-lock.json
 notebook-local-arquivos-sem-update/myvenv
+notebook-local-arquivos-sem-update/seus-scripts-locais/*.ipynb
