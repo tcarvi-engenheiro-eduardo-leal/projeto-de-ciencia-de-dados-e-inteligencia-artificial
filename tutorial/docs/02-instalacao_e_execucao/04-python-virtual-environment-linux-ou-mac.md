@@ -26,7 +26,7 @@ deactivate
   - python3
   - python3.12
 
-### Instalação na Virtual Environment  
+### Instalação de dependências na Virtual Environment  
 - Depois de criar e ativar o Virtual Environment, execute:
 
 ```console
@@ -57,7 +57,7 @@ pip install scikit-learn
 pip install jupyterlab
 ```  
   
-### Execução na Virtual Environment  
+### Execução de Jupyter Lab na Virtual Environment:
 
 ```console
 jupyter lab
