@@ -4,9 +4,16 @@
 ```python
 import pandas as pd
 
-url = 'https://raw.githubusercontent.com/alura-cursos/Pandas/main/superstore_data.csv'
-dados = pd.read_csv(url)
-print(dados)
+try:
+    # codigo
+    url = 'https://raw.githubusercontent.com/alura-cursos/Pandas/main/superstore_data.csv'
+    dados = pd.read_csv(url)
+except:
+    from pathlib import Path
+    path = Path('src/projeto-inteligencia-artificial/notebook/dados.csv').absolute()
+    dados = pd.read_csv(path)
+finally:
+    dados.head()
 ```  
 
 ## Importação de path local
