@@ -6,7 +6,7 @@
 - Iniciar aplicativo Anaconda Navigator
 - Arir aba Environments
 - Clicar no botão create (se não tiver criado ainda a Virtual Environment)
-- Opção de inicializar o terminal, dentro do Environment criado.
+- Escolha opção de inicializar o terminal, dentro do Environment criado.
 
 ```console
 pip install numpy
