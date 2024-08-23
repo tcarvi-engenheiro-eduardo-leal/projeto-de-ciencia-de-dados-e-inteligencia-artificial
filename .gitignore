@@ -70,11 +70,14 @@ node_modules/
 
 # TCARVI
 nao_enviar
+!nao_enviar/.keep
+notebook-com-venv-e-scripts-locais/nao_enviar/
+!notebook-com-venv-e-scripts-locais/nao_enviar/.keep
+notebook-com-venv-e-scripts-locais/myvenv/
+!notebook-com-venv-e-scripts-locais/myvenv/.keep
 node_modules
 build
 .firebaserc
 firebase.json
 yarn.lock
 package-lock.json
-notebook-local-arquivos-sem-update/myvenv
-notebook-local-arquivos-sem-update/seus-scripts-locais/*.ipynb
