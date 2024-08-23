@@ -5,11 +5,11 @@
   - Ou ative uma virtual environment criada anteriormente.
   
 ```console
-python3.12 -m venv myvenv```  
+python3.12 -m venv virtual-environment```  
 ``` 
 
 ```console
-source myvenv/bin/activate
+source virtual-environment/bin/activate
 ```  
   
 ```console title="Para desativar o ambiente virtual do Python"
@@ -17,7 +17,7 @@ deactivate
 ```  
 
 ## PATHs do ambiente virtual em execução
-- `./myvenv/bin`
+- `./virtual-environment/bin`
   - activatep
   - pip
   - pip3
