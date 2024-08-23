@@ -4,7 +4,7 @@
 
 ### Instalação na Virtual Environment  
 - Iniciar aplicativo Anaconda Navigator
-- Arir aba Environments
+- Abrir aba Environments
 - Clicar no botão create (se não tiver criado ainda a Virtual Environment)
 - Escolha opção de inicializar o terminal, dentro do Environment criado.
 
