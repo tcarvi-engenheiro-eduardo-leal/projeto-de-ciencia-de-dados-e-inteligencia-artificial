@@ -3,15 +3,15 @@
 ## Execução
 - Python é executado em um "***interpreter system***".
 
-## Estilo da Codificação
-- **procedural way**,
+## Estilos de Codificação
+- **procedural way**
 - **object-oriented way**
 - **functional way**
 
 ## Organização do domínio dos dados
 - Pode-se definir:
     - **rich domain data objects**
-    - ou **anemic domain data objects**
+    - **anemic domain data objects**
 
 ## Utilização no Mercado de TI
 - **Machine Learning**:
