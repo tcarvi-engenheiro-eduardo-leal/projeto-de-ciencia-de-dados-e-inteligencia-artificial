@@ -29,3 +29,4 @@ data_frame = pd. DataFrame(
 
 unpivoted_data_frame = pd.melt(df, id_vars=['A', 'C', 'F'], value_vars=['B', 'E'], var_name = 'var_name', value_name='value_name')
 ```  
+

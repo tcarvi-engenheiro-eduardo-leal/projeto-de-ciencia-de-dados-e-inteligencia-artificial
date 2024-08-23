@@ -4,7 +4,7 @@
 ```python
 import pandas as pd
 
-url = 'https://raw.githubusercontent.com/alura-cursos/pandas-conhecendo-a-biblioteca/main/desafios/alunos.csv'
+url = 'https://raw.githubusercontent.com/alura-cursos/Pandas/main/superstore_data.csv'
 dados = pd.read_csv(url)
 print(dados)
 ```  
