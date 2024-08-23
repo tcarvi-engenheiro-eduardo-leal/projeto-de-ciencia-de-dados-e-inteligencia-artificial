@@ -81,10 +81,10 @@ bower_components
 # TCARVI
 nao_enviar/*
 !nao_enviar/.keep
-virtual-environment-para-notebook-e-scripts-locais/virtual-environment/*
-!virtual-environment-para-notebook-e-scripts-locais/virtual-environment/.keep
-virtual-environment-para-notebook-e-scripts-locais/scripts-ipynb-nao-sincronizaveis/*
-!virtual-environment-para-notebook-e-scripts-locais/scripts-ipynb-nao-sincronizaveis/.keep
+virtual-environment-para-jupyterlab-e-scripts-locais/virtual-environment/*
+!virtual-environment-para-jupyterlab-e-scripts-locais/virtual-environment/.keep
+virtual-environment-para-jupyterlab-e-scripts-locais/scripts-ipynb-locais-nao-sincronizaveis/*
+!virtual-environment-para-jupyterlab-e-scripts-locais/scripts-ipynb-locais-nao-sincronizaveis/.keep
 node_modules
 build
 .firebaserc
