@@ -18,7 +18,7 @@ deactivate
 
 ## PATHs do ambiente virtual em execução
 - `./myvenv/bin`
-  - activate
+  - activatep
   - pip
   - pip3
   - python
