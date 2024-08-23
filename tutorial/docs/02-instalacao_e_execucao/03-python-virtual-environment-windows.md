@@ -36,7 +36,7 @@ pip install scikit-learn
 pip install jupyterlab
 ```  
   
-### Execução na Virtual Environment  
+### Execução de Jupyter Lab na Virtual Environment:
 
 ```console
 python -m jupyterlab
