@@ -81,7 +81,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/category/exercicios-agilidade',
+              to: '/docs/category/exercícios-de-agilidade',
             },
           ],
         },

@@ -1,3 +1,7 @@
 {
-  "label": "Exercícios de Agilidade"
+  "label": "Exercícios de Agilidade",
+  "link": {
+    "type": "generated-index",
+    "description": "5 minutos para ler cada tópico do tutorial."
+  }
 }

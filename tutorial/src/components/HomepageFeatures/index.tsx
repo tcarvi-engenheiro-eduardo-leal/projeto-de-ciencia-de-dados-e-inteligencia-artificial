@@ -10,35 +10,34 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Análise Estrutural',
+    title: 'Python',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <p>
-        Identifique e desenhe todas as cargas da edificação.<br></br>
-        Calcule o valor das cargas relevantes.<br></br>
-        Escolha a melhor solução de engenharia estrutural para sua edificação.
+        Conheça a linguagem de programação Pyton<br></br>
+        Conheças as Bibliotecas desta linguagem direcionadas para:<br></br>
+        Análise de Dados e<br></br>
+        Inteligência Artificial.
       </p>
     ),
   },
   {
-    title: 'Dimensionamento',
+    title: 'Análise de Dados',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Posicine e dimensione a geometria dos elementos estruturais.<br></br>
-        Identifique a capacidade de resistência de cada elemento estrutural planejado.<br></br>
-        Dimensione o volume de concreto e de aço dos elementos estruturais, para atender a necessidade de resistência definida.
+        Conheça conceitos sobre análies de dados.<br></br>
+        Escreva scripts de análise de dados.
       </>
     ),
   },
   {
-    title: 'Memorial de Cálculo',
+    title: 'Inteligência Artificial',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Armazene todos os cálculos e análises feitas.<br></br>
-        Codifique scripts para automatizar e replicar os cálculos estruturais.<br></br>
-        Codifique scripts para apresentar gráficos das análises.
+        Conheça conceitos sobre Inteligência Artificial.<br></br>
+        Escreva scripts de Inteligência Artificial.
       </>
     ),
   },
