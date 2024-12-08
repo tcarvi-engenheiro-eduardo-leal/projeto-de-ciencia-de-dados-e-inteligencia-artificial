@@ -1,2 +1,2 @@
-# projeto-inteligencia-artificial
-Tutoriais sobre a linguagem de codificação python
+# tcarvi-inteligencia-artificial
+Sistema TCARVI de Inteligência Artificial
