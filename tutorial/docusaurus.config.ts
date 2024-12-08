@@ -1,51 +1,48 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'projeto-inteligencia-artificial',
-  tagline: '',
+  title: 'Tutoriais de Inteligência Artificial',
+  tagline: 'tcarvi-inteligencia-artificial',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://tcarvi-inteligencia-artificial.web.app/',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'tcarvi-engenheiro-eduardo-leal',
+  projectName: 'tcarvi-inteligencia-artificial',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-br',
+    locales: ['pt-br'],
   },
-
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
   presets: [
     [
       'classic',
       {
         docs: {
+          path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding/edit/main/tutorial/',
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/tcarvi-inteligencia-artificial/edit/main/tutorial/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding/edit/main/tutorial/',
+            'https://github.com/tcarvi-engenheiro-eduardo-leal/tcarvi-inteligencia-artificial/edit/main/tutorial/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -53,14 +50,12 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'projeto-inteligencia-artificial',
+      title: 'tcarvi-inteligencia-artificial',
       logo: {
-        alt: 'projeto-inteligencia-artificial Logo',
+        alt: 'tcarvi-inteligencia-artificial',
         src: 'img/logo.svg',
       },
       items: [
@@ -68,11 +63,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tutoriais',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding',
+          href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/tcarvi-inteligencia-artificial',
           label: 'GitHub',
           position: 'right',
         },
@@ -86,7 +81,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/python/sobre-python',
+              to: '/docs/category/exercicios-agilidade',
             },
           ],
         },
@@ -95,15 +90,15 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/users/26135239/tcarvi-engenheiro-eduardo-leal?tab=questions',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCWA39JV7f68QQ6lZEpMOqIA',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'X',
+              href: 'https://x.com/tcarvi_eduardo',
             },
           ],
         },
@@ -116,7 +111,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/python-coding',
+              href: 'https://github.com/tcarvi-engenheiro-eduardo-leal/tcarvi-inteligencia-artificial',
             },
           ],
         },

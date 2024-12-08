@@ -10,32 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Análise Estrutural',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <p>
+        Identifique e desenhe todas as cargas da edificação.<br></br>
+        Calcule o valor das cargas relevantes.<br></br>
+        Escolha a melhor solução de engenharia estrutural para sua edificação.
+      </p>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Dimensionamento',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Posicine e dimensione a geometria dos elementos estruturais.<br></br>
+        Identifique a capacidade de resistência de cada elemento estrutural planejado.<br></br>
+        Dimensione o volume de concreto e de aço dos elementos estruturais, para atender a necessidade de resistência definida.
+      </>
+    ),
+  },
+  {
+    title: 'Memorial de Cálculo',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Armazene todos os cálculos e análises feitas.<br></br>
+        Codifique scripts para automatizar e replicar os cálculos estruturais.<br></br>
+        Codifique scripts para apresentar gráficos das análises.
       </>
     ),
   },

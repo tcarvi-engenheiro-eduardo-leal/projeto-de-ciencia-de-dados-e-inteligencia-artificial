@@ -4,7 +4,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -19,8 +18,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/python/sobre-python">
-            tutoriais - 5min ⏱️
+            to="/docs/category/conceitos-gerais">
+            Conheça - 10min ⏱️
           </Link>
         </div>
       </div>
@@ -33,7 +32,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Tutoriais de Engenharia Estrutural">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
